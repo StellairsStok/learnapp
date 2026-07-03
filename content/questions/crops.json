@@ -1,0 +1,3379 @@
+{
+ "generatedAt": "2026-07-03T00:32:18.376268+00:00",
+ "sourcePdf": "C:\\Users\\chenz\\Documents\\xwechat_files\\wxid_xvnawq3jszox12_0b43\\msg\\file\\2026-06\\选择性必修三1、2、3章(1).pdf",
+ "sourcePages": "C:\\Users\\chenz\\Documents\\Codex\\2026-07-03\\ni-k\\tmp\\pdfs\\pages",
+ "count": 362,
+ "formalCount": 310,
+ "informalCount": 52,
+ "matchedStarts": 352,
+ "confidenceSummary": {
+  "high": 346,
+  "medium": 6,
+  "low": 10
+ },
+ "qids": {
+  "q-x3-p002-01": {
+   "file": "q-x3-p002-01.webp",
+   "pages": [
+    2
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p002-02": {
+   "file": "q-x3-p002-02.webp",
+   "pages": [
+    2
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p002-03": {
+   "file": "q-x3-p002-03.webp",
+   "pages": [
+    2
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p002-04": {
+   "file": "q-x3-p002-04.webp",
+   "pages": [
+    2
+   ],
+   "confidence": "medium",
+   "label": "判一判(4)",
+   "informal": true
+  },
+  "q-x3-p003-01": {
+   "file": "q-x3-p003-01.webp",
+   "pages": [
+    3
+   ],
+   "confidence": "low",
+   "label": "判一判(5)",
+   "informal": true
+  },
+  "q-x3-p003-02": {
+   "file": "q-x3-p003-02.webp",
+   "pages": [
+    3
+   ],
+   "confidence": "low",
+   "label": "判一判(6)",
+   "informal": true
+  },
+  "q-x3-p003-03": {
+   "file": "q-x3-p003-03.webp",
+   "pages": [
+    3,
+    4,
+    5
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p005-01": {
+   "file": "q-x3-p005-01.webp",
+   "pages": [
+    5
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p005-02": {
+   "file": "q-x3-p005-02.webp",
+   "pages": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p008-01": {
+   "file": "q-x3-p008-01.webp",
+   "pages": [
+    8
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p009-01": {
+   "file": "q-x3-p009-01.webp",
+   "pages": [
+    9,
+    10,
+    11
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p011-01": {
+   "file": "q-x3-p011-01.webp",
+   "pages": [
+    11
+   ],
+   "confidence": "high",
+   "label": "例3",
+   "informal": false
+  },
+  "q-x3-p011-02": {
+   "file": "q-x3-p011-02.webp",
+   "pages": [
+    11
+   ],
+   "confidence": "high",
+   "label": "变式训练3-1",
+   "informal": false
+  },
+  "q-x3-p012-01": {
+   "file": "q-x3-p012-01.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "变式训练3-2",
+   "informal": false
+  },
+  "q-x3-p012-02": {
+   "file": "q-x3-p012-02.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p012-03": {
+   "file": "q-x3-p012-03.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p012-04": {
+   "file": "q-x3-p012-04.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p012-05": {
+   "file": "q-x3-p012-05.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p013-01": {
+   "file": "q-x3-p013-01.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p013-02": {
+   "file": "q-x3-p013-02.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p013-03": {
+   "file": "q-x3-p013-03.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p013-04": {
+   "file": "q-x3-p013-04.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p013-05": {
+   "file": "q-x3-p013-05.webp",
+   "pages": [
+    13,
+    14
+   ],
+   "confidence": "high",
+   "label": "A组第9题",
+   "informal": false
+  },
+  "q-x3-p014-01": {
+   "file": "q-x3-p014-01.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "A组第10题",
+   "informal": false
+  },
+  "q-x3-p014-02": {
+   "file": "q-x3-p014-02.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p014-03": {
+   "file": "q-x3-p014-03.webp",
+   "pages": [
+    14,
+    15
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p015-01": {
+   "file": "q-x3-p015-01.webp",
+   "pages": [
+    15
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p015-02": {
+   "file": "q-x3-p015-02.webp",
+   "pages": [
+    15,
+    16,
+    17,
+    18
+   ],
+   "confidence": "high",
+   "label": "B组第14题",
+   "informal": false
+  },
+  "q-x3-p018-01": {
+   "file": "q-x3-p018-01.webp",
+   "pages": [
+    18
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p019-01": {
+   "file": "q-x3-p019-01.webp",
+   "pages": [
+    19
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p019-02": {
+   "file": "q-x3-p019-02.webp",
+   "pages": [
+    19,
+    20
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p020-01": {
+   "file": "q-x3-p020-01.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p020-02": {
+   "file": "q-x3-p020-02.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "课后作业第1题",
+   "informal": false
+  },
+  "q-x3-p020-03": {
+   "file": "q-x3-p020-03.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "课后作业第2题",
+   "informal": false
+  },
+  "q-x3-p020-04": {
+   "file": "q-x3-p020-04.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "课后作业第3题",
+   "informal": false
+  },
+  "q-x3-p020-05": {
+   "file": "q-x3-p020-05.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "课后作业第4题",
+   "informal": false
+  },
+  "q-x3-p020-06": {
+   "file": "q-x3-p020-06.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "课后作业第5题",
+   "informal": false
+  },
+  "q-x3-p021-01": {
+   "file": "q-x3-p021-01.webp",
+   "pages": [
+    21
+   ],
+   "confidence": "high",
+   "label": "课后练习第6题",
+   "informal": false
+  },
+  "q-x3-p021-02": {
+   "file": "q-x3-p021-02.webp",
+   "pages": [
+    21
+   ],
+   "confidence": "high",
+   "label": "课后练习第7题",
+   "informal": false
+  },
+  "q-x3-p021-03": {
+   "file": "q-x3-p021-03.webp",
+   "pages": [
+    21
+   ],
+   "confidence": "high",
+   "label": "课后练习第8题",
+   "informal": false
+  },
+  "q-x3-p021-04": {
+   "file": "q-x3-p021-04.webp",
+   "pages": [
+    21,
+    22
+   ],
+   "confidence": "high",
+   "label": "课后练习第9题",
+   "informal": false
+  },
+  "q-x3-p022-01": {
+   "file": "q-x3-p022-01.webp",
+   "pages": [
+    22
+   ],
+   "confidence": "high",
+   "label": "课后练习第10题",
+   "informal": false
+  },
+  "q-x3-p022-02": {
+   "file": "q-x3-p022-02.webp",
+   "pages": [
+    22,
+    23
+   ],
+   "confidence": "high",
+   "label": "课后练习第11题",
+   "informal": false
+  },
+  "q-x3-p024-01": {
+   "file": "q-x3-p024-01.webp",
+   "pages": [
+    24
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p024-02": {
+   "file": "q-x3-p024-02.webp",
+   "pages": [
+    24
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p024-03": {
+   "file": "q-x3-p024-03.webp",
+   "pages": [
+    24
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p024-04": {
+   "file": "q-x3-p024-04.webp",
+   "pages": [
+    24,
+    25
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p025-01": {
+   "file": "q-x3-p025-01.webp",
+   "pages": [
+    25,
+    26
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p026-01": {
+   "file": "q-x3-p026-01.webp",
+   "pages": [
+    26,
+    27,
+    28
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p028-01": {
+   "file": "q-x3-p028-01.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p028-02": {
+   "file": "q-x3-p028-02.webp",
+   "pages": [
+    28,
+    29
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p029-01": {
+   "file": "q-x3-p029-01.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p029-02": {
+   "file": "q-x3-p029-02.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p029-03": {
+   "file": "q-x3-p029-03.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p029-04": {
+   "file": "q-x3-p029-04.webp",
+   "pages": [
+    29,
+    30
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p030-01": {
+   "file": "q-x3-p030-01.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p030-02": {
+   "file": "q-x3-p030-02.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p030-03": {
+   "file": "q-x3-p030-03.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p030-04": {
+   "file": "q-x3-p030-04.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p031-01": {
+   "file": "q-x3-p031-01.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "A组第9题",
+   "informal": false
+  },
+  "q-x3-p031-02": {
+   "file": "q-x3-p031-02.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p031-03": {
+   "file": "q-x3-p031-03.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p032-01": {
+   "file": "q-x3-p032-01.webp",
+   "pages": [
+    32,
+    33
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p033-01": {
+   "file": "q-x3-p033-01.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p033-02": {
+   "file": "q-x3-p033-02.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p033-03": {
+   "file": "q-x3-p033-03.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p033-04": {
+   "file": "q-x3-p033-04.webp",
+   "pages": [
+    33,
+    34,
+    35
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p035-01": {
+   "file": "q-x3-p035-01.webp",
+   "pages": [
+    35
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p035-02": {
+   "file": "q-x3-p035-02.webp",
+   "pages": [
+    35,
+    36,
+    37,
+    38
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p038-01": {
+   "file": "q-x3-p038-01.webp",
+   "pages": [
+    38,
+    39
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p039-01": {
+   "file": "q-x3-p039-01.webp",
+   "pages": [
+    39
+   ],
+   "confidence": "high",
+   "label": "变式训练2-1",
+   "informal": false
+  },
+  "q-x3-p039-02": {
+   "file": "q-x3-p039-02.webp",
+   "pages": [
+    39
+   ],
+   "confidence": "high",
+   "label": "变式训练2-2",
+   "informal": false
+  },
+  "q-x3-p039-03": {
+   "file": "q-x3-p039-03.webp",
+   "pages": [
+    39,
+    40
+   ],
+   "confidence": "high",
+   "label": "科学思维·例",
+   "informal": false
+  },
+  "q-x3-p040-01": {
+   "file": "q-x3-p040-01.webp",
+   "pages": [
+    40
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p040-02": {
+   "file": "q-x3-p040-02.webp",
+   "pages": [
+    40
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p040-03": {
+   "file": "q-x3-p040-03.webp",
+   "pages": [
+    40,
+    41
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p041-01": {
+   "file": "q-x3-p041-01.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p041-02": {
+   "file": "q-x3-p041-02.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p041-03": {
+   "file": "q-x3-p041-03.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p041-04": {
+   "file": "q-x3-p041-04.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p042-01": {
+   "file": "q-x3-p042-01.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p042-02": {
+   "file": "q-x3-p042-02.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "A组第9题",
+   "informal": false
+  },
+  "q-x3-p042-03": {
+   "file": "q-x3-p042-03.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p043-01": {
+   "file": "q-x3-p043-01.webp",
+   "pages": [
+    43
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p043-02": {
+   "file": "q-x3-p043-02.webp",
+   "pages": [
+    43
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p043-03": {
+   "file": "q-x3-p043-03.webp",
+   "pages": [
+    43,
+    44,
+    45
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p045-01": {
+   "file": "q-x3-p045-01.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "水平测评第1题",
+   "informal": false
+  },
+  "q-x3-p045-02": {
+   "file": "q-x3-p045-02.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "水平测评第2题",
+   "informal": false
+  },
+  "q-x3-p045-03": {
+   "file": "q-x3-p045-03.webp",
+   "pages": [
+    45,
+    46
+   ],
+   "confidence": "high",
+   "label": "水平测评第3题",
+   "informal": false
+  },
+  "q-x3-p046-01": {
+   "file": "q-x3-p046-01.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "水平测评第4题",
+   "informal": false
+  },
+  "q-x3-p046-02": {
+   "file": "q-x3-p046-02.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "水平测评第5题",
+   "informal": false
+  },
+  "q-x3-p046-03": {
+   "file": "q-x3-p046-03.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "水平测评第6题",
+   "informal": false
+  },
+  "q-x3-p046-04": {
+   "file": "q-x3-p046-04.webp",
+   "pages": [
+    46,
+    47
+   ],
+   "confidence": "high",
+   "label": "水平测评第7题",
+   "informal": false
+  },
+  "q-x3-p047-01": {
+   "file": "q-x3-p047-01.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "水平测评第8题",
+   "informal": false
+  },
+  "q-x3-p047-02": {
+   "file": "q-x3-p047-02.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "水平测评第9题",
+   "informal": false
+  },
+  "q-x3-p047-03": {
+   "file": "q-x3-p047-03.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "水平测评第10题",
+   "informal": false
+  },
+  "q-x3-p047-04": {
+   "file": "q-x3-p047-04.webp",
+   "pages": [
+    47,
+    48
+   ],
+   "confidence": "high",
+   "label": "水平测评第11题",
+   "informal": false
+  },
+  "q-x3-p048-01": {
+   "file": "q-x3-p048-01.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "水平测评第12题",
+   "informal": false
+  },
+  "q-x3-p048-02": {
+   "file": "q-x3-p048-02.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "水平测评第13题",
+   "informal": false
+  },
+  "q-x3-p049-01": {
+   "file": "q-x3-p049-01.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "水平测评第14题",
+   "informal": false
+  },
+  "q-x3-p049-02": {
+   "file": "q-x3-p049-02.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "水平测评第15题",
+   "informal": false
+  },
+  "q-x3-p049-03": {
+   "file": "q-x3-p049-03.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "水平测评第16题",
+   "informal": false
+  },
+  "q-x3-p050-01": {
+   "file": "q-x3-p050-01.webp",
+   "pages": [
+    50
+   ],
+   "confidence": "high",
+   "label": "水平测评第17题",
+   "informal": false
+  },
+  "q-x3-p050-02": {
+   "file": "q-x3-p050-02.webp",
+   "pages": [
+    50,
+    51,
+    52
+   ],
+   "confidence": "high",
+   "label": "水平测评第18题",
+   "informal": false
+  },
+  "q-x3-p052-01": {
+   "file": "q-x3-p052-01.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p052-02": {
+   "file": "q-x3-p052-02.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p052-03": {
+   "file": "q-x3-p052-03.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p052-04": {
+   "file": "q-x3-p052-04.webp",
+   "pages": [
+    52,
+    53
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p053-01": {
+   "file": "q-x3-p053-01.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p053-02": {
+   "file": "q-x3-p053-02.webp",
+   "pages": [
+    53,
+    54,
+    55
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p055-01": {
+   "file": "q-x3-p055-01.webp",
+   "pages": [
+    55
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p056-01": {
+   "file": "q-x3-p056-01.webp",
+   "pages": [
+    56,
+    57
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p057-01": {
+   "file": "q-x3-p057-01.webp",
+   "pages": [
+    57,
+    58
+   ],
+   "confidence": "high",
+   "label": "例3",
+   "informal": false
+  },
+  "q-x3-p058-01": {
+   "file": "q-x3-p058-01.webp",
+   "pages": [
+    58
+   ],
+   "confidence": "high",
+   "label": "变式训练3",
+   "informal": false
+  },
+  "q-x3-p058-02": {
+   "file": "q-x3-p058-02.webp",
+   "pages": [
+    58
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p058-03": {
+   "file": "q-x3-p058-03.webp",
+   "pages": [
+    58
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p058-04": {
+   "file": "q-x3-p058-04.webp",
+   "pages": [
+    58,
+    59
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p059-01": {
+   "file": "q-x3-p059-01.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p059-02": {
+   "file": "q-x3-p059-02.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p059-03": {
+   "file": "q-x3-p059-03.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p059-04": {
+   "file": "q-x3-p059-04.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p059-05": {
+   "file": "q-x3-p059-05.webp",
+   "pages": [
+    59,
+    60
+   ],
+   "confidence": "high",
+   "label": "B组第8题",
+   "informal": false
+  },
+  "q-x3-p060-01": {
+   "file": "q-x3-p060-01.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "B组第9题",
+   "informal": false
+  },
+  "q-x3-p060-02": {
+   "file": "q-x3-p060-02.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p060-03": {
+   "file": "q-x3-p060-03.webp",
+   "pages": [
+    60,
+    61
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p061-01": {
+   "file": "q-x3-p061-01.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "课后作业第12题",
+   "informal": false
+  },
+  "q-x3-p061-02": {
+   "file": "q-x3-p061-02.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "课后作业第13题",
+   "informal": false
+  },
+  "q-x3-p061-03": {
+   "file": "q-x3-p061-03.webp",
+   "pages": [
+    61,
+    62,
+    63,
+    64
+   ],
+   "confidence": "high",
+   "label": "课后作业第14题",
+   "informal": false
+  },
+  "q-x3-p064-01": {
+   "file": "q-x3-p064-01.webp",
+   "pages": [
+    64
+   ],
+   "confidence": "high",
+   "label": "例",
+   "informal": false
+  },
+  "q-x3-p065-01": {
+   "file": "q-x3-p065-01.webp",
+   "pages": [
+    65,
+    66
+   ],
+   "confidence": "high",
+   "label": "变式训练",
+   "informal": false
+  },
+  "q-x3-p066-01": {
+   "file": "q-x3-p066-01.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p066-02": {
+   "file": "q-x3-p066-02.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p066-03": {
+   "file": "q-x3-p066-03.webp",
+   "pages": [
+    66,
+    67
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p067-01": {
+   "file": "q-x3-p067-01.webp",
+   "pages": [
+    67,
+    68
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p068-01": {
+   "file": "q-x3-p068-01.webp",
+   "pages": [
+    68,
+    69
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p069-01": {
+   "file": "q-x3-p069-01.webp",
+   "pages": [
+    69
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p069-02": {
+   "file": "q-x3-p069-02.webp",
+   "pages": [
+    69,
+    70
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p071-01": {
+   "file": "q-x3-p071-01.webp",
+   "pages": [
+    71
+   ],
+   "confidence": "high",
+   "label": "例3",
+   "informal": false
+  },
+  "q-x3-p071-02": {
+   "file": "q-x3-p071-02.webp",
+   "pages": [
+    71,
+    72
+   ],
+   "confidence": "high",
+   "label": "变式训练3",
+   "informal": false
+  },
+  "q-x3-p072-01": {
+   "file": "q-x3-p072-01.webp",
+   "pages": [
+    72
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p072-02": {
+   "file": "q-x3-p072-02.webp",
+   "pages": [
+    72
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p072-03": {
+   "file": "q-x3-p072-03.webp",
+   "pages": [
+    72
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p072-04": {
+   "file": "q-x3-p072-04.webp",
+   "pages": [
+    72,
+    73
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p073-01": {
+   "file": "q-x3-p073-01.webp",
+   "pages": [
+    73
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p073-02": {
+   "file": "q-x3-p073-02.webp",
+   "pages": [
+    73,
+    74
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p074-01": {
+   "file": "q-x3-p074-01.webp",
+   "pages": [
+    74,
+    75
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p075-01": {
+   "file": "q-x3-p075-01.webp",
+   "pages": [
+    75
+   ],
+   "confidence": "high",
+   "label": "B组第8题",
+   "informal": false
+  },
+  "q-x3-p075-02": {
+   "file": "q-x3-p075-02.webp",
+   "pages": [
+    75
+   ],
+   "confidence": "high",
+   "label": "B组第9题",
+   "informal": false
+  },
+  "q-x3-p075-03": {
+   "file": "q-x3-p075-03.webp",
+   "pages": [
+    75
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p076-01": {
+   "file": "q-x3-p076-01.webp",
+   "pages": [
+    76
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p076-02": {
+   "file": "q-x3-p076-02.webp",
+   "pages": [
+    76,
+    77
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p077-01": {
+   "file": "q-x3-p077-01.webp",
+   "pages": [
+    77
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p077-02": {
+   "file": "q-x3-p077-02.webp",
+   "pages": [
+    77
+   ],
+   "confidence": "medium",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p078-01": {
+   "file": "q-x3-p078-01.webp",
+   "pages": [
+    78
+   ],
+   "confidence": "low",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p080-01": {
+   "file": "q-x3-p080-01.webp",
+   "pages": [
+    80
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p080-02": {
+   "file": "q-x3-p080-02.webp",
+   "pages": [
+    80,
+    81,
+    82,
+    83
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p083-01": {
+   "file": "q-x3-p083-01.webp",
+   "pages": [
+    83
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p083-02": {
+   "file": "q-x3-p083-02.webp",
+   "pages": [
+    83,
+    84
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p084-01": {
+   "file": "q-x3-p084-01.webp",
+   "pages": [
+    84
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p084-02": {
+   "file": "q-x3-p084-02.webp",
+   "pages": [
+    84
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p084-03": {
+   "file": "q-x3-p084-03.webp",
+   "pages": [
+    84
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p084-04": {
+   "file": "q-x3-p084-04.webp",
+   "pages": [
+    84
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p085-01": {
+   "file": "q-x3-p085-01.webp",
+   "pages": [
+    85
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p085-02": {
+   "file": "q-x3-p085-02.webp",
+   "pages": [
+    85
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p085-03": {
+   "file": "q-x3-p085-03.webp",
+   "pages": [
+    85
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p086-01": {
+   "file": "q-x3-p086-01.webp",
+   "pages": [
+    86
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p086-02": {
+   "file": "q-x3-p086-02.webp",
+   "pages": [
+    86,
+    87
+   ],
+   "confidence": "high",
+   "label": "A组第9题",
+   "informal": false
+  },
+  "q-x3-p087-01": {
+   "file": "q-x3-p087-01.webp",
+   "pages": [
+    87
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p087-02": {
+   "file": "q-x3-p087-02.webp",
+   "pages": [
+    87
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p087-03": {
+   "file": "q-x3-p087-03.webp",
+   "pages": [
+    87
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p088-01": {
+   "file": "q-x3-p088-01.webp",
+   "pages": [
+    88,
+    89
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p089-01": {
+   "file": "q-x3-p089-01.webp",
+   "pages": [
+    89
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p089-02": {
+   "file": "q-x3-p089-02.webp",
+   "pages": [
+    89
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p089-03": {
+   "file": "q-x3-p089-03.webp",
+   "pages": [
+    89
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p089-04": {
+   "file": "q-x3-p089-04.webp",
+   "pages": [
+    89
+   ],
+   "confidence": "high",
+   "label": "判一判(4)",
+   "informal": true
+  },
+  "q-x3-p090-01": {
+   "file": "q-x3-p090-01.webp",
+   "pages": [
+    90,
+    91
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p092-01": {
+   "file": "q-x3-p092-01.webp",
+   "pages": [
+    92
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p092-02": {
+   "file": "q-x3-p092-02.webp",
+   "pages": [
+    92,
+    93,
+    94
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p094-01": {
+   "file": "q-x3-p094-01.webp",
+   "pages": [
+    94
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p094-02": {
+   "file": "q-x3-p094-02.webp",
+   "pages": [
+    94,
+    95
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p095-01": {
+   "file": "q-x3-p095-01.webp",
+   "pages": [
+    95
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p095-02": {
+   "file": "q-x3-p095-02.webp",
+   "pages": [
+    95
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p095-03": {
+   "file": "q-x3-p095-03.webp",
+   "pages": [
+    95
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p096-01": {
+   "file": "q-x3-p096-01.webp",
+   "pages": [
+    96
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p096-02": {
+   "file": "q-x3-p096-02.webp",
+   "pages": [
+    96
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p096-03": {
+   "file": "q-x3-p096-03.webp",
+   "pages": [
+    96
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p096-04": {
+   "file": "q-x3-p096-04.webp",
+   "pages": [
+    96
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p097-01": {
+   "file": "q-x3-p097-01.webp",
+   "pages": [
+    97
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p097-02": {
+   "file": "q-x3-p097-02.webp",
+   "pages": [
+    97,
+    98
+   ],
+   "confidence": "high",
+   "label": "A组第9题",
+   "informal": false
+  },
+  "q-x3-p098-01": {
+   "file": "q-x3-p098-01.webp",
+   "pages": [
+    98
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p098-02": {
+   "file": "q-x3-p098-02.webp",
+   "pages": [
+    98
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p098-03": {
+   "file": "q-x3-p098-03.webp",
+   "pages": [
+    98
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p099-01": {
+   "file": "q-x3-p099-01.webp",
+   "pages": [
+    99,
+    100
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p101-01": {
+   "file": "q-x3-p101-01.webp",
+   "pages": [
+    101
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p102-01": {
+   "file": "q-x3-p102-01.webp",
+   "pages": [
+    102,
+    103
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p103-01": {
+   "file": "q-x3-p103-01.webp",
+   "pages": [
+    103
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p104-01": {
+   "file": "q-x3-p104-01.webp",
+   "pages": [
+    104
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p105-01": {
+   "file": "q-x3-p105-01.webp",
+   "pages": [
+    105
+   ],
+   "confidence": "high",
+   "label": "例3",
+   "informal": false
+  },
+  "q-x3-p105-02": {
+   "file": "q-x3-p105-02.webp",
+   "pages": [
+    105,
+    106
+   ],
+   "confidence": "high",
+   "label": "变式训练3",
+   "informal": false
+  },
+  "q-x3-p106-01": {
+   "file": "q-x3-p106-01.webp",
+   "pages": [
+    106
+   ],
+   "confidence": "high",
+   "label": "课后作业第1题",
+   "informal": false
+  },
+  "q-x3-p106-02": {
+   "file": "q-x3-p106-02.webp",
+   "pages": [
+    106
+   ],
+   "confidence": "high",
+   "label": "课后作业第2题",
+   "informal": false
+  },
+  "q-x3-p106-03": {
+   "file": "q-x3-p106-03.webp",
+   "pages": [
+    106
+   ],
+   "confidence": "high",
+   "label": "课后作业第3题",
+   "informal": false
+  },
+  "q-x3-p107-01": {
+   "file": "q-x3-p107-01.webp",
+   "pages": [
+    107
+   ],
+   "confidence": "high",
+   "label": "课后作业第4题",
+   "informal": false
+  },
+  "q-x3-p107-02": {
+   "file": "q-x3-p107-02.webp",
+   "pages": [
+    107
+   ],
+   "confidence": "high",
+   "label": "课后作业第5题",
+   "informal": false
+  },
+  "q-x3-p107-03": {
+   "file": "q-x3-p107-03.webp",
+   "pages": [
+    107
+   ],
+   "confidence": "high",
+   "label": "课后作业第6题",
+   "informal": false
+  },
+  "q-x3-p108-01": {
+   "file": "q-x3-p108-01.webp",
+   "pages": [
+    108
+   ],
+   "confidence": "high",
+   "label": "课后作业第7题",
+   "informal": false
+  },
+  "q-x3-p108-02": {
+   "file": "q-x3-p108-02.webp",
+   "pages": [
+    108
+   ],
+   "confidence": "high",
+   "label": "课后作业第8题",
+   "informal": false
+  },
+  "q-x3-p109-01": {
+   "file": "q-x3-p109-01.webp",
+   "pages": [
+    109
+   ],
+   "confidence": "high",
+   "label": "课后作业第9题",
+   "informal": false
+  },
+  "q-x3-p109-02": {
+   "file": "q-x3-p109-02.webp",
+   "pages": [
+    109
+   ],
+   "confidence": "high",
+   "label": "课后作业第10题",
+   "informal": false
+  },
+  "q-x3-p110-01": {
+   "file": "q-x3-p110-01.webp",
+   "pages": [
+    110
+   ],
+   "confidence": "high",
+   "label": "课后作业第11题",
+   "informal": false
+  },
+  "q-x3-p110-02": {
+   "file": "q-x3-p110-02.webp",
+   "pages": [
+    110
+   ],
+   "confidence": "medium",
+   "label": "课后作业第12题",
+   "informal": false
+  },
+  "q-x3-p112-01": {
+   "file": "q-x3-p112-01.webp",
+   "pages": [
+    112
+   ],
+   "confidence": "low",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p112-02": {
+   "file": "q-x3-p112-02.webp",
+   "pages": [
+    112
+   ],
+   "confidence": "low",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p112-03": {
+   "file": "q-x3-p112-03.webp",
+   "pages": [
+    112
+   ],
+   "confidence": "low",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p112-04": {
+   "file": "q-x3-p112-04.webp",
+   "pages": [
+    112
+   ],
+   "confidence": "low",
+   "label": "判一判(4)",
+   "informal": true
+  },
+  "q-x3-p112-05": {
+   "file": "q-x3-p112-05.webp",
+   "pages": [
+    112,
+    113
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p114-01": {
+   "file": "q-x3-p114-01.webp",
+   "pages": [
+    114
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p114-02": {
+   "file": "q-x3-p114-02.webp",
+   "pages": [
+    114,
+    115,
+    116
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p116-01": {
+   "file": "q-x3-p116-01.webp",
+   "pages": [
+    116
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p117-01": {
+   "file": "q-x3-p117-01.webp",
+   "pages": [
+    117
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p117-02": {
+   "file": "q-x3-p117-02.webp",
+   "pages": [
+    117
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p117-03": {
+   "file": "q-x3-p117-03.webp",
+   "pages": [
+    117
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p117-04": {
+   "file": "q-x3-p117-04.webp",
+   "pages": [
+    117
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p118-01": {
+   "file": "q-x3-p118-01.webp",
+   "pages": [
+    118
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p118-02": {
+   "file": "q-x3-p118-02.webp",
+   "pages": [
+    118
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p118-03": {
+   "file": "q-x3-p118-03.webp",
+   "pages": [
+    118
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p118-04": {
+   "file": "q-x3-p118-04.webp",
+   "pages": [
+    118
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p118-05": {
+   "file": "q-x3-p118-05.webp",
+   "pages": [
+    118
+   ],
+   "confidence": "high",
+   "label": "B组第8题",
+   "informal": false
+  },
+  "q-x3-p119-01": {
+   "file": "q-x3-p119-01.webp",
+   "pages": [
+    119
+   ],
+   "confidence": "high",
+   "label": "B组第9题",
+   "informal": false
+  },
+  "q-x3-p119-02": {
+   "file": "q-x3-p119-02.webp",
+   "pages": [
+    119
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p119-03": {
+   "file": "q-x3-p119-03.webp",
+   "pages": [
+    119
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p119-04": {
+   "file": "q-x3-p119-04.webp",
+   "pages": [
+    119
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p120-01": {
+   "file": "q-x3-p120-01.webp",
+   "pages": [
+    120,
+    121
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p121-01": {
+   "file": "q-x3-p121-01.webp",
+   "pages": [
+    121
+   ],
+   "confidence": "medium",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p122-01": {
+   "file": "q-x3-p122-01.webp",
+   "pages": [
+    122
+   ],
+   "confidence": "low",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p122-02": {
+   "file": "q-x3-p122-02.webp",
+   "pages": [
+    122
+   ],
+   "confidence": "low",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p122-03": {
+   "file": "q-x3-p122-03.webp",
+   "pages": [
+    122,
+    123
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p123-01": {
+   "file": "q-x3-p123-01.webp",
+   "pages": [
+    123,
+    124
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p124-01": {
+   "file": "q-x3-p124-01.webp",
+   "pages": [
+    124,
+    125
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p125-01": {
+   "file": "q-x3-p125-01.webp",
+   "pages": [
+    125
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p126-01": {
+   "file": "q-x3-p126-01.webp",
+   "pages": [
+    126,
+    127
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p127-01": {
+   "file": "q-x3-p127-01.webp",
+   "pages": [
+    127
+   ],
+   "confidence": "high",
+   "label": "例3",
+   "informal": false
+  },
+  "q-x3-p127-02": {
+   "file": "q-x3-p127-02.webp",
+   "pages": [
+    127,
+    128
+   ],
+   "confidence": "high",
+   "label": "变式训练3",
+   "informal": false
+  },
+  "q-x3-p128-01": {
+   "file": "q-x3-p128-01.webp",
+   "pages": [
+    128
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p128-02": {
+   "file": "q-x3-p128-02.webp",
+   "pages": [
+    128
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p128-03": {
+   "file": "q-x3-p128-03.webp",
+   "pages": [
+    128
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p128-04": {
+   "file": "q-x3-p128-04.webp",
+   "pages": [
+    128
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p128-05": {
+   "file": "q-x3-p128-05.webp",
+   "pages": [
+    128,
+    129
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p129-01": {
+   "file": "q-x3-p129-01.webp",
+   "pages": [
+    129
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p129-02": {
+   "file": "q-x3-p129-02.webp",
+   "pages": [
+    129
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p129-03": {
+   "file": "q-x3-p129-03.webp",
+   "pages": [
+    129
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p129-04": {
+   "file": "q-x3-p129-04.webp",
+   "pages": [
+    129
+   ],
+   "confidence": "high",
+   "label": "A组第9题",
+   "informal": false
+  },
+  "q-x3-p129-05": {
+   "file": "q-x3-p129-05.webp",
+   "pages": [
+    129
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p130-01": {
+   "file": "q-x3-p130-01.webp",
+   "pages": [
+    130
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p130-02": {
+   "file": "q-x3-p130-02.webp",
+   "pages": [
+    130
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p130-03": {
+   "file": "q-x3-p130-03.webp",
+   "pages": [
+    130
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p130-04": {
+   "file": "q-x3-p130-04.webp",
+   "pages": [
+    130
+   ],
+   "confidence": "high",
+   "label": "B组第14题",
+   "informal": false
+  },
+  "q-x3-p130-05": {
+   "file": "q-x3-p130-05.webp",
+   "pages": [
+    130
+   ],
+   "confidence": "high",
+   "label": "B组第15题",
+   "informal": false
+  },
+  "q-x3-p131-01": {
+   "file": "q-x3-p131-01.webp",
+   "pages": [
+    131,
+    132
+   ],
+   "confidence": "high",
+   "label": "B组第16题",
+   "informal": false
+  },
+  "q-x3-p132-01": {
+   "file": "q-x3-p132-01.webp",
+   "pages": [
+    132
+   ],
+   "confidence": "high",
+   "label": "水平测评第1题",
+   "informal": false
+  },
+  "q-x3-p132-02": {
+   "file": "q-x3-p132-02.webp",
+   "pages": [
+    132
+   ],
+   "confidence": "high",
+   "label": "水平测评第2题",
+   "informal": false
+  },
+  "q-x3-p132-03": {
+   "file": "q-x3-p132-03.webp",
+   "pages": [
+    132
+   ],
+   "confidence": "high",
+   "label": "水平测评第3题",
+   "informal": false
+  },
+  "q-x3-p132-04": {
+   "file": "q-x3-p132-04.webp",
+   "pages": [
+    132,
+    133
+   ],
+   "confidence": "high",
+   "label": "水平测评第4题",
+   "informal": false
+  },
+  "q-x3-p133-01": {
+   "file": "q-x3-p133-01.webp",
+   "pages": [
+    133
+   ],
+   "confidence": "high",
+   "label": "水平测评第5题",
+   "informal": false
+  },
+  "q-x3-p133-02": {
+   "file": "q-x3-p133-02.webp",
+   "pages": [
+    133
+   ],
+   "confidence": "high",
+   "label": "水平测评第6题",
+   "informal": false
+  },
+  "q-x3-p133-03": {
+   "file": "q-x3-p133-03.webp",
+   "pages": [
+    133
+   ],
+   "confidence": "high",
+   "label": "水平测评第7题",
+   "informal": false
+  },
+  "q-x3-p134-01": {
+   "file": "q-x3-p134-01.webp",
+   "pages": [
+    134
+   ],
+   "confidence": "high",
+   "label": "水平测评第8题",
+   "informal": false
+  },
+  "q-x3-p134-02": {
+   "file": "q-x3-p134-02.webp",
+   "pages": [
+    134
+   ],
+   "confidence": "high",
+   "label": "水平测评第9题",
+   "informal": false
+  },
+  "q-x3-p134-03": {
+   "file": "q-x3-p134-03.webp",
+   "pages": [
+    134
+   ],
+   "confidence": "high",
+   "label": "水平测评第10题",
+   "informal": false
+  },
+  "q-x3-p134-04": {
+   "file": "q-x3-p134-04.webp",
+   "pages": [
+    134,
+    135
+   ],
+   "confidence": "high",
+   "label": "水平测评第11题",
+   "informal": false
+  },
+  "q-x3-p135-01": {
+   "file": "q-x3-p135-01.webp",
+   "pages": [
+    135
+   ],
+   "confidence": "high",
+   "label": "水平测评第12题",
+   "informal": false
+  },
+  "q-x3-p135-02": {
+   "file": "q-x3-p135-02.webp",
+   "pages": [
+    135,
+    136
+   ],
+   "confidence": "high",
+   "label": "水平测评第13题",
+   "informal": false
+  },
+  "q-x3-p136-01": {
+   "file": "q-x3-p136-01.webp",
+   "pages": [
+    136
+   ],
+   "confidence": "high",
+   "label": "水平测评第14题",
+   "informal": false
+  },
+  "q-x3-p136-02": {
+   "file": "q-x3-p136-02.webp",
+   "pages": [
+    136,
+    137
+   ],
+   "confidence": "high",
+   "label": "水平测评第15题",
+   "informal": false
+  },
+  "q-x3-p137-01": {
+   "file": "q-x3-p137-01.webp",
+   "pages": [
+    137
+   ],
+   "confidence": "high",
+   "label": "水平测评第16题",
+   "informal": false
+  },
+  "q-x3-p138-01": {
+   "file": "q-x3-p138-01.webp",
+   "pages": [
+    138
+   ],
+   "confidence": "high",
+   "label": "水平测评第17题",
+   "informal": false
+  },
+  "q-x3-p139-01": {
+   "file": "q-x3-p139-01.webp",
+   "pages": [
+    139,
+    140
+   ],
+   "confidence": "high",
+   "label": "水平测评第18题",
+   "informal": false
+  },
+  "q-x3-p140-01": {
+   "file": "q-x3-p140-01.webp",
+   "pages": [
+    140
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p140-02": {
+   "file": "q-x3-p140-02.webp",
+   "pages": [
+    140
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p140-03": {
+   "file": "q-x3-p140-03.webp",
+   "pages": [
+    140
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p141-01": {
+   "file": "q-x3-p141-01.webp",
+   "pages": [
+    141,
+    142,
+    143
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p143-01": {
+   "file": "q-x3-p143-01.webp",
+   "pages": [
+    143
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p143-02": {
+   "file": "q-x3-p143-02.webp",
+   "pages": [
+    143,
+    144
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p145-01": {
+   "file": "q-x3-p145-01.webp",
+   "pages": [
+    145
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p145-02": {
+   "file": "q-x3-p145-02.webp",
+   "pages": [
+    145
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p145-03": {
+   "file": "q-x3-p145-03.webp",
+   "pages": [
+    145
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p146-01": {
+   "file": "q-x3-p146-01.webp",
+   "pages": [
+    146
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p146-02": {
+   "file": "q-x3-p146-02.webp",
+   "pages": [
+    146
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p146-03": {
+   "file": "q-x3-p146-03.webp",
+   "pages": [
+    146
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p146-04": {
+   "file": "q-x3-p146-04.webp",
+   "pages": [
+    146
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p146-05": {
+   "file": "q-x3-p146-05.webp",
+   "pages": [
+    146,
+    147
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p147-01": {
+   "file": "q-x3-p147-01.webp",
+   "pages": [
+    147
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p147-02": {
+   "file": "q-x3-p147-02.webp",
+   "pages": [
+    147
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p147-03": {
+   "file": "q-x3-p147-03.webp",
+   "pages": [
+    147
+   ],
+   "confidence": "high",
+   "label": "B组第9题",
+   "informal": false
+  },
+  "q-x3-p147-04": {
+   "file": "q-x3-p147-04.webp",
+   "pages": [
+    147,
+    148
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p148-01": {
+   "file": "q-x3-p148-01.webp",
+   "pages": [
+    148
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p148-02": {
+   "file": "q-x3-p148-02.webp",
+   "pages": [
+    148
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p148-03": {
+   "file": "q-x3-p148-03.webp",
+   "pages": [
+    148,
+    149
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p149-01": {
+   "file": "q-x3-p149-01.webp",
+   "pages": [
+    149
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p149-02": {
+   "file": "q-x3-p149-02.webp",
+   "pages": [
+    149
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p149-03": {
+   "file": "q-x3-p149-03.webp",
+   "pages": [
+    149
+   ],
+   "confidence": "medium",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p150-01": {
+   "file": "q-x3-p150-01.webp",
+   "pages": [
+    150
+   ],
+   "confidence": "low",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p151-01": {
+   "file": "q-x3-p151-01.webp",
+   "pages": [
+    151
+   ],
+   "confidence": "high",
+   "label": "例1",
+   "informal": false
+  },
+  "q-x3-p152-01": {
+   "file": "q-x3-p152-01.webp",
+   "pages": [
+    152,
+    153
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p153-01": {
+   "file": "q-x3-p153-01.webp",
+   "pages": [
+    153,
+    154
+   ],
+   "confidence": "high",
+   "label": "例2",
+   "informal": false
+  },
+  "q-x3-p154-01": {
+   "file": "q-x3-p154-01.webp",
+   "pages": [
+    154,
+    155
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p155-01": {
+   "file": "q-x3-p155-01.webp",
+   "pages": [
+    155
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p155-02": {
+   "file": "q-x3-p155-02.webp",
+   "pages": [
+    155
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p155-03": {
+   "file": "q-x3-p155-03.webp",
+   "pages": [
+    155
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p155-04": {
+   "file": "q-x3-p155-04.webp",
+   "pages": [
+    155
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p156-01": {
+   "file": "q-x3-p156-01.webp",
+   "pages": [
+    156
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p156-02": {
+   "file": "q-x3-p156-02.webp",
+   "pages": [
+    156
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p156-03": {
+   "file": "q-x3-p156-03.webp",
+   "pages": [
+    156
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p157-01": {
+   "file": "q-x3-p157-01.webp",
+   "pages": [
+    157
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p157-02": {
+   "file": "q-x3-p157-02.webp",
+   "pages": [
+    157
+   ],
+   "confidence": "high",
+   "label": "B组第9题",
+   "informal": false
+  },
+  "q-x3-p157-03": {
+   "file": "q-x3-p157-03.webp",
+   "pages": [
+    157
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p158-01": {
+   "file": "q-x3-p158-01.webp",
+   "pages": [
+    158
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p158-02": {
+   "file": "q-x3-p158-02.webp",
+   "pages": [
+    158
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p158-03": {
+   "file": "q-x3-p158-03.webp",
+   "pages": [
+    158
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p159-01": {
+   "file": "q-x3-p159-01.webp",
+   "pages": [
+    159
+   ],
+   "confidence": "high",
+   "label": "B组第14题",
+   "informal": false
+  },
+  "q-x3-p159-02": {
+   "file": "q-x3-p159-02.webp",
+   "pages": [
+    159,
+    160
+   ],
+   "confidence": "high",
+   "label": "B组第15题",
+   "informal": false
+  },
+  "q-x3-p160-01": {
+   "file": "q-x3-p160-01.webp",
+   "pages": [
+    160
+   ],
+   "confidence": "high",
+   "label": "判一判(1)",
+   "informal": true
+  },
+  "q-x3-p160-02": {
+   "file": "q-x3-p160-02.webp",
+   "pages": [
+    160
+   ],
+   "confidence": "high",
+   "label": "判一判(2)",
+   "informal": true
+  },
+  "q-x3-p160-03": {
+   "file": "q-x3-p160-03.webp",
+   "pages": [
+    160
+   ],
+   "confidence": "high",
+   "label": "判一判(3)",
+   "informal": true
+  },
+  "q-x3-p160-04": {
+   "file": "q-x3-p160-04.webp",
+   "pages": [
+    160
+   ],
+   "confidence": "high",
+   "label": "判一判(4)",
+   "informal": true
+  },
+  "q-x3-p160-05": {
+   "file": "q-x3-p160-05.webp",
+   "pages": [
+    160,
+    161,
+    162,
+    163
+   ],
+   "confidence": "high",
+   "label": "想一想",
+   "informal": true
+  },
+  "q-x3-p163-01": {
+   "file": "q-x3-p163-01.webp",
+   "pages": [
+    163
+   ],
+   "confidence": "high",
+   "label": "例",
+   "informal": false
+  },
+  "q-x3-p164-01": {
+   "file": "q-x3-p164-01.webp",
+   "pages": [
+    164
+   ],
+   "confidence": "high",
+   "label": "变式训练1",
+   "informal": false
+  },
+  "q-x3-p164-02": {
+   "file": "q-x3-p164-02.webp",
+   "pages": [
+    164
+   ],
+   "confidence": "high",
+   "label": "变式训练2",
+   "informal": false
+  },
+  "q-x3-p164-03": {
+   "file": "q-x3-p164-03.webp",
+   "pages": [
+    164
+   ],
+   "confidence": "high",
+   "label": "A组第1题",
+   "informal": false
+  },
+  "q-x3-p164-04": {
+   "file": "q-x3-p164-04.webp",
+   "pages": [
+    164
+   ],
+   "confidence": "high",
+   "label": "A组第2题",
+   "informal": false
+  },
+  "q-x3-p164-05": {
+   "file": "q-x3-p164-05.webp",
+   "pages": [
+    164,
+    165
+   ],
+   "confidence": "high",
+   "label": "A组第3题",
+   "informal": false
+  },
+  "q-x3-p165-01": {
+   "file": "q-x3-p165-01.webp",
+   "pages": [
+    165
+   ],
+   "confidence": "high",
+   "label": "A组第4题",
+   "informal": false
+  },
+  "q-x3-p165-02": {
+   "file": "q-x3-p165-02.webp",
+   "pages": [
+    165
+   ],
+   "confidence": "high",
+   "label": "A组第5题",
+   "informal": false
+  },
+  "q-x3-p165-03": {
+   "file": "q-x3-p165-03.webp",
+   "pages": [
+    165
+   ],
+   "confidence": "high",
+   "label": "A组第6题",
+   "informal": false
+  },
+  "q-x3-p165-04": {
+   "file": "q-x3-p165-04.webp",
+   "pages": [
+    165
+   ],
+   "confidence": "high",
+   "label": "A组第7题",
+   "informal": false
+  },
+  "q-x3-p165-05": {
+   "file": "q-x3-p165-05.webp",
+   "pages": [
+    165,
+    166
+   ],
+   "confidence": "high",
+   "label": "A组第8题",
+   "informal": false
+  },
+  "q-x3-p166-01": {
+   "file": "q-x3-p166-01.webp",
+   "pages": [
+    166
+   ],
+   "confidence": "high",
+   "label": "B组第9题",
+   "informal": false
+  },
+  "q-x3-p166-02": {
+   "file": "q-x3-p166-02.webp",
+   "pages": [
+    166
+   ],
+   "confidence": "high",
+   "label": "B组第10题",
+   "informal": false
+  },
+  "q-x3-p167-01": {
+   "file": "q-x3-p167-01.webp",
+   "pages": [
+    167
+   ],
+   "confidence": "high",
+   "label": "B组第11题",
+   "informal": false
+  },
+  "q-x3-p167-02": {
+   "file": "q-x3-p167-02.webp",
+   "pages": [
+    167
+   ],
+   "confidence": "high",
+   "label": "B组第12题",
+   "informal": false
+  },
+  "q-x3-p167-03": {
+   "file": "q-x3-p167-03.webp",
+   "pages": [
+    167
+   ],
+   "confidence": "high",
+   "label": "B组第13题",
+   "informal": false
+  },
+  "q-x3-p168-01": {
+   "file": "q-x3-p168-01.webp",
+   "pages": [
+    168
+   ],
+   "confidence": "high",
+   "label": "B组第14题",
+   "informal": false
+  },
+  "q-x3-p168-02": {
+   "file": "q-x3-p168-02.webp",
+   "pages": [
+    168,
+    169
+   ],
+   "confidence": "high",
+   "label": "B组第15题",
+   "informal": false
+  },
+  "q-x3-p169-01": {
+   "file": "q-x3-p169-01.webp",
+   "pages": [
+    169
+   ],
+   "confidence": "high",
+   "label": "水平测评第1题",
+   "informal": false
+  },
+  "q-x3-p169-02": {
+   "file": "q-x3-p169-02.webp",
+   "pages": [
+    169
+   ],
+   "confidence": "high",
+   "label": "水平测评第2题",
+   "informal": false
+  },
+  "q-x3-p169-03": {
+   "file": "q-x3-p169-03.webp",
+   "pages": [
+    169
+   ],
+   "confidence": "high",
+   "label": "水平测评第3题",
+   "informal": false
+  },
+  "q-x3-p169-04": {
+   "file": "q-x3-p169-04.webp",
+   "pages": [
+    169
+   ],
+   "confidence": "high",
+   "label": "水平测评第4题",
+   "informal": false
+  },
+  "q-x3-p170-01": {
+   "file": "q-x3-p170-01.webp",
+   "pages": [
+    170
+   ],
+   "confidence": "high",
+   "label": "水平测评第5题",
+   "informal": false
+  },
+  "q-x3-p170-02": {
+   "file": "q-x3-p170-02.webp",
+   "pages": [
+    170
+   ],
+   "confidence": "high",
+   "label": "水平测评第6题",
+   "informal": false
+  },
+  "q-x3-p170-03": {
+   "file": "q-x3-p170-03.webp",
+   "pages": [
+    170,
+    171
+   ],
+   "confidence": "high",
+   "label": "水平测评第7题",
+   "informal": false
+  },
+  "q-x3-p171-01": {
+   "file": "q-x3-p171-01.webp",
+   "pages": [
+    171
+   ],
+   "confidence": "high",
+   "label": "水平测评第8题",
+   "informal": false
+  },
+  "q-x3-p171-02": {
+   "file": "q-x3-p171-02.webp",
+   "pages": [
+    171
+   ],
+   "confidence": "high",
+   "label": "水平测评第9题",
+   "informal": false
+  },
+  "q-x3-p171-03": {
+   "file": "q-x3-p171-03.webp",
+   "pages": [
+    171
+   ],
+   "confidence": "high",
+   "label": "水平测评第10题",
+   "informal": false
+  },
+  "q-x3-p172-01": {
+   "file": "q-x3-p172-01.webp",
+   "pages": [
+    172
+   ],
+   "confidence": "high",
+   "label": "水平测评第11题",
+   "informal": false
+  },
+  "q-x3-p172-02": {
+   "file": "q-x3-p172-02.webp",
+   "pages": [
+    172
+   ],
+   "confidence": "high",
+   "label": "水平测评第12题",
+   "informal": false
+  },
+  "q-x3-p172-03": {
+   "file": "q-x3-p172-03.webp",
+   "pages": [
+    172
+   ],
+   "confidence": "high",
+   "label": "水平测评第13题",
+   "informal": false
+  },
+  "q-x3-p173-01": {
+   "file": "q-x3-p173-01.webp",
+   "pages": [
+    173
+   ],
+   "confidence": "high",
+   "label": "水平测评第14题",
+   "informal": false
+  },
+  "q-x3-p173-02": {
+   "file": "q-x3-p173-02.webp",
+   "pages": [
+    173
+   ],
+   "confidence": "high",
+   "label": "水平测评第15题",
+   "informal": false
+  },
+  "q-x3-p173-03": {
+   "file": "q-x3-p173-03.webp",
+   "pages": [
+    173
+   ],
+   "confidence": "high",
+   "label": "水平测评第16题",
+   "informal": false
+  },
+  "q-x3-p174-01": {
+   "file": "q-x3-p174-01.webp",
+   "pages": [
+    174
+   ],
+   "confidence": "high",
+   "label": "水平测评第17题",
+   "informal": false
+  },
+  "q-x3-p175-01": {
+   "file": "q-x3-p175-01.webp",
+   "pages": [
+    175
+   ],
+   "confidence": "medium",
+   "label": "水平测评第18题",
+   "informal": false
+  }
+ }
+}

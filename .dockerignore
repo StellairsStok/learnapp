@@ -1,0 +1,7 @@
+node_modules
+dist
+data
+.env
+.git
+*.log
+docs/研究资料

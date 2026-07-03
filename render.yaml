@@ -1,0 +1,13 @@
+# Render 一键部署配置(免费层)
+services:
+  - type: web
+    name: stellairs
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npx tsx server/index.ts
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_BASE_URL
+        sync: false

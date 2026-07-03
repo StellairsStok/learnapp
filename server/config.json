@@ -1,0 +1,8 @@
+{
+  "provider": "mock",
+  "model": "claude-opus-4-8",
+  "maxTokens": 2048,
+  "note": "provider 可选: mock(演示通道,无需账号) | anthropic(需 API key,填 apiKey 或环境变量 ANTHROPIC_API_KEY;第三方中转平台的 key 还需填 baseUrl,如 https://api.某平台.com) | claude-cli(本机 Claude Code 无头模式)",
+  "apiKey": "",
+  "baseUrl": ""
+}
