@@ -24,6 +24,9 @@ export default function ChatPage() {
   const [modeName, setModeName] = useState<string | null>(null);
   const [qMeta, setQMeta] = useState<{ image: string | null; page: number; label: string; kpName: string } | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const stickRef = useRef(true); // 是否自动吸底;用户上滑看历史时暂停,滑回底部时恢复
+  const progScrollRef = useRef(false); // 标记"这次滚动是程序触发的",避免自动吸底反过来把自己重新锁死
   const startedRef = useRef(false);
   const abortRef = useRef<AbortController | null>(null);
 
@@ -171,9 +174,22 @@ export default function ChatPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // 仅当用户本就在底部时才自动跟随;上滑查看历史时不再强制拉到底
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (!stickRef.current) return;
+    progScrollRef.current = true; // 这次是程序滚的,别让 onScroll 误判
+    bottomRef.current?.scrollIntoView({ behavior: "auto" });
+    requestAnimationFrame(() => {
+      progScrollRef.current = false;
+    });
   }, [messages]);
+
+  const onScrollArea = () => {
+    if (progScrollRef.current) return; // 忽略程序自身触发的滚动
+    const el = scrollRef.current;
+    if (!el) return;
+    stickRef.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80;
+  };
 
   const onChip = (c: Chip) => {
     if (c.nav) navigate(c.nav);
@@ -208,7 +224,7 @@ export default function ChatPage() {
         </div>
       </header>
 
-      <div className="chat-scroll">
+      <div className="chat-scroll" ref={scrollRef} onScroll={onScrollArea}>
         {questionId && qMeta?.image && (
           <div className="q-banner">
             <div className="q-banner-head">
@@ -252,13 +268,13 @@ export default function ChatPage() {
         <div className="composer">
           <textarea
             value={input}
-            placeholder={busy ? "Stellairs 正在回复…" : "输入消息,Enter 发送(Shift+Enter 换行)"}
-            disabled={busy}
+            placeholder="输入消息,Enter 发送(Shift+Enter 换行)"
             rows={1}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
                 e.preventDefault();
+                if (busy || !input.trim()) return; // 回复中可以继续打字,内容留着,等这段讲完再发
                 const t = input;
                 setInput("");
                 void send(t);
