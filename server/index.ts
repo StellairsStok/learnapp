@@ -417,11 +417,12 @@ app.post("/api/chat", async (req, res) => {
       if (ev.type === "meta") {
         lastMode = ev.mode;
         lastChips = ev.chips;
-        // 附上考点上下文,前端标题据此更新
+        // 附上考点上下文,前端标题据此更新(名称净化为纯文本)
+        const rawName = effectiveKp ? getKpMap().get(effectiveKp)?.name : undefined;
         sse.send({
           ...ev,
           kpId: effectiveKp ?? undefined,
-          kpName: effectiveKp ? getKpMap().get(effectiveKp)?.name : undefined,
+          kpName: rawName ? plainName(rawName) : undefined,
         });
         continue;
       }
