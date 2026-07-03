@@ -5,11 +5,12 @@
   "type": "module",
   "description": "Stellairs —— 高考物理 AI 私教(选必三热学切片)",
   "scripts": {
-    "dev": "concurrently -n server,client -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
-    "dev:server": "tsx watch server/index.ts",
-    "dev:client": "vite",
+    "predev": "node scripts/copy-content.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/copy-content.mjs",
     "build": "vite build",
-    "start": "tsx server/index.ts"
+    "deploy": "node scripts/copy-content.mjs && vite build && node scripts/deploy-pages.mjs",
+    "server": "tsx server/index.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0",
