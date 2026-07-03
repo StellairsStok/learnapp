@@ -495,7 +495,12 @@ if (fs.existsSync(dist)) {
   app.get(/^(?!\/api\/).*/, (_req, res) => res.sendFile(path.join(dist, "index.html")));
 }
 
-const PORT = Number(process.env.PORT) || 8787; // 托管平台(Render/Zeabur)会注入 PORT
+// 端口:生产环境(托管平台)听平台注入的 PORT;本地开发固定 8787(避免与 vite 的 5173 相撞,
+// 预览工具也会注入 PORT=5173,不能盲听)。API_PORT 可显式覆盖。
+const PORT =
+  Number(process.env.API_PORT) ||
+  (process.env.NODE_ENV === "production" ? Number(process.env.PORT) : 0) ||
+  8787;
 app.listen(PORT, () => {
   const kpCount = getKpMap().size;
   console.log(`[Stellairs] 服务已启动 http://localhost:${PORT} · provider=${getConfig().provider} · 知识点=${kpCount}`);

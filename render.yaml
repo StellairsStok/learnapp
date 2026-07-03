@@ -7,6 +7,8 @@ services:
     buildCommand: npm ci && npm run build
     startCommand: npx tsx server/index.ts
     envVars:
+      - key: NODE_ENV
+        value: production
       - key: ANTHROPIC_API_KEY
         sync: false
       - key: ANTHROPIC_BASE_URL
