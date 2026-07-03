@@ -116,6 +116,7 @@ export interface SeedQuestion {
   // 与索引连接后补充:
   qid?: string;
   kp_primary?: string;
+  kp_secondary?: string[];
   stage?: string;
   difficulty?: string;
   situation?: string;
@@ -131,6 +132,7 @@ export function getSeeds(): SeedQuestion[] {
       ...s,
       qid: hit?.qid ?? `q-x3-p${String(s.page).padStart(3, "0")}-seed${i + 1}`,
       kp_primary: hit?.kp_primary,
+      kp_secondary: hit?.kp_secondary,
       stage: hit?.stage,
       difficulty: hit?.difficulty,
       situation: hit?.situation,

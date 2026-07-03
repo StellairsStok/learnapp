@@ -33,6 +33,7 @@ export interface ChatMsg {
   text: string;
   mode?: string;
   modeName?: string;
+  chips?: Chip[];
 }
 
 export interface Mastery {
@@ -62,6 +63,8 @@ export interface StudentPublic {
   }[];
 }
 
+export type DifficultyLevel = "basic" | "advanced" | "challenge";
+
 export interface PracticeQuestion {
   kind: "text" | "image";
   qid: string;
@@ -75,6 +78,7 @@ export interface PracticeQuestion {
   kp_primary?: string;
   stage?: string;
   difficulty?: string;
+  difficultyLevel?: DifficultyLevel;
   review_status?: string;
   answerable: boolean;
   image?: string;

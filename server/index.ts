@@ -5,6 +5,7 @@ import path from "node:path";
 import { getCrops, getKpMap, getQuestionIndex, getSeeds, getTree } from "./lib/content";
 import { masteryState, MODE_NAMES, pickMode, type Mode } from "./lib/pedagogy";
 import { getStudent, resetStudent, sanitizeCode, saveStudent, touchMastery, type Student } from "./lib/store";
+import { maybeWriteNotes, studentSignals } from "./lib/student-model";
 import { getBrain, getConfig } from "./providers";
 import type { BrainEvent, Chip } from "./providers/types";
 
@@ -22,6 +23,34 @@ try {
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+type DifficultyLevel = "basic" | "advanced" | "challenge";
+
+const DIFFICULTY_LEVELS: DifficultyLevel[] = ["basic", "advanced", "challenge"];
+const DIFFICULTY_LEVEL_LABEL: Record<DifficultyLevel, string> = {
+  basic: "基础",
+  advanced: "拔高",
+  challenge: "压轴",
+};
+
+function difficultyLevelOf(difficulty?: string | null): DifficultyLevel {
+  if (difficulty === "D4" || difficulty === "D5") return "challenge";
+  if (difficulty === "D3") return "advanced";
+  return "basic";
+}
+
+function parseDifficultyLevel(raw: unknown): DifficultyLevel | null {
+  const v = String(raw ?? "");
+  return (DIFFICULTY_LEVELS as string[]).includes(v) ? (v as DifficultyLevel) : null;
+}
+
+function emptyDifficultyBuckets() {
+  return {
+    basic: { formal: 0, cropped: 0, practice: 0 },
+    advanced: { formal: 0, cropped: 0, practice: 0 },
+    challenge: { formal: 0, cropped: 0, practice: 0 },
+  } satisfies Record<DifficultyLevel, { formal: number; cropped: number; practice: number }>;
+}
 app.use("/qimg", express.static(path.resolve(process.cwd(), "content", "questions", "img"), { maxAge: "1d" }));
 
 // ---------------- 基础信息 ----------------
@@ -60,15 +89,72 @@ app.get("/api/questions/meta", (req, res) => {
 app.get("/api/questions/stats", (_req, res) => {
   const index = getQuestionIndex();
   const seeds = getSeeds();
-  const perKp: Record<string, { total: number; seeded: number }> = {};
+  const crops = getCrops();
+  const seedQids = new Set(seeds.map((x) => x.qid).filter(Boolean));
+  type KpStats = {
+    total: number;
+    formal: number;
+    seeded: number;
+    cropped: number;
+    practice: number;
+    byLevel: Record<DifficultyLevel, { formal: number; cropped: number; practice: number }>;
+  };
+  const newStats = (): KpStats => ({
+    total: 0,
+    formal: 0,
+    seeded: 0,
+    cropped: 0,
+    practice: 0,
+    byLevel: emptyDifficultyBuckets(),
+  });
+  const levelTotals = emptyDifficultyBuckets();
+  const perKp: Record<string, KpStats> = {};
+  const relatedKps = (q: { kp_primary?: string; kp_secondary?: string[] }) =>
+    [...new Set([q.kp_primary, ...(q.kp_secondary ?? [])].filter(Boolean) as string[])];
+
   for (const q of index) {
-    const e = (perKp[q.kp_primary] ??= { total: 0, seeded: 0 });
-    e.total += 1;
+    for (const kp of relatedKps(q)) {
+      const e = (perKp[kp] ??= newStats());
+      e.total += 1;
+      if (!q.informal) {
+        const level = difficultyLevelOf(q.difficulty);
+        e.formal += 1;
+        e.byLevel[level].formal += 1;
+        if (crops[q.qid]) {
+          e.cropped += 1;
+          e.byLevel[level].cropped += 1;
+        }
+        if (seedQids.has(q.qid) || crops[q.qid]) {
+          e.practice += 1;
+          e.byLevel[level].practice += 1;
+        }
+      }
+    }
   }
   for (const s of seeds) {
-    if (s.kp_primary && perKp[s.kp_primary]) perKp[s.kp_primary].seeded += 1;
+    for (const kp of relatedKps(s)) {
+      const e = (perKp[kp] ??= newStats());
+      e.seeded += 1;
+    }
   }
-  res.json({ perKp, indexTotal: index.length, seedTotal: seeds.length });
+  const formalQuestions = index.filter((q) => !q.informal);
+  const formalTotal = formalQuestions.length;
+  const practiceTotal = formalQuestions.filter((q) => seedQids.has(q.qid) || crops[q.qid]).length;
+  for (const q of formalQuestions) {
+    const level = difficultyLevelOf(q.difficulty);
+    levelTotals[level].formal += 1;
+    if (crops[q.qid]) levelTotals[level].cropped += 1;
+    if (seedQids.has(q.qid) || crops[q.qid]) levelTotals[level].practice += 1;
+  }
+  res.json({
+    perKp,
+    levelTotals,
+    levelLabels: DIFFICULTY_LEVEL_LABEL,
+    indexTotal: index.length,
+    formalTotal,
+    practiceTotal,
+    seedTotal: seeds.length,
+  });
 });
 
 // ---------------- 学生档案 ----------------
@@ -84,6 +170,16 @@ function codeOf(req: express.Request): string {
 }
 
 app.get("/api/student", (req, res) => res.json(publicStudent(getStudent(codeOf(req)))));
+
+/** 老师对学生的理解:客观学情 + 教学笔记(设置页展示,只读) */
+app.get("/api/student/model", (req, res) => {
+  const s = getStudent(codeOf(req));
+  res.json({
+    signals: studentSignals(s),
+    notes: s.teacherNotes?.text ?? null,
+    notesUpdatedAt: s.teacherNotes?.updatedAt ?? null,
+  });
+});
 
 app.post("/api/student/profile", (req, res) => {
   const code = codeOf(req);
@@ -443,8 +539,11 @@ app.post("/api/chat", async (req, res) => {
       mode: lastMode,
       chips: lastChips,
     });
+    // 教学轮计数:非闲聊的真教学轮才计入;够数了触发老师课后写笔记(异步,不阻塞)
+    if (lastMode !== "chat" && !sse.closed) s.turnsSinceNotes += 1;
   }
   saveStudent(code, s);
+  maybeWriteNotes(code);
   }
 });
 
@@ -463,8 +562,10 @@ interface Candidate {
   multi: boolean;
   choice: boolean;
   kp_primary?: string;
+  kp_secondary?: string[];
   stage?: string;
   difficulty?: string;
+  difficultyLevel: DifficultyLevel;
   answerable: boolean;
   // text 专有
   stem_md?: string;
@@ -489,8 +590,10 @@ function buildPool(): Candidate[] {
       multi: (q.qtype ?? "").includes("多"),
       choice: true,
       kp_primary: q.kp_primary,
+      kp_secondary: q.kp_secondary,
       stage: q.stage,
       difficulty: q.difficulty,
+      difficultyLevel: difficultyLevelOf(q.difficulty),
       answerable: true,
       stem_md: q.stem_md,
       options: q.options,
@@ -509,8 +612,10 @@ function buildPool(): Candidate[] {
       multi: q.qtype.includes("多"),
       choice,
       kp_primary: q.kp_primary,
+      kp_secondary: q.kp_secondary,
       stage: q.stage,
       difficulty: q.difficulty,
+      difficultyLevel: difficultyLevelOf(q.difficulty),
       answerable: false,
       image: `/qimg/${crops[q.qid].file}`,
     });
@@ -521,6 +626,13 @@ function buildPool(): Candidate[] {
 app.get("/api/practice/next", (req, res) => {
   const kp = req.query.kp ? String(req.query.kp) : null;
   const qid = req.query.qid ? String(req.query.qid) : null;
+  const level = parseDifficultyLevel(req.query.level);
+  const excluded = new Set(
+    String(req.query.exclude ?? "")
+      .split(",")
+      .map((x) => x.trim())
+      .filter(Boolean),
+  );
   const s = getStudent(codeOf(req));
   const all = buildPool();
 
@@ -529,10 +641,34 @@ app.get("/api/practice/next", (req, res) => {
     return hit ? res.json({ question: hit }) : res.status(404).json({ error: "题目不存在" });
   }
 
-  let pool = kp ? all.filter((x) => x.kp_primary === kp) : all;
+  const matchesKp = (x: Candidate) => !kp || x.kp_primary === kp || x.kp_secondary?.includes(kp);
+  const matchesLevel = (x: Candidate) => !level || x.difficultyLevel === level;
+  let pool = all.filter((x) => matchesKp(x) && matchesLevel(x));
   if (pool.length === 0) {
-    return res.json({ question: null, reason: kp ? "该考点暂时没有可呈现的题(截图与题干都缺)" : "题库为空" });
+    const levelLabel = level ? DIFFICULTY_LEVEL_LABEL[level] : null;
+    return res.json({
+      question: null,
+      reason: kp
+        ? levelLabel
+          ? `该考点暂时没有${levelLabel}档可练题。`
+          : "该考点暂时没有可呈现的题(截图与题干都缺)"
+        : levelLabel
+          ? `题库里暂时没有${levelLabel}档可练题。`
+          : "题库为空",
+    });
   }
+
+  if (excluded.size > 0) {
+    const nextPool = pool.filter((x) => !excluded.has(x.qid));
+    if (nextPool.length === 0) {
+      pool = all.filter((x) => matchesLevel(x) && !excluded.has(x.qid));
+      if (pool.length === 0) pool = all.filter(matchesLevel);
+      if (pool.length === 0) pool = all;
+    } else {
+      pool = nextPool;
+    }
+  }
+
   // 优先:没做过的 > 做过的;可判分文本题 > 图题;难度由低到高爬
   const fresh = pool.filter((x) => !(x.qid in s.answers));
   if (fresh.length > 0) pool = fresh;

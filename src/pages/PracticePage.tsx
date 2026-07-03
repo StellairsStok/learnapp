@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Md from "../components/Md";
 import { getJSON, postJSON } from "../lib/api";
-import type { KpTree, PracticeQuestion } from "../lib/types";
+import type { DifficultyLevel, KpTree, PracticeQuestion } from "../lib/types";
 
 interface AnswerResult {
   correct: boolean;
@@ -19,10 +19,29 @@ const DIFF_LABEL: Record<string, string> = {
   D5: "压轴",
 };
 
+const DIFFICULTY_LEVELS: { value: DifficultyLevel | null; label: string }[] = [
+  { value: null, label: "全部" },
+  { value: "basic", label: "基础" },
+  { value: "advanced", label: "拔高" },
+  { value: "challenge", label: "压轴" },
+];
+
+const DIFFICULTY_LEVEL_LABEL: Record<DifficultyLevel, string> = {
+  basic: "基础",
+  advanced: "拔高",
+  challenge: "压轴",
+};
+
+function parseDifficultyLevel(value: string | null): DifficultyLevel | null {
+  return value === "basic" || value === "advanced" || value === "challenge" ? value : null;
+}
+
 export default function PracticePage() {
   const [params, setParams] = useSearchParams();
   const kp = params.get("kp");
   const qid = params.get("qid");
+  const difficultyLevel = parseDifficultyLevel(params.get("level"));
+  const activeDifficultyLabel = difficultyLevel ? DIFFICULTY_LEVEL_LABEL[difficultyLevel] : "全部难度";
 
   const [q, setQ] = useState<PracticeQuestion | null>(null);
   const [emptyReason, setEmptyReason] = useState<string | null>(null);
@@ -31,6 +50,8 @@ export default function PracticePage() {
   const [submitting, setSubmitting] = useState(false);
   const [kpNames, setKpNames] = useState<Record<string, string>>({});
   const loadSeq = useRef(0);
+  const seenQids = useRef<Set<string>>(new Set());
+  const excludeOnNextLoad = useRef<string[]>([]);
 
   useEffect(() => {
     getJSON<KpTree>("/api/content/tree")
@@ -42,21 +63,47 @@ export default function PracticePage() {
       .catch(() => {});
   }, []);
 
-  const load = useCallback(async () => {
+  useEffect(() => {
+    seenQids.current = new Set();
+    excludeOnNextLoad.current = [];
+  }, [kp, difficultyLevel]);
+
+  const load = useCallback(async (excludeQids?: string[] | null) => {
     const seq = ++loadSeq.current; // 过期请求防护:kp/qid 快速切换时丢弃旧响应
+    const exclude = excludeQids ?? excludeOnNextLoad.current;
+    excludeOnNextLoad.current = [];
     setQ(null);
     setChosen([]);
     setResult(null);
     setSubmitting(false);
     setEmptyReason(null);
-    const query = qid ? `qid=${qid}` : kp ? `kp=${kp}` : "";
+    const queryParts: string[] = [];
+    if (qid) {
+      queryParts.push(`qid=${encodeURIComponent(qid)}`);
+    } else {
+      if (kp) queryParts.push(`kp=${encodeURIComponent(kp)}`);
+      if (difficultyLevel) queryParts.push(`level=${encodeURIComponent(difficultyLevel)}`);
+      if (exclude.length > 0) queryParts.push(`exclude=${encodeURIComponent(exclude.join(","))}`);
+    }
+    const query = queryParts.join("&");
     const data = await getJSON<{ question: PracticeQuestion | null; reason?: string }>(
       `/api/practice/next${query ? "?" + query : ""}`,
     ).catch(() => ({ question: null, reason: "服务未连接" }));
     if (seq !== loadSeq.current) return;
-    if (data.question) setQ(data.question);
-    else setEmptyReason(data.reason ?? "暂无可用题目");
-  }, [kp, qid]);
+    if (data.question) {
+      seenQids.current.add(data.question.qid);
+      setQ(data.question);
+    } else {
+      setEmptyReason(data.reason ?? "暂无可用题目");
+    }
+  }, [kp, qid, difficultyLevel]);
+
+  const setDifficulty = (nextLevel: DifficultyLevel | null) => {
+    const nextParams: Record<string, string> = {};
+    if (kp) nextParams.kp = kp;
+    if (nextLevel) nextParams.level = nextLevel;
+    setParams(nextParams);
+  };
 
   useEffect(() => {
     void load();
@@ -85,9 +132,22 @@ export default function PracticePage() {
   };
 
   const next = () => {
-    if (qid) setParams(kp ? { kp } : {});
-    else void load();
+    const currentQid = q?.qid ?? qid;
+    if (currentQid) seenQids.current.add(currentQid);
+    const exclude = Array.from(seenQids.current);
+    if (qid) {
+      excludeOnNextLoad.current = exclude;
+      const nextParams: Record<string, string> = {};
+      if (kp) nextParams.kp = kp;
+      if (difficultyLevel) nextParams.level = difficultyLevel;
+      setParams(nextParams);
+    } else {
+      void load(exclude);
+    }
   };
+
+  const mapUrl = difficultyLevel ? `/map?level=${difficultyLevel}` : "/map";
+  const practiceUrl = difficultyLevel ? `/practice?level=${difficultyLevel}` : "/practice";
 
   return (
     <div className="page practice-page">
@@ -97,14 +157,28 @@ export default function PracticePage() {
           <div className="head-sub">
             {kp ? (
               <>
-                考点筛选:{kpNames[kp] ?? kp} · <Link to="/practice" className="inline-link">取消筛选</Link>
+                考点筛选:{kpNames[kp] ?? kp} · 难度:{activeDifficultyLabel} · <Link to={practiceUrl} className="inline-link">取消考点</Link>
               </>
             ) : (
-              "智能推荐 · 从已录入的讲义真题中选题"
+              `智能推荐 · ${activeDifficultyLabel} · 从已录入的讲义真题中选题`
             )}
           </div>
         </div>
-        <Link to="/map" className="ghost-btn">按考点选题</Link>
+        <div className="head-actions practice-head-actions">
+          <Link to={mapUrl} className="ghost-btn">按考点选题</Link>
+          <div className="difficulty-filter difficulty-filter-compact" role="group" aria-label="难度筛选">
+            {DIFFICULTY_LEVELS.map((item) => (
+              <button
+                key={item.value ?? "all"}
+                type="button"
+                className={`difficulty-chip${difficultyLevel === item.value ? " on" : ""}`}
+                onClick={() => setDifficulty(item.value)}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        </div>
       </header>
 
       {emptyReason && (
@@ -113,7 +187,7 @@ export default function PracticePage() {
           {kp && (
             <p>
               这个考点在索引里有题,但题干文本还没录入。可以先
-              <Link to="/practice" className="inline-link">做不限考点的推荐题</Link>,或去
+              <Link to={practiceUrl} className="inline-link">做不限考点的推荐题</Link>,或去
               <Link to={`/?kp=${kp}`} className="inline-link">让 Stellairs 讲这个考点</Link>。
             </p>
           )}
@@ -125,6 +199,7 @@ export default function PracticePage() {
           <div className="q-meta">
             <span className="q-tag q-source">讲义 p{q.page} · {q.label}</span>
             {q.kp_primary && <span className="q-tag">{kpNames[q.kp_primary] ?? q.kp_primary}</span>}
+            {q.difficultyLevel && <span className="q-tag q-level-tag">{DIFFICULTY_LEVEL_LABEL[q.difficultyLevel]}</span>}
             {q.difficulty && <span className="q-tag">{DIFF_LABEL[q.difficulty] ?? q.difficulty}</span>}
             <span className="q-tag">{q.choice ? (q.multi ? "多选" : "单选") : q.qtype}</span>
           </div>
@@ -174,6 +249,7 @@ export default function PracticePage() {
               <button className="primary-btn" disabled={chosen.length === 0 || submitting} onClick={() => void submit()}>
                 {submitting ? "判分中…" : "提交答案"}
               </button>
+              <button className="ghost-btn" onClick={next}>下一题</button>
               {q.multi && <span className="q-hint">多选题:选出全部正确项</span>}
             </div>
           ) : (

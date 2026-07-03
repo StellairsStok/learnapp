@@ -1,5 +1,6 @@
 import { getKnowledgeCard, getKpMap, getPedagogyInject, getPersonaInject } from "./content";
 import type { Student } from "./store";
+import { teacherModelBlock } from "./student-model";
 
 // 教学模式层:模式由「内容状态 × 学生偏好」的规则矩阵决定,不靠模型即兴发挥。
 // 详见 docs/02-切片一-选必三热学.md 第二节。
@@ -67,12 +68,8 @@ export function buildSystemPrompt(kpId: string | null | undefined, mode: Mode, s
     }
   }
 
-  const p = s.styleProfile;
-  const prefs: string[] = [];
-  if (p.newConcept) prefs.push(`学新东西偏好:${p.newConcept === "listen" ? "先听讲解" : "先试着做"}`);
-  if (p.onWrong) prefs.push(`做错时偏好:${p.onWrong === "explain" ? "直接讲清错处" : "被引导自己找错"}`);
-  if (p.practice) prefs.push(`练习偏好:${p.practice === "drill" ? "大量刷题快节奏" : "精讲一题抠深度"}`);
-  if (prefs.length) parts.push(`【学生教学偏好档案】\n${prefs.join("\n")}`);
+  // 学生模型:客观学情 + 老师自己维护的教学笔记(取代原来的浅层偏好三选项)
+  parts.push(teacherModelBlock(s));
 
   parts.push(
     "【硬性规则】所有数学公式用 $...$ 或 $$...$$ 的 LaTeX 书写;不聊与物理学习无关的话题(礼貌拉回);不确定的知识坦率承认,不要编造。",

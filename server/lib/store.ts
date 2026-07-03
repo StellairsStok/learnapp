@@ -48,6 +48,10 @@ export interface Student {
   onboarding: { step: number; done: boolean };
   /** 当前正在学的考点(服务端记忆,换设备/刷新都还在) */
   currentKp: string | null;
+  /** 老师的教学笔记:Stellairs 自己观察、自己维护的学生模型(修订制) */
+  teacherNotes: { updatedAt: string; text: string } | null;
+  /** 距上次写笔记的教学轮数 */
+  turnsSinceNotes: number;
   mastery: Record<string, { seen: number; correct: number; wrong: number; lastAt: string }>;
   answers: Record<string, AnswerRecord>;
   mistakes: MistakeEntry[];
@@ -62,6 +66,8 @@ function defaultStudent(): Student {
     styleLog: [],
     onboarding: { step: 0, done: false },
     currentKp: null,
+    teacherNotes: null,
+    turnsSinceNotes: 0,
     mastery: {},
     answers: {},
     mistakes: [],

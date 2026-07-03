@@ -18,7 +18,6 @@ export default function ChatPage() {
   const navigate = useNavigate();
 
   const [messages, setMessages] = useState<ChatMsg[]>([]);
-  const [chips, setChips] = useState<Chip[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(true); // 历史加载完成前禁用输入,防止与首次问候流并发
   const [kpName, setKpName] = useState<string | null>(null);
@@ -102,11 +101,11 @@ export default function ChatPage() {
           {
             onMeta: (_mode, name, newChips, metaKpName) => {
               setModeName(name);
-              setChips(newChips ?? []);
               if (metaKpName !== undefined) setKpName(metaKpName || null);
               setMessages((m) => {
+                if (m.length === 0) return m;
                 const copy = [...m];
-                copy[copy.length - 1] = { ...copy[copy.length - 1], modeName: name };
+                copy[copy.length - 1] = { ...copy[copy.length - 1], modeName: name, chips: newChips ?? [] };
                 return copy;
               });
             },
@@ -126,7 +125,6 @@ export default function ChatPage() {
     async (text: string) => {
       if (busy || !text.trim()) return;
       setBusy(true);
-      setChips([]);
       setMessages((m) => [...m, { role: "user", text }, { role: "assistant", text: "" }]);
       try {
         await runStream(text);
@@ -152,10 +150,9 @@ export default function ChatPage() {
             role: c.role,
             text: c.text,
             modeName: c.mode ? MODE_CN[c.mode] : undefined,
+            chips: c.chips,
           })),
         );
-        const lastAssistant = [...visible].reverse().find((c) => c.role === "assistant");
-        if (lastAssistant?.chips?.length) setChips(lastAssistant.chips);
         if (questionId) {
           setMessages((m) => [...m, { role: "user", text: "请带我做这道题" }, { role: "assistant", text: "" }]);
           await runStream("请带我做这道题");
@@ -176,12 +173,19 @@ export default function ChatPage() {
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, chips]);
+  }, [messages]);
 
   const onChip = (c: Chip) => {
     if (c.nav) navigate(c.nav);
     else void send(c.label);
   };
+
+  const lastAssistantIndex = (() => {
+    for (let i = messages.length - 1; i >= 0; i -= 1) {
+      if (messages[i].role === "assistant") return i;
+    }
+    return -1;
+  })();
 
   return (
     <div className="chat-page">
@@ -228,6 +232,15 @@ export default function ChatPage() {
                   {m.modeName && <span className="ai-mode">{m.modeName}</span>}
                 </div>
                 {m.text ? <Md>{m.text}</Md> : <div className="typing"><span /><span /><span /></div>}
+                {m.chips?.length && i === lastAssistantIndex && !busy ? (
+                  <div className="message-chips" aria-label="可选择的回答">
+                    {m.chips.map((c) => (
+                      <button key={c.label} className="message-chip" onClick={() => onChip(c)}>
+                        {c.label}
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             </div>
           ),
@@ -236,15 +249,6 @@ export default function ChatPage() {
       </div>
 
       <div className="composer-wrap">
-        {chips.length > 0 && !busy && (
-          <div className="chips">
-            {chips.map((c) => (
-              <button key={c.label} className="chip" onClick={() => onChip(c)}>
-                {c.label}
-              </button>
-            ))}
-          </div>
-        )}
         <div className="composer">
           <textarea
             value={input}

@@ -29,14 +29,22 @@ const QUESTIONS = [
   },
 ];
 
+interface StudentModel {
+  signals: string;
+  notes: string | null;
+  notesUpdatedAt: string | null;
+}
+
 export default function SettingsPage() {
   const [student, setStudent] = useState<StudentPublic | null>(null);
   const [health, setHealth] = useState<Health | null>(null);
+  const [model, setModel] = useState<StudentModel | null>(null);
   const [flash, setFlash] = useState<{ text: string; ok: boolean } | null>(null);
 
   useEffect(() => {
     getJSON<StudentPublic>("/api/student").then(setStudent).catch(() => {});
     getJSON<Health>("/api/health").then(setHealth).catch(() => {});
+    getJSON<StudentModel>("/api/student/model").then(setModel).catch(() => {});
   }, []);
 
   const showFlash = (text: string, ok: boolean) => {
@@ -70,15 +78,35 @@ export default function SettingsPage() {
       <header className="page-head">
         <div>
           <h1>设置</h1>
-          <div className="head-sub">教学偏好与系统状态</div>
+          <div className="head-sub">老师的观察 · 系统状态</div>
         </div>
         {flash && <span className={flash.ok ? "saved-flash" : "saved-flash fail"}>{flash.text}</span>}
       </header>
 
       <div className="panel">
-        <h2 className="panel-title">教学偏好</h2>
+        <h2 className="panel-title">老师对你的了解</h2>
         <p className="panel-desc">
-          Stellairs 按这份档案决定怎么教你。在对话里直接说也能改(比如"别让我猜,直接讲"),两边同步。
+          这不是你填的表——是 Stellairs 在教你的过程中,一节课一节课观察、记下来的。它据此决定怎么教你,并且会随着更了解你而不断修正。
+        </p>
+        {model?.notes ? (
+          <div className="teacher-notes">{model.notes}</div>
+        ) : (
+          <div className="teacher-notes teacher-notes-empty">
+            我还不太了解你。多上几节课、多做几道题,我会慢慢摸清你的路子——哪种讲法让你开窍、你常卡在哪、要给你多少提示。
+          </div>
+        )}
+        {model?.signals && <div className="teacher-signals">学情快照 · {model.signals}</div>}
+        {model?.notesUpdatedAt && (
+          <div className="teacher-notes-time">
+            笔记更新于 {new Date(model.notesUpdatedAt).toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}
+          </div>
+        )}
+      </div>
+
+      <div className="panel">
+        <h2 className="panel-title">入学起点</h2>
+        <p className="panel-desc">
+          你刚进来时的自述,只是老师了解你的起点——真正怎么教,以上面的观察为准。想临时纠正,对话里直接说(比如"别让我猜,直接讲")最快。
         </p>
         {QUESTIONS.map((qc) => (
           <div key={qc.key} className="pref-row">
