@@ -1595,7 +1595,6 @@ a {
   margin: 0 -8px;
   padding-left: 8px;
   padding-right: 8px;
-  backdrop-filter: blur(10px);
 }
 
 .composer textarea,
@@ -2075,6 +2074,17 @@ body {
 .chat-page .page-head,
 .composer-wrap {
   background: linear-gradient(180deg, rgba(6, 7, 20, 0.66), rgba(6, 7, 20, 0));
+}
+
+/* 底部输入区:去掉磨砂模糊,做成清晰的实心输入条 */
+.composer-wrap {
+  background: linear-gradient(180deg, rgba(5, 7, 18, 0), rgba(5, 7, 18, 0.86) 40%, rgba(5, 7, 18, 0.97));
+  backdrop-filter: none;
+}
+
+.composer {
+  background: linear-gradient(135deg, rgba(11, 19, 42, 0.94), rgba(16, 29, 60, 0.92));
+  backdrop-filter: none;
 }
 
 .ai-avatar {
