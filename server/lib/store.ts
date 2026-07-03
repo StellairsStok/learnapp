@@ -46,6 +46,8 @@ export interface Student {
   styleProfile: StyleProfile;
   styleLog: { at: string; change: string }[];
   onboarding: { step: number; done: boolean };
+  /** 当前正在学的考点(服务端记忆,换设备/刷新都还在) */
+  currentKp: string | null;
   mastery: Record<string, { seen: number; correct: number; wrong: number; lastAt: string }>;
   answers: Record<string, AnswerRecord>;
   mistakes: MistakeEntry[];
@@ -59,6 +61,7 @@ function defaultStudent(): Student {
     styleProfile: { newConcept: null, onWrong: null, practice: null },
     styleLog: [],
     onboarding: { step: 0, done: false },
+    currentKp: null,
     mastery: {},
     answers: {},
     mistakes: [],

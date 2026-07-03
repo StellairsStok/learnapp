@@ -33,25 +33,32 @@ export default function ChatPage() {
     return () => abortRef.current?.abort();
   }, []);
 
-  // 知识点上下文名称(带过期保护:kp 快速切换时丢弃旧响应)
+  // 知识点上下文名称:URL 参数优先,否则用服务端记忆的 currentKp(带过期保护)
   useEffect(() => {
-    if (!kp) {
-      setKpName(null);
-      return;
-    }
     let stale = false;
-    getJSON<KpTree>("/api/content/tree")
-      .then((tree) => {
+    (async () => {
+      try {
+        let target = kp;
+        if (!target) {
+          const stu = await getJSON<{ currentKp?: string | null }>("/api/student");
+          target = stu.currentKp ?? null;
+        }
+        if (stale) return;
+        if (!target) {
+          setKpName(null);
+          return;
+        }
+        const tree = await getJSON<KpTree>("/api/content/tree");
         if (stale) return;
         let found: string | null = null;
         for (const ch of tree.chapters)
           for (const u of ch.units)
-            for (const k of u.kps) if (k.id === kp) found = k.name;
-        setKpName(found ?? kp);
-      })
-      .catch(() => {
-        if (!stale) setKpName(kp);
-      });
+            for (const k of u.kps) if (k.id === target) found = k.name;
+        setKpName(found ?? target);
+      } catch {
+        if (!stale && kp) setKpName(kp);
+      }
+    })();
     return () => {
       stale = true;
     };
@@ -93,9 +100,10 @@ export default function ChatPage() {
         await streamChat(
           { message, kp, q: questionId },
           {
-            onMeta: (_mode, name, newChips) => {
+            onMeta: (_mode, name, newChips, metaKpName) => {
               setModeName(name);
               setChips(newChips ?? []);
+              if (metaKpName !== undefined) setKpName(metaKpName || null);
               setMessages((m) => {
                 const copy = [...m];
                 copy[copy.length - 1] = { ...copy[copy.length - 1], modeName: name };
@@ -186,7 +194,14 @@ export default function ChatPage() {
             kpName && kp && <div className="head-sub">当前考点上下文 · {kp}</div>
           )}
         </div>
-        {modeName && <span className="mode-badge">{modeName}</span>}
+        <div className="head-actions">
+          {kpName && !questionId && (
+            <button className="ghost-btn small" onClick={() => void send("换个考点")} disabled={busy}>
+              换个考点
+            </button>
+          )}
+          {modeName && <span className="mode-badge">{modeName}</span>}
+        </div>
       </header>
 
       <div className="chat-scroll">

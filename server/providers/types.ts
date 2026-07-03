@@ -23,7 +23,7 @@ export interface BrainRequest {
 }
 
 export type BrainEvent =
-  | { type: "meta"; mode: Mode; modeName: string; chips?: Chip[] }
+  | { type: "meta"; mode: Mode; modeName: string; chips?: Chip[]; kpId?: string; kpName?: string }
   | { type: "delta"; text: string }
   | { type: "done" };
 

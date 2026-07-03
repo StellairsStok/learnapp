@@ -166,6 +166,55 @@ const ONBOARDING: { q: string; key: "newConcept" | "onWrong" | "practice"; chips
   },
 ];
 
+// ---------- 选课导航(老师摊开知识地图让学生挑,纯脚本层,不耗 token) ----------
+
+function chapterChips(): Chip[] {
+  const tree = getTree();
+  return [
+    ...(tree?.chapters ?? []).map((c) => ({ label: c.name })),
+    { label: "去学习地图挑", nav: "/map" },
+  ];
+}
+
+function unitChipsOf(chapterName: string): { text: string; chips: Chip[] } | null {
+  const ch = getTree()?.chapters.find((c) => c.name === chapterName);
+  if (!ch) return null;
+  return {
+    text: `《${ch.name}》有 ${ch.units.length} 个单元,共 ${ch.units.reduce((n, u) => n + u.kps.length, 0)} 个考点:`,
+    chips: [...ch.units.map((u) => ({ label: u.name })), { label: "重新选章" }],
+  };
+}
+
+/** 考点名净化:芯片是纯文本,去掉 LaTeX 记号 */
+function plainName(name: string): string {
+  return name.replace(/\\frac1V/g, "1/V").replace(/\\frac\{1\}\{V\}/g, "1/V").replace(/[$\\]/g, "");
+}
+
+function kpChipsOf(unitName: string): { text: string; chips: Chip[] } | null {
+  for (const ch of getTree()?.chapters ?? []) {
+    const u = ch.units.find((x) => x.name === unitName);
+    if (u) {
+      return {
+        text: `《${u.name}》包含这些考点,点一个,这节课马上开讲:`,
+        chips: [...u.kps.map((k) => ({ label: `学:${plainName(k.name)}` })), { label: "重新选章" }],
+      };
+    }
+  }
+  return null;
+}
+
+function findKpByName(name: string): { id: string; name: string } | null {
+  const target = plainName(name);
+  for (const ch of getTree()?.chapters ?? [])
+    for (const u of ch.units)
+      for (const k of u.kps) if (plainName(k.name) === target) return { id: k.id, name: k.name };
+  return null;
+}
+
+const PANORAMA_TEXT =
+  "记住了,你的偏好档案建好了——在**设置**里随时能看能改,对话里一句话(比如\"别让我猜,直接讲\")也能改。\n\n" +
+  "现在看看我们要一起攻克的地盘:**人教版选择性必修第三册(热学)**,3 章、14 个单元、41 个考点——每一个我都备好了课,练习题也都就位。\n\n从哪一章开始?";
+
 async function replyScripted(sse: SSEWriter, s: Student, text: string, mode: Mode, chips?: Chip[]) {
   sse.send({ type: "meta", mode, modeName: MODE_NAMES[mode], chips });
   const step = 18;
@@ -229,12 +278,7 @@ app.post("/api/chat", async (req, res) => {
       s.onboarding.step += 1;
       if (s.onboarding.step >= ONBOARDING.length) {
         s.onboarding.done = true;
-        const done =
-          "记住了。你的偏好档案建好了——在**设置**里随时能看能改,对话里一句话(比如\"别让我猜,直接讲\")也能改。\n\n现在可以开始了:我目前跑在演示通道上,能完整上一节**玻意耳定律**;也可以先去学习地图看看整个切片的 41 个考点。";
-        await replyScripted(sse, s, done, "chat", [
-          { label: "讲玻意耳定律" },
-          { label: "去学习地图", nav: "/map" },
-        ]);
+        await replyScripted(sse, s, PANORAMA_TEXT, "chat", chapterChips());
       } else {
         const nxt = ONBOARDING[s.onboarding.step];
         await replyScripted(sse, s, nxt.q, "chat", nxt.chips.map((label) => ({ label })));
@@ -248,13 +292,20 @@ app.post("/api/chat", async (req, res) => {
   }
 
   if (isStart) {
-    // 已完成三问的回访:不重复问,给一句轻的欢迎
-    const back = "回来了。继续上次的进度,还是换个考点?";
-    await replyScripted(sse, s, back, "chat", [
-      { label: "讲玻意耳定律" },
-      { label: "去学习地图", nav: "/map" },
-      { label: "去练习", nav: "/practice" },
-    ]);
+    // 已完成三问的回访:接着上次的考点,或重新挑
+    const cur = s.currentKp ? getKpMap().get(s.currentKp) : null;
+    if (cur) {
+      await replyScripted(sse, s, `回来了。上次我们学到《${plainName(cur.name)}》——继续,还是换一个?`, "chat", [
+        { label: `继续学:${plainName(cur.name)}` },
+        { label: "换个考点" },
+        { label: "去练习", nav: "/practice" },
+      ]);
+    } else {
+      await replyScripted(sse, s, "回来了。今天从哪一章开始?", "chat", [
+        ...chapterChips(),
+        { label: "去练习", nav: "/practice" },
+      ]);
+    }
     saveStudent(code, s);
     return;
   }
@@ -283,6 +334,38 @@ app.post("/api/chat", async (req, res) => {
     return;
   }
 
+  // —— 选课导航(脚本层,不耗 token):章 → 单元 → 考点 ——
+  if (/^(换个考点|重新选章|换一?章|重新挑)$/.test(message)) {
+    s.currentKp = null;
+    await replyScripted(sse, s, "好,重新挑。从哪一章开始?", "chat", chapterChips());
+    saveStudent(code, s);
+    return;
+  }
+  const unitReply = unitChipsOf(message);
+  if (unitReply) {
+    await replyScripted(sse, s, unitReply.text, "chat", unitReply.chips);
+    saveStudent(code, s);
+    return;
+  }
+  const kpListReply = kpChipsOf(message);
+  if (kpListReply) {
+    await replyScripted(sse, s, kpListReply.text, "chat", kpListReply.chips);
+    saveStudent(code, s);
+    return;
+  }
+  // 选中考点 → 记入档案,交给真大脑开讲
+  let teachKickoff: string | null = null;
+  const pick = message.match(/^(继续)?学[::]\s*(.+)$/);
+  if (pick) {
+    const kp = findKpByName(pick[2].trim());
+    if (kp) {
+      s.currentKp = kp.id;
+      teachKickoff = pick[1]
+        ? `我们继续学《${kp.name}》,接着上次的进度往下。`
+        : `我选好了:《${kp.name}》。请从头开始教我这个考点。`;
+    }
+  }
+
   // —— 讲题上下文:载入题目截图(真大脑用视觉读题)——
   let questionImage: { dataB64: string; mediaType: string; caption: string } | null = null;
   let effectiveKp = kpId;
@@ -302,6 +385,9 @@ app.post("/api/chat", async (req, res) => {
       if (!effectiveKp) effectiveKp = qmeta.kp_primary;
     }
   }
+  // 上下文兜底与记忆:URL/讲题没带考点时用档案里的;有新考点则记住
+  if (!effectiveKp) effectiveKp = s.currentKp;
+  if (effectiveKp && effectiveKp !== s.currentKp) s.currentKp = effectiveKp;
 
   // —— 正常教学轮:模式矩阵选模式,交给当前大脑通道 ——
   const state = masteryState(effectiveKp, s);
@@ -318,12 +404,26 @@ app.post("/api/chat", async (req, res) => {
   let lastMode: Mode = mode;
   let lastChips: Chip[] | undefined;
   try {
-    for await (const ev of brain({ code, history, message, kpId: effectiveKp, mode, questionImage })) {
+    for await (const ev of brain({
+      code,
+      history,
+      message: teachKickoff ?? message,
+      kpId: effectiveKp,
+      mode,
+      questionImage,
+    })) {
       if (sse.closed) break; // 客户端断开就停止消费(真大脑时=不再白烧 token)
       if (ev.type === "delta") assistantText += ev.text;
       if (ev.type === "meta") {
         lastMode = ev.mode;
         lastChips = ev.chips;
+        // 附上考点上下文,前端标题据此更新
+        sse.send({
+          ...ev,
+          kpId: effectiveKp ?? undefined,
+          kpName: effectiveKp ? getKpMap().get(effectiveKp)?.name : undefined,
+        });
+        continue;
       }
       sse.send(ev);
     }

@@ -35,7 +35,7 @@ export async function postJSON<T>(url: string, body: unknown): Promise<T> {
 }
 
 export interface StreamHandlers {
-  onMeta?: (mode: string, modeName: string, chips?: Chip[]) => void;
+  onMeta?: (mode: string, modeName: string, chips?: Chip[], kpName?: string) => void;
   onDelta?: (text: string) => void;
   onDone?: () => void;
 }
@@ -76,7 +76,7 @@ export async function streamChat(
       if (!line.startsWith("data: ")) continue;
       try {
         const ev = JSON.parse(line.slice(6));
-        if (ev.type === "meta") h.onMeta?.(ev.mode, ev.modeName, ev.chips);
+        if (ev.type === "meta") h.onMeta?.(ev.mode, ev.modeName, ev.chips, ev.kpName);
         else if (ev.type === "delta") h.onDelta?.(ev.text);
         else if (ev.type === "done") fireDone();
       } catch {
