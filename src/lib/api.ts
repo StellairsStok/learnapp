@@ -1,7 +1,7 @@
 // 静态站的"虚拟后端":页面照旧调 getJSON/postJSON/streamChat,这里在浏览器本地执行,
 // AI 调用直连中转平台。取代原来打到 Node 服务器的 fetch。
 import { MODEL } from "../config";
-import { runChat } from "../engine/chat";
+import { presentPractice, runChat } from "../engine/chat";
 import { getTree } from "../engine/content";
 import { gradeAnswer, nextQuestion, questionMeta, stats } from "../engine/practice";
 import { exportStudent, getStudent, importStudent, resetStudent, saveStudent, type Student } from "../engine/store";
@@ -94,6 +94,11 @@ export interface StreamHandlers {
   onDelta?: (text: string) => void;
   onError?: (kind: "ratelimit" | "offline" | "network") => void;
   onDone?: () => void;
+}
+
+/** 教学后出题:挑一道匹配考点的题,作为带图消息进入对话 */
+export async function startPractice(kp?: string | null) {
+  return presentPractice(kp ?? null);
 }
 
 /** 对话:本地编排 + 直连大脑流式 */

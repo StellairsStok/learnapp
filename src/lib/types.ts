@@ -34,6 +34,8 @@ export interface ChatMsg {
   mode?: string;
   modeName?: string;
   chips?: Chip[];
+  image?: string;
+  imageLabel?: string;
 }
 
 export interface Mastery {

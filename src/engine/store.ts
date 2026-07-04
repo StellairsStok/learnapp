@@ -12,6 +12,8 @@ export interface ChatEntry {
   at: string;
   mode?: string;
   chips?: { label: string; nav?: string }[];
+  image?: string; // 内嵌图片(如教学后出的练习题题图)
+  imageLabel?: string; // 图片题的来源标注,如 "讲义 p12 · 例3"
 }
 export interface MistakeEntry {
   qid: string;
@@ -34,6 +36,7 @@ export interface Student {
   styleLog: { at: string; change: string }[];
   onboarding: { step: number; done: boolean };
   currentKp: string | null;
+  activeQid: string | null; // 正在对话里做的练习题;学生作答时把它的题图带给 AI 批改
   teacherNotes: { updatedAt: string; text: string } | null;
   turnsSinceNotes: number;
   mastery: Record<string, { seen: number; correct: number; wrong: number; lastAt: string }>;
@@ -49,6 +52,7 @@ function defaultStudent(): Student {
     styleLog: [],
     onboarding: { step: 0, done: false },
     currentKp: null,
+    activeQid: null,
     teacherNotes: null,
     turnsSinceNotes: 0,
     mastery: {},

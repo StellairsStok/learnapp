@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Md from "../components/Md";
-import { getJSON, streamChat } from "../lib/api";
+import { getJSON, startPractice, streamChat } from "../lib/api";
 import type { Chip, ChatMsg, KpTree } from "../lib/types";
 
 const MODE_CN: Record<string, string> = {
@@ -154,6 +154,25 @@ export default function ChatPage() {
     void send(text);
   }, [busy, send]);
 
+  // 教学后出题:从题库挑一道匹配题,以带图消息进入对话
+  const doPractice = useCallback(async () => {
+    if (busy) return;
+    setBusy(true);
+    setRetryKind(null);
+    try {
+      const r = await startPractice(kp);
+      if ("error" in r) {
+        setMessages((m) => [...m, { role: "assistant", text: r.error }]);
+      } else {
+        setMessages((m) => [...m, { role: "assistant", text: r.text, image: r.image, imageLabel: r.imageLabel, chips: r.chips }]);
+      }
+    } catch {
+      setMessages((m) => [...m, { role: "assistant", text: "挑题时出了点问题,稍后再试。" }]);
+    } finally {
+      setBusy(false);
+    }
+  }, [busy, kp]);
+
   // 载入历史;首次访问触发 __start__ 问候
   useEffect(() => {
     if (startedRef.current) return;
@@ -161,7 +180,7 @@ export default function ChatPage() {
     (async () => {
       try {
         const h = await getJSON<{
-          chat: { role: "user" | "assistant"; text: string; mode?: string; chips?: Chip[] }[];
+          chat: { role: "user" | "assistant"; text: string; mode?: string; chips?: Chip[]; image?: string; imageLabel?: string }[];
         }>("/api/chat/history");
         const visible = h.chat.filter((c) => c.text && c.text !== "__start__");
         setMessages(
@@ -170,6 +189,8 @@ export default function ChatPage() {
             text: c.text,
             modeName: c.mode ? MODE_CN[c.mode] : undefined,
             chips: c.chips,
+            image: c.image,
+            imageLabel: c.imageLabel,
           })),
         );
         if (questionId) {
@@ -209,6 +230,7 @@ export default function ChatPage() {
 
   const onChip = (c: Chip) => {
     if (c.nav) navigate(c.nav);
+    else if (c.label === "做一道相关的题" || c.label === "换一道") void doPractice();
     else void send(c.label);
   };
 
@@ -271,6 +293,12 @@ export default function ChatPage() {
                   {m.modeName && <span className="ai-mode">{m.modeName}</span>}
                 </div>
                 {m.text ? <Md>{m.text}</Md> : <div className="typing"><span /><span /><span /></div>}
+                {m.image && (
+                  <div className="chat-qcard">
+                    {m.imageLabel && <div className="chat-qcard-head">📄 {m.imageLabel}</div>}
+                    <img src={m.image} alt="练习题题图" loading="lazy" onClick={() => m.image && setZoomSrc(m.image)} title="点击看大图" />
+                  </div>
+                )}
                 {m.chips?.length && i === lastAssistantIndex && !busy ? (
                   <div className="message-chips" aria-label="可选择的回答">
                     {m.chips.map((c) => (

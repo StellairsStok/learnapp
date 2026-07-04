@@ -4,8 +4,36 @@ import { MAX_TOKENS, MODEL } from "../config";
 import { imageToBase64, ProxyError, streamProxy } from "./brain";
 import { getCrops, getKpMap, getQuestionIndex, getTree, questionImageUrl } from "./content";
 import { buildSystemPrompt, masteryState, MODE_NAMES, pickMode, plainName, type Mode } from "./pedagogy";
+import { nextQuestion } from "./practice";
 import { getStudent, saveStudent, type ChatEntry, type Student } from "./store";
 import { maybeWriteNotes } from "./studentModel";
+
+// 教学后出题:从题库挑一道匹配当前考点的题,作为一条带图的助教消息推进对话,并记为"当前在做的题"。
+export async function presentPractice(kpId: string | null): Promise<{ text: string; image?: string; imageLabel?: string; chips: Chip[] } | { error: string }> {
+  const s = getStudent();
+  const kp = kpId ?? s.currentKp;
+  const params = new URLSearchParams();
+  if (kp) params.set("kp", kp);
+  const { question, reason } = await nextQuestion(params);
+  if (!question) return { error: reason ?? "这个考点暂时没有可练的题。" };
+  s.activeQid = question.qid;
+  if (kp) s.currentKp = kp;
+  const label = `讲义 p${question.page} · ${question.label}`;
+  let text: string;
+  let image: string | undefined;
+  if (question.image) {
+    image = question.image;
+    text = `来,试一道跟这节课对得上的题(${label})。先自己动手做,把思路和答案发我,我来看你哪儿对、哪儿能更好。`;
+  } else {
+    const opts = question.options ? "\n\n" + Object.entries(question.options).map(([k, v]) => `${k}. ${v}`).join("\n") : "";
+    text = `来,试一道跟这节课对得上的题(${label}):\n\n${question.stem_md ?? ""}${opts}\n\n把你选的答案和理由发我。`;
+  }
+  const chips: Chip[] = [{ label: "换一道" }, { label: "换个考点" }];
+  const entry: ChatEntry = { role: "assistant", text, at: new Date().toISOString(), image, imageLabel: image ? label : undefined, chips };
+  s.chat.push(entry);
+  saveStudent(s);
+  return { text, image, imageLabel: entry.imageLabel, chips };
+}
 
 export interface Chip { label: string; nav?: string }
 export interface ChatHandlers {
@@ -75,7 +103,7 @@ export async function runChat(
 ): Promise<void> {
   const message = String(body.message ?? "").trim();
   const kpId = body.kp ?? null;
-  const qid = body.q ?? body.qid ?? null;
+  const explicitQid = body.q ?? body.qid ?? null; // URL 里明确指定的讲题
   const isStart = message === "__start__";
   const s = getStudent();
 
@@ -143,6 +171,7 @@ export async function runChat(
   // —— 选课导航 ——
   if (/^(换个考点|重新选章|换一?章|重新挑)$/.test(message)) {
     s.currentKp = null;
+    s.activeQid = null;
     await scripted(h, s, "好,重新挑。从哪一章开始?", "chat", await chapterChips(), signal);
     saveStudent(s); return;
   }
@@ -151,18 +180,21 @@ export async function runChat(
   const kpListReply = await kpChipsOf(message);
   if (kpListReply) { await scripted(h, s, kpListReply.text, "chat", kpListReply.chips, signal); saveStudent(s); return; }
 
-  // 选中考点 → 记档案,真大脑开讲
+  // 选中考点 → 记档案,真大脑开讲(切到新考点时清掉上一题的在做状态)
   let teachKickoff: string | null = null;
   const pick = message.match(/^(继续)?学[::]\s*(.+)$/);
   if (pick) {
     const kp = await findKpByName(pick[2].trim());
     if (kp) {
       s.currentKp = kp.id;
+      s.activeQid = null;
       teachKickoff = pick[1] ? `我们继续学《${kp.name}》,接着上次的进度往下。` : `我选好了:《${kp.name}》。请从头开始教我这个考点。`;
     }
   }
 
-  // 讲题上下文:题图视觉输入
+  // 讲题/批改上下文:题图视觉输入。qid 来自 URL(明确讲题)或 activeQid(学生正在做我出的练习题)。
+  const qid = explicitQid ?? s.activeQid ?? null;
+  const isGrading = !teachKickoff && !explicitQid && !!s.activeQid && qid === s.activeQid;
   let questionImage: { dataB64: string; mediaType: string; caption: string } | null = null;
   let effectiveKp = kpId;
   if (qid) {
@@ -174,7 +206,9 @@ export async function runChat(
         const kpName = (await getKpMap()).get(qmeta.kp_primary)?.name ?? qmeta.kp_primary;
         questionImage = {
           dataB64: data, mediaType,
-          caption: `讲义第${qmeta.page}页 ${qmeta.label},考点:${kpName},题型:${qmeta.qtype}。截图可能带到相邻内容,只讲 ${qmeta.label} 这道题。此题标准答案未录入,请你独立解出后按苏格拉底阶梯带学生做,最终答案要自己验算。`,
+          caption: isGrading
+            ? `这是你刚出给学生的练习题(讲义第${qmeta.page}页 ${qmeta.label},考点:${kpName})。下面是学生的作答或提问。请按引导修复讲评:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;做对了就确认并点出关键、可追问一句变式。标准答案未录入时,你先自己解一遍并用第二种方法/量纲复核。`
+            : `讲义第${qmeta.page}页 ${qmeta.label},考点:${kpName},题型:${qmeta.qtype}。截图可能带到相邻内容,只讲 ${qmeta.label} 这道题。此题标准答案未录入,请你独立解出后按苏格拉底阶梯带学生做,最终答案要自己验算。`,
         };
       } catch { /* 图取不到就当普通讲课 */ }
       if (!effectiveKp) effectiveKp = qmeta.kp_primary;
@@ -185,7 +219,7 @@ export async function runChat(
 
   // —— 真教学轮:模式矩阵 + 真大脑流式 ——
   const state = masteryState(effectiveKp, s);
-  const mode: Mode = questionImage ? "socratic" : effectiveKp ? pickMode(state, s) : "chat";
+  const mode: Mode = isGrading ? "guided-repair" : questionImage ? "socratic" : effectiveKp ? pickMode(state, s) : "chat";
   const kpName = effectiveKp ? plainName((await getKpMap()).get(effectiveKp)?.name ?? effectiveKp) : undefined;
   h.onMeta?.(mode, MODE_NAMES[mode], undefined, kpName);
 
@@ -252,7 +286,15 @@ export async function runChat(
   }
 
   if (assistantText) {
-    const entry: ChatEntry = { role: "assistant", text: assistantText, at: new Date().toISOString(), mode };
+    // 讲课/批改后挂上练习动作;批改后是"换一道",讲课后是"做一道相关的题"
+    let chips: Chip[] | undefined;
+    if (effectiveKp && mode !== "chat") {
+      chips = isGrading
+        ? [{ label: "换一道" }, { label: "换个考点" }]
+        : [{ label: "做一道相关的题" }, { label: "换个考点" }];
+      h.onMeta?.(mode, MODE_NAMES[mode], chips, kpName);
+    }
+    const entry: ChatEntry = { role: "assistant", text: assistantText, at: new Date().toISOString(), mode, chips };
     s.chat.push(entry);
     if (mode !== "chat" && !signal?.aborted) s.turnsSinceNotes += 1;
   }
