@@ -1,0 +1,51 @@
+{
+  "figures": [
+    {
+      "id": "fig-fr",
+      "file": "fig-fr.webp",
+      "caption": "分子间作用力 F 随分子间距 r 变化(F>0 斥力,F<0 引力,r₀ 处 F=0)",
+      "kps": [
+        "kp-x3-04-004"
+      ],
+      "keywords": [
+        "分子力",
+        "分子间的作用力",
+        "分子间作用力",
+        "F-r",
+        "F-x",
+        "斥力",
+        "引力"
+      ]
+    },
+    {
+      "id": "fig-epr",
+      "file": "fig-epr.webp",
+      "caption": "分子势能 Eₚ 随分子间距 r 变化(r₀ 处 Eₚ 最小,r→∞ 时 Eₚ→0)",
+      "kps": [
+        "kp-x3-04-002"
+      ],
+      "keywords": [
+        "分子势能",
+        "势能",
+        "Ep",
+        "E_p",
+        "Eₚ"
+      ]
+    },
+    {
+      "id": "fig-speed-dist",
+      "file": "fig-speed-dist.webp",
+      "caption": "气体分子速率分布曲线(温度越高,曲线峰越靠右、越平)",
+      "kps": [
+        "kp-x3-03-002"
+      ],
+      "keywords": [
+        "速率分布",
+        "麦克斯韦",
+        "分子速率",
+        "f(v)",
+        "速率分布曲线"
+      ]
+    }
+  ]
+}

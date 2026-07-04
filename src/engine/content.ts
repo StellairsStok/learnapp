@@ -163,3 +163,20 @@ export async function getCrops(): Promise<CropsManifest["qids"]> {
 export function questionImageUrl(file: string): string {
   return ASSET_BASE + "content/questions/img/" + file;
 }
+
+// ---------- 概念配图(从真题裁出的标准图) ----------
+export interface Figure {
+  id: string;
+  file: string;
+  caption: string;
+  kps: string[];
+  keywords: string[];
+}
+export async function getFigures(): Promise<Figure[]> {
+  const m = await loadJson<{ figures: Figure[] }>("figures/manifest.json");
+  return m?.figures ?? [];
+}
+/** 概念配图静态 URL(id 即文件名前缀) */
+export function figureUrl(id: string): string {
+  return ASSET_BASE + "content/figures/" + id + ".webp";
+}

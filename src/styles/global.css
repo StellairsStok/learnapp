@@ -2393,39 +2393,28 @@ body {
   cursor: pointer;
 }
 
-/* ---------------- 物理示意图(程序绘制) ---------------- */
+/* ---------------- 概念配图(从真题裁出的真实图) ---------------- */
 
-/* ```plot 块外层的 pre 去样式,让示意图独立呈现 */
-.md pre:has(.physics-plot) {
+/* ```figure 块外层的 pre 去样式 */
+.md pre:has(.concept-figure) {
   background: none;
   border: none;
   padding: 0;
   margin: 0.7em 0;
 }
-.physics-plot {
+.concept-figure {
   margin: 0.7em 0;
-  max-width: 460px;
+  max-width: 380px;
+  padding: 10px 12px;
   border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  background: #f6f8fc;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.26);
 }
-.physics-plot svg {
+.concept-figure img {
   display: block;
   width: 100%;
   height: auto;
-}
-.pp-title { fill: #26303f; font-size: 14px; font-weight: 700; }
-.pp-axis { stroke: #26303f; stroke-width: 1.5; }
-.pp-axislabel { fill: #26303f; font-size: 13px; font-style: italic; }
-.pp-o { fill: #26303f; font-size: 12px; }
-.pp-curvelabel { font-size: 12.5px; font-weight: 600; }
-.pp-pointlabel { fill: #26303f; font-size: 13px; font-weight: 700; }
-.plot-fallback {
-  padding: 10px 12px;
-  border: 1px dashed var(--line-strong);
-  border-radius: 8px;
-  color: var(--ink-3);
-  font-size: 13px;
+  cursor: zoom-in;
 }
 
 /* 聊天里内嵌的练习题图片(教学后出题) */
