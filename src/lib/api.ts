@@ -4,18 +4,18 @@ import { MODEL } from "../config";
 import { runChat } from "../engine/chat";
 import { getTree } from "../engine/content";
 import { gradeAnswer, nextQuestion, questionMeta, stats } from "../engine/practice";
-import { getStudent, resetStudent, saveStudent, type Student } from "../engine/store";
+import { exportStudent, getStudent, importStudent, resetStudent, saveStudent, type Student } from "../engine/store";
 import { studentSignals } from "../engine/studentModel";
 import type { Chip } from "./types";
 
-// —— 访问码(静态站:每浏览器一个档案,码仅作显示;跨设备无法同步)——
-export function studentCode(): string {
-  let c = localStorage.getItem("stellairs-code");
-  if (!c) { c = "s" + Math.random().toString(36).slice(2, 8); localStorage.setItem("stellairs-code", c); }
-  return c;
+// —— 备份与恢复(静态站:档案只存在本浏览器,导出/导入是唯一的跨设备与防丢手段)——
+/** 导出当前档案为可下载的 JSON 文本 */
+export function exportStudentData(): string {
+  return exportStudent();
 }
-export function setStudentCode(code: string): void {
-  localStorage.setItem("stellairs-code", code);
+/** 从导出的 JSON 文本恢复档案(解析失败或格式不对会抛错) */
+export function importStudentData(text: string): void {
+  importStudent(JSON.parse(text));
 }
 
 function publicStudent(s: Student) {
@@ -92,6 +92,7 @@ export async function postJSON<T>(url: string, body: unknown): Promise<T> {
 export interface StreamHandlers {
   onMeta?: (mode: string, modeName: string, chips?: Chip[], kpName?: string) => void;
   onDelta?: (text: string) => void;
+  onError?: (kind: "ratelimit" | "offline" | "network") => void;
   onDone?: () => void;
 }
 
@@ -102,7 +103,7 @@ export async function streamChat(
   signal?: AbortSignal,
 ): Promise<void> {
   try {
-    await runChat(body, { onMeta: h.onMeta, onDelta: h.onDelta }, signal);
+    await runChat(body, { onMeta: h.onMeta, onDelta: h.onDelta, onError: h.onError }, signal);
   } finally {
     h.onDone?.();
   }

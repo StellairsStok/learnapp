@@ -80,9 +80,32 @@ export function saveStudent(s: Student): void {
   if (s.mistakes.length > 200) s.mistakes = s.mistakes.slice(-200);
   try {
     localStorage.setItem(KEY, JSON.stringify(s));
-  } catch {
-    /* localStorage 满或禁用:忽略 */
+  } catch (e) {
+    // 不能再静默:写满或被禁用时,学生以为在存、其实全丢。发个事件让界面提醒去导出备份。
+    const quota = e instanceof DOMException && (e.name === "QuotaExceededError" || e.code === 22);
+    console.warn("[store] 保存失败" + (quota ? "(本地存储已满)" : "(存储被禁用?)"), e);
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("stellairs-storage-full", { detail: { quota } }));
+    }
   }
+}
+
+/** 导出当前档案为 JSON 字符串(用于备份下载) */
+export function exportStudent(): string {
+  return JSON.stringify(getStudent(), null, 2);
+}
+
+/** 从导出的 JSON 覆盖当前档案。校验最小结构后保存并返回。 */
+export function importStudent(data: unknown): Student {
+  if (!data || typeof data !== "object") throw new Error("这个文件看起来不是学习档案");
+  const d = data as Partial<Student>;
+  if (!Array.isArray(d.chat) || typeof d.mastery !== "object" || d.mastery === null) {
+    throw new Error("这不是 Stellairs 的学习档案文件");
+  }
+  const merged = { ...defaultStudent(), ...d } as Student;
+  current = merged;
+  saveStudent(merged);
+  return merged;
 }
 
 export function resetStudent(): Student {

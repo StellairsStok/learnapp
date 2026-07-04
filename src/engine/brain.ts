@@ -21,7 +21,17 @@ const HEADERS = {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** 非流式:返回完整文本(用于写笔记等后台调用)。网络波动自动重试。 */
+/** 带 HTTP 状态码的中转错误。让上层区分"限额用满(429)"和普通网络波动。 */
+export class ProxyError extends Error {
+  status: number;
+  constructor(status: number) {
+    super(`proxy ${status}`);
+    this.name = "ProxyError";
+    this.status = status;
+  }
+}
+
+/** 非流式:返回完整文本(用于写笔记等后台调用)。网络波动自动重试;4xx(含 429 限额)不重试。 */
 export async function callProxy(req: ProxyReq): Promise<string> {
   let lastErr: unknown;
   for (let attempt = 0; attempt < 4; attempt++) {
@@ -31,12 +41,14 @@ export async function callProxy(req: ProxyReq): Promise<string> {
         headers: HEADERS,
         body: JSON.stringify({ ...req, stream: false }),
       });
-      if (!r.ok) throw new Error(`proxy ${r.status}`);
+      if (!r.ok) throw new ProxyError(r.status);
       const j = await r.json();
       const blocks: { type: string; text?: string }[] = j.content ?? [];
       return blocks.filter((b) => b.type === "text").map((b) => b.text ?? "").join("");
     } catch (e) {
       lastErr = e;
+      // 客户端错误(限额/鉴权)重试没意义,反而加重限额——直接抛出。
+      if (e instanceof ProxyError && e.status >= 400 && e.status < 500) throw e;
       await sleep(1500 * (attempt + 1));
     }
   }
@@ -54,12 +66,31 @@ export async function* streamProxy(
     body: JSON.stringify({ ...req, stream: true }),
     signal,
   });
-  if (!r.ok || !r.body) throw new Error(`proxy ${r.status}`);
+  if (!r.ok) throw new ProxyError(r.status);
+  if (!r.body) throw new Error("proxy no body");
   const reader = r.body.getReader();
   const dec = new TextDecoder();
   let buf = "";
+  // 空闲超时:中转平台偶尔连接开着(200)却迟迟不吐数据。超过 IDLE_MS 没有新数据就当失败,
+  // 让上层进入重试/提示,而不是永远卡在"正在输入"。每收到一段数据就重置。
+  const IDLE_MS = 30000;
   for (;;) {
-    const { done, value } = await reader.read();
+    let chunk: ReadableStreamReadResult<Uint8Array>;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    try {
+      chunk = await Promise.race([
+        reader.read(),
+        new Promise<never>((_, reject) => {
+          timer = setTimeout(() => reject(new Error("stream idle timeout")), IDLE_MS);
+        }),
+      ]);
+    } catch (e) {
+      try { await reader.cancel(); } catch { /* 已断开 */ }
+      throw e;
+    } finally {
+      if (timer) clearTimeout(timer);
+    }
+    const { done, value } = chunk;
     if (done) break;
     buf += dec.decode(value, { stream: true });
     const parts = buf.split("\n\n");

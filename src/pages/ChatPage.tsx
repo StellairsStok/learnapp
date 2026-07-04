@@ -29,6 +29,9 @@ export default function ChatPage() {
   const progScrollRef = useRef(false); // 标记"这次滚动是程序触发的",避免自动吸底反过来把自己重新锁死
   const startedRef = useRef(false);
   const abortRef = useRef<AbortController | null>(null);
+  const [retryKind, setRetryKind] = useState<"ratelimit" | "offline" | "network" | null>(null);
+  const [zoomSrc, setZoomSrc] = useState<string | null>(null);
+  const lastUserRef = useRef("");
 
   // 卸载时中断进行中的流
   useEffect(() => {
@@ -96,6 +99,7 @@ export default function ChatPage() {
 
   const runStream = useCallback(
     async (message: string) => {
+      lastUserRef.current = message;
       const ctrl = new AbortController();
       abortRef.current = ctrl;
       try {
@@ -113,12 +117,14 @@ export default function ChatPage() {
               });
             },
             onDelta: appendToLast,
+            onError: (kind) => setRetryKind(kind),
           },
           ctrl.signal,
         );
       } catch (e) {
         if (e instanceof DOMException && e.name === "AbortError") return; // 用户切走了,静默
         appendToLast("(连接服务失败,确认应用正在运行后重试。)");
+        setRetryKind("network");
       }
     },
     [kp, questionId, appendToLast],
@@ -128,6 +134,7 @@ export default function ChatPage() {
     async (text: string) => {
       if (busy || !text.trim()) return;
       setBusy(true);
+      setRetryKind(null);
       setMessages((m) => [...m, { role: "user", text }, { role: "assistant", text: "" }]);
       try {
         await runStream(text);
@@ -137,6 +144,15 @@ export default function ChatPage() {
     },
     [busy, runStream],
   );
+
+  // 重试:去掉失败的用户气泡 + 错误气泡,用同一句话干净重发(失败轮未存进历史)
+  const retry = useCallback(() => {
+    const text = lastUserRef.current;
+    if (!text || busy) return;
+    setRetryKind(null);
+    setMessages((m) => m.slice(0, -2));
+    void send(text);
+  }, [busy, send]);
 
   // 载入历史;首次访问触发 __start__ 问候
   useEffect(() => {
@@ -231,7 +247,14 @@ export default function ChatPage() {
               <span className="q-tag q-source">讲义 p{qMeta.page} · {qMeta.label}</span>
               <span className="q-tag">{qMeta.kpName}</span>
             </div>
-            <img className="q-image" src={qMeta.image} alt={`${qMeta.label} 题图`} />
+            <img
+              className="q-image"
+              src={qMeta.image}
+              alt={`${qMeta.label} 题图`}
+              loading="lazy"
+              onClick={() => qMeta.image && setZoomSrc(qMeta.image)}
+              title="点击看大图"
+            />
           </div>
         )}
         {messages.map((m, i) =>
@@ -261,6 +284,11 @@ export default function ChatPage() {
             </div>
           ),
         )}
+        {retryKind && !busy && (
+          <div className="retry-row">
+            <button className="retry-btn" onClick={retry}>重试</button>
+          </div>
+        )}
         <div ref={bottomRef} />
       </div>
 
@@ -270,6 +298,7 @@ export default function ChatPage() {
             value={input}
             placeholder="输入消息,Enter 发送(Shift+Enter 换行)"
             rows={1}
+            enterKeyHint="send"
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !e.shiftKey) {
@@ -294,6 +323,13 @@ export default function ChatPage() {
           </button>
         </div>
       </div>
+
+      {zoomSrc && (
+        <div className="img-lightbox" role="dialog" aria-label="放大的题目图片" onClick={() => setZoomSrc(null)}>
+          <img src={zoomSrc} alt="放大的题目" />
+          <button className="img-lightbox-close" aria-label="关闭大图" onClick={() => setZoomSrc(null)}>✕</button>
+        </div>
+      )}
     </div>
   );
 }

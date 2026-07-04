@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { getJSON } from "../lib/api";
 import type { DifficultyLevel, KpTree, StudentPublic } from "../lib/types";
@@ -70,13 +70,26 @@ export default function MapPage() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    getJSON<KpTree>("/api/content/tree").then(setTree).catch(() => setError("知识树加载失败(content/tree/kp-tree.json)"));
-    getJSON<StudentPublic>("/api/student").then(setStudent).catch(() => {});
-    getJSON<Stats>("/api/questions/stats").then(setStats).catch(() => {});
+  const loadTree = useCallback(() => {
+    setError(null);
+    getJSON<KpTree>("/api/content/tree").then(setTree).catch(() => setError("知识地图没能加载出来,可能是网络不太稳。"));
   }, []);
 
-  if (error) return <div className="page"><header className="page-head"><h1>学习地图</h1></header><p className="empty">{error}</p></div>;
+  useEffect(() => {
+    loadTree();
+    getJSON<StudentPublic>("/api/student").then(setStudent).catch(() => {});
+    getJSON<Stats>("/api/questions/stats").then(setStats).catch(() => {});
+  }, [loadTree]);
+
+  if (error) return (
+    <div className="page">
+      <header className="page-head"><h1>学习地图</h1></header>
+      <div className="panel empty-panel">
+        <p>{error}</p>
+        <button className="ghost-btn" onClick={loadTree}>重试</button>
+      </div>
+    </div>
+  );
   if (!tree) return <div className="page"><header className="page-head"><h1>学习地图</h1></header><p className="empty">加载中…</p></div>;
 
   const activeTotal = difficultyLevel ? stats?.levelTotals?.[difficultyLevel] : null;

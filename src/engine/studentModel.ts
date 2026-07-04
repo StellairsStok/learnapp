@@ -66,13 +66,22 @@ const NOTE_WRITER_SYSTEM = `你是一位带过很多学生的物理特级教师 
 - 用第二人称写给未来的自己(如"他对……类比反应好""讲到……要放慢,他会卡在符号")。
 - 证据不足时,宁可少写也不编。只输出笔记正文,不要任何前后缀。`;
 
-/** 课后异步写笔记:不阻塞对话。失败静默。 */
+/** 课后异步写笔记:不阻塞对话。先归零计数以防并发重入,失败则恢复计数,下次教学轮再试。 */
 export async function maybeWriteNotes(): Promise<void> {
   const s = getStudent();
   if (s.turnsSinceNotes < NOTES_EVERY) return;
+  const pending = s.turnsSinceNotes;
   s.turnsSinceNotes = 0;
   saveStudent(s);
-  writeNotes().catch((e) => console.error("[notes] 写笔记失败", e));
+  try {
+    await writeNotes();
+  } catch (e) {
+    // 写失败(网络/限额)不能把这批学情丢掉——恢复计数,下次达到阈值会再写一次。
+    console.error("[notes] 写笔记失败,已恢复计数以便重试", e);
+    const cur = getStudent();
+    cur.turnsSinceNotes = Math.max(cur.turnsSinceNotes, pending);
+    saveStudent(cur);
+  }
 }
 
 async function writeNotes(): Promise<void> {

@@ -48,6 +48,7 @@ export default function PracticePage() {
   const [chosen, setChosen] = useState<string[]>([]);
   const [result, setResult] = useState<AnswerResult | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [zoomSrc, setZoomSrc] = useState<string | null>(null);
   const [kpNames, setKpNames] = useState<Record<string, string>>({});
   const loadSeq = useRef(0);
   const seenQids = useRef<Set<string>>(new Set());
@@ -88,7 +89,7 @@ export default function PracticePage() {
     const query = queryParts.join("&");
     const data = await getJSON<{ question: PracticeQuestion | null; reason?: string }>(
       `/api/practice/next${query ? "?" + query : ""}`,
-    ).catch(() => ({ question: null, reason: "服务未连接" }));
+    ).catch(() => ({ question: null, reason: "题目加载失败,网络不太稳,稍后再试。" }));
     if (seq !== loadSeq.current) return;
     if (data.question) {
       seenQids.current.add(data.question.qid);
@@ -125,7 +126,7 @@ export default function PracticePage() {
       const r = await postJSON<AnswerResult>("/api/practice/answer", { qid: q.qid, given: chosen });
       setResult(r);
     } catch {
-      setEmptyReason("提交失败:服务未连接。启动应用后重试。");
+      setEmptyReason("提交失败:网络不太稳,稍后再试一次。");
     } finally {
       setSubmitting(false);
     }
@@ -206,7 +207,14 @@ export default function PracticePage() {
 
           {q.kind === "image" && q.image ? (
             <div className="q-image-wrap">
-              <img className="q-image" src={q.image} alt={`${q.label} 题图`} />
+              <img
+                className="q-image"
+                src={q.image}
+                alt={`${q.label} 题图`}
+                loading="lazy"
+                onClick={() => q.image && setZoomSrc(q.image)}
+                title="点击看大图"
+              />
             </div>
           ) : (
             <>
@@ -259,7 +267,7 @@ export default function PracticePage() {
                 <Md>{result.rationale}</Md>
               </div>
               {result.review_status === "pending" && (
-                <div className="verdict-note">此题答案为 AI 起草、待教研终审;发现有误请记下 p{q.page} {q.label}。</div>
+                <div className="verdict-note">这道题的答案是 AI 起草的、还没经人工核验,可能有误——发现不对请记下 p{q.page} {q.label},以正式解析为准。</div>
               )}
               <div className="q-actions">
                 <button className="primary-btn" onClick={next}>下一题</button>
@@ -269,6 +277,13 @@ export default function PracticePage() {
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {zoomSrc && (
+        <div className="img-lightbox" role="dialog" aria-label="放大的题目图片" onClick={() => setZoomSrc(null)}>
+          <img src={zoomSrc} alt="放大的题目" />
+          <button className="img-lightbox-close" aria-label="关闭大图" onClick={() => setZoomSrc(null)}>✕</button>
         </div>
       )}
     </div>

@@ -1,7 +1,7 @@
 // 对话编排引擎(客户端):三问初始化、章→单元→考点选课、偏好一句话调整、
 // 真大脑讲课(流式)、视觉讲题、课后写笔记。取代原 server /api/chat。
 import { MAX_TOKENS, MODEL } from "../config";
-import { imageToBase64, streamProxy } from "./brain";
+import { imageToBase64, ProxyError, streamProxy } from "./brain";
 import { getCrops, getKpMap, getQuestionIndex, getTree, questionImageUrl } from "./content";
 import { buildSystemPrompt, masteryState, MODE_NAMES, pickMode, plainName, type Mode } from "./pedagogy";
 import { getStudent, saveStudent, type ChatEntry, type Student } from "./store";
@@ -11,6 +11,8 @@ export interface Chip { label: string; nav?: string }
 export interface ChatHandlers {
   onMeta?: (mode: string, modeName: string, chips?: Chip[], kpName?: string) => void;
   onDelta?: (text: string) => void;
+  /** 本轮以错误收场(限额/断网/网络),让界面显示"重试"。 */
+  onError?: (kind: "ratelimit" | "offline" | "network") => void;
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -23,7 +25,7 @@ const ONBOARDING = [
 
 const PANORAMA_TEXT =
   "记住了,你的偏好档案建好了——在**设置**里随时能看能改,对话里一句话(比如\"别让我猜,直接讲\")也能改。\n\n" +
-  "现在看看我们要一起攻克的地盘:**人教版选择性必修第三册(热学)**,3 章、14 个单元、41 个考点——每一个我都备好了课,练习题也都就位。\n\n从哪一章开始?";
+  "我们要一起攻克的地盘:**人教版选择性必修第三册(热学)**,3 章、14 个单元、41 个考点。整张地图已经铺好、题库也都在;我正一节一节把课备细,先带你从我讲得最透的几个考点入门,其余的边学边补。\n\n从哪一章开始?";
 
 async function chapterChips(): Promise<Chip[]> {
   const tree = await getTree();
@@ -208,6 +210,7 @@ export async function runChat(
   const system = await buildSystemPrompt(effectiveKp, mode, s);
   const reqBody = { model: MODEL, max_tokens: MAX_TOKENS, system, messages: [...history, lastUser] };
   let assistantText = "";
+  let errored: "ratelimit" | "offline" | "network" | null = null;
   // 网络波动会概率性掐断到中转平台的连接:开讲前若失败,自动重试;已开始输出则不重试(避免重复)。
   const MAX_TRIES = 4;
   for (let attempt = 0; attempt < MAX_TRIES; attempt++) {
@@ -219,15 +222,33 @@ export async function runChat(
       break; // 正常读完
     } catch (e) {
       if (signal?.aborted) return;
-      if (assistantText.length > 0) break; // 已经在输出,不重试
+      if (assistantText.length > 0) break; // 已经在输出,保留已收到的内容
+      const status = e instanceof ProxyError ? e.status : 0;
+      const offline = typeof navigator !== "undefined" && navigator.onLine === false;
+      if (status === 429) {
+        // 限额用满:重试只会更堵,诚实告知、不再无脑重试
+        const err = "公共额度暂时用满了(大家共用一个额度)。过一会儿再回来找我——通常等一会儿就恢复,不用一直重发。";
+        h.onDelta?.(err); errored = "ratelimit"; break;
+      }
+      if (offline) {
+        const err = "看起来断网了。连上网络后,点下面的「重试」就行。";
+        h.onDelta?.(err); errored = "offline"; break;
+      }
       if (attempt < MAX_TRIES - 1) {
         await sleep(1500 * (attempt + 1));
         continue; // 静默重试
       }
-      const err = `连接大脑时网络波动,试了几次都没连上。稍等一下再点一次发送——通常重试就好。`;
-      assistantText = err;
-      h.onDelta?.(err);
+      const err = "连接大脑时网络不太稳,试了几次都没连上。点下面的「重试」,或稍后再发一次。";
+      h.onDelta?.(err); errored = "network";
     }
+  }
+
+  // 失败轮不留痕:通知界面显示"重试",弹掉刚 push 的用户消息(方便干净重发),不保存错误气泡
+  if (errored) {
+    h.onError?.(errored);
+    if (pushed && s.chat[s.chat.length - 1]?.role === "user") s.chat.pop();
+    saveStudent(s);
+    return;
   }
 
   if (assistantText) {

@@ -71,6 +71,7 @@ code {
 .app {
   display: flex;
   height: 100vh;
+  height: 100dvh; /* 动态视口:手机地址栏/键盘弹出时跟着缩,底部输入条不被遮 */
 }
 
 .main {
@@ -352,6 +353,7 @@ code {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh;
   max-width: 830px;
   width: 100%;
   margin: 0 auto;
@@ -566,6 +568,7 @@ code {
 
 .composer-wrap {
   padding: 8px 4px 28px;
+  padding-bottom: calc(28px + env(safe-area-inset-bottom)); /* 手机底部安全区 */
 }
 
 .chips {
@@ -2270,4 +2273,122 @@ body {
   .difficulty-filter-compact {
     max-width: none;
   }
+}
+
+/* ---------------- 第一波:安全修复相关组件 ---------------- */
+
+/* 长表格横向滚动,不撑破页面 */
+.md table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+.md table th,
+.md table td {
+  border: 1px solid var(--line-strong);
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+/* 题图可点开看大图 */
+.q-image {
+  cursor: zoom-in;
+}
+
+/* 大图灯箱 */
+.img-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(4, 6, 14, 0.88);
+  cursor: zoom-out;
+  animation: lightbox-in 0.16s ease;
+}
+@keyframes lightbox-in { from { opacity: 0; } to { opacity: 1; } }
+.img-lightbox img {
+  max-width: 96vw;
+  max-height: 92vh;
+  border-radius: 10px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  background: #fff;
+}
+.img-lightbox-close {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  right: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 241, 255, 0.32);
+  background: rgba(12, 16, 30, 0.7);
+  color: #f5f8ff;
+  font-size: 17px;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) {
+  .img-lightbox { animation: none; }
+}
+
+/* 重试按钮(回复失败时) */
+.retry-row {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0 10px;
+}
+.retry-btn {
+  padding: 8px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--zhu);
+  background: var(--zhu-soft, rgba(217, 74, 56, 0.12));
+  color: var(--zhu, #ec6152);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.retry-btn:hover {
+  background: var(--zhu);
+  color: #fbf6ec;
+}
+
+/* 备份/导入 按钮组 */
+.backup-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 本地存储写满的全局提醒条 */
+.storage-warn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 24px 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(217, 74, 56, 0.5);
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(217, 74, 56, 0.14), rgba(217, 74, 56, 0.05));
+  color: #ffe1dc;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.storage-warn a {
+  color: #ffd0c8;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.storage-warn button {
+  margin-left: auto;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 241, 255, 0.24);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
 }

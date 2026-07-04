@@ -138,13 +138,25 @@ export default function CosmicBackdrop() {
       raf = window.requestAnimationFrame(draw);
     };
 
+    // 切到别的标签页时暂停动画,回来再恢复——长时间学习省手机电、省 CPU。
+    const onVisibility = () => {
+      if (document.hidden) {
+        if (raf) { window.cancelAnimationFrame(raf); raf = 0; }
+      } else if (!raf) {
+        last = performance.now();
+        raf = window.requestAnimationFrame(draw);
+      }
+    };
+
     resize();
     window.addEventListener("resize", resize);
-    raf = window.requestAnimationFrame(draw);
+    document.addEventListener("visibilitychange", onVisibility);
+    if (!document.hidden) raf = window.requestAnimationFrame(draw);
 
     return () => {
       window.removeEventListener("resize", resize);
-      window.cancelAnimationFrame(raf);
+      document.removeEventListener("visibilitychange", onVisibility);
+      if (raf) window.cancelAnimationFrame(raf);
     };
   }, []);
 

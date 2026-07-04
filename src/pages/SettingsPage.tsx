@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { getJSON, postJSON, setStudentCode, studentCode } from "../lib/api";
+import { useEffect, useRef, useState } from "react";
+import { exportStudentData, getJSON, importStudentData, postJSON } from "../lib/api";
 import type { Health, StudentPublic } from "../lib/types";
 
 const QUESTIONS = [
@@ -71,6 +71,38 @@ export default function SettingsPage() {
     } catch {
       showFlash("重置失败:服务未连接", false);
     }
+  };
+
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  const doExport = () => {
+    try {
+      const blob = new Blob([exportStudentData()], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `stellairs-备份-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      showFlash("已导出备份文件", true);
+    } catch {
+      showFlash("导出失败", false);
+    }
+  };
+
+  const doImport = (file: File) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        importStudentData(String(reader.result));
+        showFlash("已导入,正在刷新…", true);
+        setTimeout(() => window.location.reload(), 700);
+      } catch (e) {
+        showFlash("导入失败:" + (e instanceof Error ? e.message : "文件无法识别"), false);
+      }
+    };
+    reader.onerror = () => showFlash("读取文件失败", false);
+    reader.readAsText(file);
   };
 
   return (
@@ -156,37 +188,34 @@ export default function SettingsPage() {
       </div>
 
       <div className="panel">
-        <h2 className="panel-title">访问码</h2>
+        <h2 className="panel-title">备份与恢复</h2>
         <p className="panel-desc">
-          你的学习档案跟着访问码走:换设备或换浏览器时,输入同一个码就能继续自己的进度。多名学生共用一个网址时,各自用各自的码,互不干扰。
+          你的学习档案(对话、掌握度、错题本、老师笔记)<b>只存在这一个浏览器里</b>——换设备、清缓存、无痕模式都会让它消失,而且找不回来。所以请定期<b>导出备份</b>;换设备或重装后,用备份文件<b>导入</b>就能接着学。
         </p>
-        <div className="code-row">
-          <span className="pref-label">当前访问码</span>
-          <span className="code-current">{studentCode()}</span>
-        </div>
-        <div className="code-row" style={{ marginTop: 10 }}>
-          <span className="pref-label">切换到别的码</span>
+        <div className="backup-row">
+          <button className="ghost-btn" onClick={doExport}>导出备份</button>
+          <button className="ghost-btn" onClick={() => fileRef.current?.click()}>从备份导入</button>
           <input
-            className="code-input"
-            placeholder="输入访问码"
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                const v = (e.target as HTMLInputElement).value.trim();
-                if (v) {
-                  setStudentCode(v.replace(/[^a-zA-Z0-9_-]/g, "").slice(0, 24));
-                  window.location.href = "/";
-                }
-              }
+            ref={fileRef}
+            type="file"
+            accept="application/json,.json"
+            style={{ display: "none" }}
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) doImport(f);
+              e.target.value = "";
             }}
           />
-          <span className="q-hint">输入后按 Enter,页面会重新加载</span>
         </div>
+        <p className="q-hint" style={{ marginTop: 12 }}>
+          导入会<b>覆盖</b>当前这个浏览器里的档案,导入前建议先导出当前进度以防万一。
+        </p>
       </div>
 
       <div className="panel">
-        <h2 className="panel-title">学习数据</h2>
+        <h2 className="panel-title">重置</h2>
         <p className="panel-desc">
-          全部学习数据保存在本机 <code>data/student.json</code>,可以直接打开查看。
+          清空这个浏览器里的全部学习数据,从头开始。此操作不可撤销——需要保留的话先导出备份。
         </p>
         <button className="danger-btn" onClick={() => void reset()}>
           重置全部学习数据
