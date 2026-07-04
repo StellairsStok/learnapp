@@ -8,6 +8,9 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/, "$1"), "..");
 const IMG_DIR = path.join(ROOT, "content", "questions", "img");
 const OUT_DIR = path.join(ROOT, "content", "figures");
+// 教学页(学案讲解部分)的高清页图,概念图从这里裁最干净
+const PAGES_DIR = "C:/Users/chenz/Documents/Codex/2026-07-03/ni-k/tmp/pdfs/pages";
+const srcPathOf = (f) => f.page ? path.join(PAGES_DIR, `page-${String(f.page).padStart(3, "0")}.png`) : path.join(IMG_DIR, f.src);
 
 // —— 配图清单 —— box:[left,top,width,height] 占原图比例
 const FIGS = [
@@ -35,13 +38,31 @@ const FIGS = [
     kps: ["kp-x3-03-002"],
     keywords: ["速率分布", "麦克斯韦", "分子速率", "f(v)", "速率分布曲线"],
   },
+  {
+    // 教学页 p70:p-V 等温线族(T₁<T₂<T₃<T₄,温度越高等温线离原点越远)
+    id: "fig-pv-isotherm",
+    page: 70,
+    box: [0.54, 0.492, 0.175, 0.094],
+    caption: "一定质量气体等温变化的 p-V 图:等温线是双曲线;温度越高,等温线离原点越远(T₁<T₂<T₃<T₄)",
+    kps: ["kp-x3-06-003", "kp-x3-06-001"],
+    keywords: ["p-V", "pV", "等温线", "玻意耳", "等温变化"],
+  },
+  {
+    // 教学页 p70:p-1/V 图(过原点直线,斜率=pV=C,斜率越大温度越高)
+    id: "fig-pinvv",
+    page: 70,
+    box: [0.43, 0.83, 0.17, 0.086],
+    caption: "一定质量气体等温变化的 p-1/V 图:过原点的倾斜直线,斜率 k=pV=C(斜率越大温度越高,T₂>T₁)",
+    kps: ["kp-x3-06-003", "kp-x3-06-001"],
+    keywords: ["p-1/V", "p-1V", "1/V", "过原点", "玻意耳", "等温线"],
+  },
 ];
 
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
   const manifest = [];
   for (const f of FIGS) {
-    const srcPath = path.join(IMG_DIR, f.src);
+    const srcPath = srcPathOf(f);
     const buf = await readFile(srcPath);
     const meta = await sharp(buf).metadata();
     const W = meta.width, H = meta.height;
