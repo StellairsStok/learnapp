@@ -52,7 +52,7 @@ export default function Sidebar() {
           <span className="dot" />
           {providerLabel}
         </div>
-        <div className="scope-note">选必三 · 热学切片</div>
+        <div className="scope-note">选必三 · 热学+原子物理</div>
       </div>
     </aside>
   );

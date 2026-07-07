@@ -106,6 +106,13 @@ async function pool(): Promise<Candidate[]> {
   return cands;
 }
 
+/** 该考点在题库里有没有可呈现的题(第四章等无讲义章节没有题库) */
+export async function hasPracticeFor(kp: string | null | undefined): Promise<boolean> {
+  if (!kp) return false;
+  const all = await pool();
+  return all.some((x) => x.kp_primary === kp || x.kp_secondary?.includes(kp));
+}
+
 export async function nextQuestion(params: URLSearchParams): Promise<{ question: Candidate | null; reason?: string }> {
   const kp = params.get("kp");
   const qid = params.get("qid");

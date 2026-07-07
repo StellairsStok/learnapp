@@ -113,7 +113,7 @@ export default function MapPage() {
         <div>
           <h1>学习地图</h1>
           <div className="head-sub">
-            {tree.scope} · 41 个知识单位 · {activeDifficultyLabel} · 可练 {activePractice ?? "—"}/{activeFormal ?? "—"} 题
+            {tree.scope} · {tree.chapters.reduce((n, c) => n + c.units.reduce((m, u) => m + u.kps.length, 0), 0)} 个知识单位 · {activeDifficultyLabel} · 可练 {activePractice ?? "—"}/{activeFormal ?? "—"} 题
           </div>
         </div>
         <div className="map-head-tools">
@@ -151,7 +151,7 @@ export default function MapPage() {
               <div key={u.id} className="unit-card">
                 <div className="unit-head">
                   <span className="unit-name">{u.name}</span>
-                  <span className="unit-pages">{u.pages}</span>
+                  {u.pages && <span className="unit-pages">{u.pages}</span>}
                 </div>
                 <ul className="kp-list">
                   {u.kps.map((kp) => {
@@ -179,7 +179,7 @@ export default function MapPage() {
                             </span>
                           )}
                           <Link className="kp-btn" to={`/?kp=${kp.id}`}>学</Link>
-                          <Link className="kp-btn" to={practiceUrlFor(kp.id)}>练</Link>
+                          {qs && qs.practice > 0 && <Link className="kp-btn" to={practiceUrlFor(kp.id)}>练</Link>}
                         </span>
                       </li>
                     );

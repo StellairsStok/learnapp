@@ -4,7 +4,7 @@ import { MAX_TOKENS, MODEL } from "../config";
 import { imageToBase64, ProxyError, streamProxy } from "./brain";
 import { getCrops, getKpMap, getQuestionIndex, getTree, questionImageUrl } from "./content";
 import { buildSystemPrompt, masteryState, MODE_NAMES, pickMode, plainName, type Mode } from "./pedagogy";
-import { nextQuestion } from "./practice";
+import { hasPracticeFor, nextQuestion } from "./practice";
 import { getStudent, saveStudent, type ChatEntry, type Student } from "./store";
 import { maybeWriteNotes } from "./studentModel";
 
@@ -51,9 +51,17 @@ const ONBOARDING = [
   { q: "最后一个:**练习**你偏好什么节奏?", key: "practice", chips: ["大量刷题,快节奏", "精讲一题,抠深度"], values: ["drill", "deep"] },
 ] as const;
 
-const PANORAMA_TEXT =
-  "记住了,你的偏好档案建好了——在**设置**里随时能看能改,对话里一句话(比如\"别让我猜,直接讲\")也能改。\n\n" +
-  "我们要一起攻克的地盘:**人教版选择性必修第三册(热学)**,3 章、14 个单元、41 个考点。整张地图已经铺好、题库也都在;我正一节一节把课备细,先带你从我讲得最透的几个考点入门,其余的边学边补。\n\n从哪一章开始?";
+// 全景开场白:章/单元/考点数从知识树实时计算,加新章不用改文案
+async function panoramaText(): Promise<string> {
+  const tree = await getTree();
+  const chapters = tree?.chapters ?? [];
+  const units = chapters.reduce((n, c) => n + c.units.length, 0);
+  const kps = chapters.reduce((n, c) => n + c.units.reduce((m, u) => m + u.kps.length, 0), 0);
+  return (
+    "记住了,你的偏好档案建好了——在**设置**里随时能看能改,对话里一句话(比如\"别让我猜,直接讲\")也能改。\n\n" +
+    `我们要一起攻克的地盘:**人教版选择性必修第三册**,${chapters.length} 章、${units} 个单元、${kps} 个考点。整张地图已经铺好;我正一节一节把课备细,先带你从我讲得最透的几个考点入门,其余的边学边补。\n\n从哪一章开始?`
+  );
+}
 
 async function chapterChips(): Promise<Chip[]> {
   const tree = await getTree();
@@ -129,7 +137,7 @@ export async function runChat(
       s.onboarding.step += 1;
       if (s.onboarding.step >= ONBOARDING.length) {
         s.onboarding.done = true;
-        await scripted(h, s, PANORAMA_TEXT, "chat", await chapterChips(), signal);
+        await scripted(h, s, await panoramaText(), "chat", await chapterChips(), signal);
       } else {
         const nxt = ONBOARDING[s.onboarding.step];
         await scripted(h, s, nxt.q, "chat", nxt.chips.map((label) => ({ label })), signal);
@@ -286,12 +294,16 @@ export async function runChat(
   }
 
   if (assistantText) {
-    // 讲课/批改后挂上练习动作;批改后是"换一道",讲课后是"做一道相关的题"
+    // 讲课/批改后挂上练习动作;批改后是"换一道",讲课后是"做一道相关的题"。
+    // 题库没这个考点的题(如第四章)就不挂做题按钮,避免点了扑空。
     let chips: Chip[] | undefined;
     if (effectiveKp && mode !== "chat") {
+      const practicable = await hasPracticeFor(effectiveKp);
       chips = isGrading
         ? [{ label: "换一道" }, { label: "换个考点" }]
-        : [{ label: "做一道相关的题" }, { label: "换个考点" }];
+        : practicable
+          ? [{ label: "做一道相关的题" }, { label: "换个考点" }]
+          : [{ label: "换个考点" }];
       h.onMeta?.(mode, MODE_NAMES[mode], chips, kpName);
     }
     const entry: ChatEntry = { role: "assistant", text: assistantText, at: new Date().toISOString(), mode, chips };

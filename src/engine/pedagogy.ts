@@ -1,5 +1,6 @@
 // 教学模式层(客户端):模式由内容状态×学生偏好的矩阵决定。取代原 server/lib/pedagogy.ts。
 import { getFigures, getKnowledgeCard, getKpMap, getPedagogyInject, getPersonaInject } from "./content";
+import { hasPracticeFor } from "./practice";
 import type { Student } from "./store";
 import { teacherModelBlock } from "./studentModel";
 
@@ -47,12 +48,14 @@ export function plainName(name: string): string {
 const TEACHING_QUALITY = `【把这节课讲好的要求】
 - 先点破再展开:开头用一句话或一个图景点破这个考点的核心,别一上来堆公式。
 - 公式要"讲活":每个公式都说清它的物理意义、成立条件、符号与单位约定,而不是只写出来。
-- 该画就画:关键的抽象关系用示意图画出来(见下面的画图能力),不要只用文字描述图形。
+- 有配图就用:若下方列出了本考点的真实配图,在讲到对应内容时插入,不要只用文字描述图形;没有配图时用文字把图景讲清楚即可,不要凭空编图。
 - 举一个最小的具体例子走一遍,并就着易错点指出这里最容易踩的坑。
 - 边讲边验:讲完一小节,用一个简短问题检查学生是否真懂(让他用自己的话复述,或做一步),再往下走——不要一口气讲到底。
 - 口语、简洁、像面对面讲题;分点清楚,但不写成教科书。`;
 
 const PRACTICE_OFFER = `【课后出题】当这个考点讲清楚、且学生看起来跟上了,主动提议练一道("要不要拿一道题练练手?我挑一道跟这节课对得上的")。你只需口头提出——学生点"做一道相关的题"后,程序会从题库挑一道匹配题、以图片形式呈现,你届时再据此带他做。若学生正在作答你出的练习题:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;不要一上来直接报标准答案。`;
+
+const PRACTICE_OFFER_NO_BANK = `【课后检查】本考点题库暂时没有配套练习题,不要提议"从题库挑题"。这节课收尾时,自己出 1 道贴合本考点、难度适中的原创小题(选择或简答)当堂检查,学生答完按引导修复讲评;并提醒学生这道题是你现编的、非讲义真题。`;
 
 // 概念配图:列出与当前考点相关的真实配图,让 AI 需要时插入(只用给定的图,不要自己画/描述图形)。
 async function figureGuideFor(kpId: string | null | undefined): Promise<string | null> {
@@ -84,7 +87,7 @@ export async function buildSystemPrompt(
     parts.push(TEACHING_QUALITY);
     const figGuide = await figureGuideFor(kpId);
     if (figGuide) parts.push(figGuide);
-    parts.push(PRACTICE_OFFER);
+    parts.push((await hasPracticeFor(kpId)) ? PRACTICE_OFFER : PRACTICE_OFFER_NO_BANK);
   }
 
   if (kpId) {
