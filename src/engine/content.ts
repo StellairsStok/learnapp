@@ -92,6 +92,8 @@ export interface IndexQuestion {
   figure_type: string;
   source_note: string;
   answer_status: string;
+  source?: string; // "wb1"=必刷题练习册;缺省=原175页讲义
+  kp_proposed?: string; // 第五章(树未建)题目的建议归属
 }
 
 export async function getQuestionIndex(): Promise<IndexQuestion[]> {
@@ -162,6 +164,11 @@ export async function getCrops(): Promise<CropsManifest["qids"]> {
 /** 题图静态 URL(供 <img> 与视觉读题用) */
 export function questionImageUrl(file: string): string {
   return ASSET_BASE + "content/questions/img/" + file;
+}
+
+/** 题目来源标签:必刷题练习册(q-wb1-,page 为逻辑页=印刷页+3)或原讲义 */
+export function questionSourceLabel(qid: string, page: number): string {
+  return qid.startsWith("q-wb1-") ? `必刷题 p${page - 3}` : `讲义 p${page}`;
 }
 
 // ---------- 概念配图(从真题裁出的标准图) ----------

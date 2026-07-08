@@ -84,6 +84,8 @@ export interface PracticeQuestion {
   review_status?: string;
   answerable: boolean;
   image?: string;
+  source?: string;
+  sourceLabel?: string;
 }
 
 export interface Health {

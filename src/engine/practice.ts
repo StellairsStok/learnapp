@@ -5,6 +5,7 @@ import {
   getQuestionIndex,
   getSeeds,
   questionImageUrl,
+  questionSourceLabel,
   type SeedQuestion,
 } from "./content";
 import { getStudent, saveStudent, touchMastery } from "./store";
@@ -51,6 +52,8 @@ interface Candidate {
   options?: Record<string, string>;
   review_status?: string;
   image?: string;
+  source?: string;
+  sourceLabel: string;
 }
 
 let poolCache: Candidate[] | null = null;
@@ -81,6 +84,7 @@ async function pool(): Promise<Candidate[]> {
       stem_md: q.stem_md,
       options: q.options,
       review_status: q.review_status,
+      sourceLabel: questionSourceLabel(q.qid!, q.page),
     });
   }
   for (const q of index) {
@@ -100,6 +104,8 @@ async function pool(): Promise<Candidate[]> {
       difficultyLevel: difficultyLevelOf(q.difficulty),
       answerable: false,
       image: questionImageUrl(crops[q.qid].file),
+      source: q.source,
+      sourceLabel: questionSourceLabel(q.qid, q.page),
     });
   }
   poolCache = cands;
@@ -206,6 +212,7 @@ export async function questionMeta(qid: string): Promise<unknown> {
     kp_primary: q.kp_primary,
     kpName,
     image: crop ? questionImageUrl(crop.file) : null,
+    sourceLabel: questionSourceLabel(qid, q.page),
   };
 }
 

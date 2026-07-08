@@ -2,7 +2,7 @@
 // 真大脑讲课(流式)、视觉讲题、课后写笔记。取代原 server /api/chat。
 import { MAX_TOKENS, MODEL } from "../config";
 import { imageToBase64, ProxyError, streamProxy } from "./brain";
-import { getCrops, getKpMap, getQuestionIndex, getTree, questionImageUrl } from "./content";
+import { getCrops, getKpMap, getQuestionIndex, getTree, questionImageUrl, questionSourceLabel } from "./content";
 import { buildSystemPrompt, masteryState, MODE_NAMES, pickMode, plainName, type Mode } from "./pedagogy";
 import { hasPracticeFor, nextQuestion } from "./practice";
 import { getStudent, saveStudent, type ChatEntry, type Student } from "./store";
@@ -18,7 +18,7 @@ export async function presentPractice(kpId: string | null): Promise<{ text: stri
   if (!question) return { error: reason ?? "这个考点暂时没有可练的题。" };
   s.activeQid = question.qid;
   if (kp) s.currentKp = kp;
-  const label = `讲义 p${question.page} · ${question.label}`;
+  const label = `${question.sourceLabel} · ${question.label}`;
   let text: string;
   let image: string | undefined;
   if (question.image) {
@@ -215,8 +215,8 @@ export async function runChat(
         questionImage = {
           dataB64: data, mediaType,
           caption: isGrading
-            ? `这是你刚出给学生的练习题(讲义第${qmeta.page}页 ${qmeta.label},考点:${kpName})。下面是学生的作答或提问。请按引导修复讲评:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;做对了就确认并点出关键、可追问一句变式。标准答案未录入时,你先自己解一遍并用第二种方法/量纲复核。`
-            : `讲义第${qmeta.page}页 ${qmeta.label},考点:${kpName},题型:${qmeta.qtype}。截图可能带到相邻内容,只讲 ${qmeta.label} 这道题。此题标准答案未录入,请你独立解出后按苏格拉底阶梯带学生做,最终答案要自己验算。`,
+            ? `这是你刚出给学生的练习题(${questionSourceLabel(qid, qmeta.page)} ${qmeta.label},考点:${kpName})。下面是学生的作答或提问。请按引导修复讲评:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;做对了就确认并点出关键、可追问一句变式。标准答案未录入时,你先自己解一遍并用第二种方法/量纲复核。`
+            : `${questionSourceLabel(qid, qmeta.page)} ${qmeta.label},考点:${kpName},题型:${qmeta.qtype}。截图可能带到相邻内容,只讲 ${qmeta.label} 这道题。此题标准答案未录入,请你独立解出后按苏格拉底阶梯带学生做,最终答案要自己验算。`,
         };
       } catch { /* 图取不到就当普通讲课 */ }
       if (!effectiveKp) effectiveKp = qmeta.kp_primary;

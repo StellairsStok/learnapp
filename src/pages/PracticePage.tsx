@@ -198,7 +198,7 @@ export default function PracticePage() {
       {q && (
         <div className="panel question-panel">
           <div className="q-meta">
-            <span className="q-tag q-source">讲义 p{q.page} · {q.label}</span>
+            <span className="q-tag q-source">{q.sourceLabel ?? `讲义 p${q.page}`} · {q.label}</span>
             {q.kp_primary && <span className="q-tag">{kpNames[q.kp_primary] ?? q.kp_primary}</span>}
             {q.difficultyLevel && <span className="q-tag q-level-tag">{DIFFICULTY_LEVEL_LABEL[q.difficultyLevel]}</span>}
             {q.difficulty && <span className="q-tag">{DIFF_LABEL[q.difficulty] ?? q.difficulty}</span>}

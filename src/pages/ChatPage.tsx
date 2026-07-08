@@ -22,7 +22,7 @@ export default function ChatPage() {
   const [busy, setBusy] = useState(true); // 历史加载完成前禁用输入,防止与首次问候流并发
   const [kpName, setKpName] = useState<string | null>(null);
   const [modeName, setModeName] = useState<string | null>(null);
-  const [qMeta, setQMeta] = useState<{ image: string | null; page: number; label: string; kpName: string } | null>(null);
+  const [qMeta, setQMeta] = useState<{ image: string | null; page: number; label: string; kpName: string; sourceLabel?: string } | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const stickRef = useRef(true); // 是否自动吸底;用户上滑看历史时暂停,滑回底部时恢复
@@ -76,7 +76,7 @@ export default function ChatPage() {
       return;
     }
     let stale = false;
-    getJSON<{ image: string | null; page: number; label: string; kpName: string }>(
+    getJSON<{ image: string | null; page: number; label: string; kpName: string; sourceLabel?: string }>(
       `/api/questions/meta?qid=${questionId}`,
     )
       .then((m) => {
@@ -266,7 +266,7 @@ export default function ChatPage() {
         {questionId && qMeta?.image && (
           <div className="q-banner">
             <div className="q-banner-head">
-              <span className="q-tag q-source">讲义 p{qMeta.page} · {qMeta.label}</span>
+              <span className="q-tag q-source">{qMeta.sourceLabel ?? `讲义 p${qMeta.page}`} · {qMeta.label}</span>
               <span className="q-tag">{qMeta.kpName}</span>
             </div>
             <img

@@ -1,0 +1,2464 @@
+{
+  "generatedAt": "2026-07-07T12:29:39.031Z",
+  "totalQ": 307,
+  "matched": 293,
+  "recovered": 14,
+  "manual": 0,
+  "droppedFalsePositives": 83,
+  "pages": [
+    {
+      "wbPage": 4,
+      "printedPage": 1,
+      "pageKind": "习题页",
+      "sectionHeader": "第一章 分子动理论 第一节 物质是由大量分子组成的",
+      "notes": "右栏顶部为第2题(2)(3)小问的续内容;第3题从右栏中部开始并跨到下一页;页面有\"答案P69\"引用和视频微课二维码",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 941,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1823,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 1226,
+          "via": "image"
+        }
+      ]
+    },
+    {
+      "wbPage": 5,
+      "printedPage": 2,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(高中必刷题 物理,第一章分子动理论相关习题)",
+      "notes": "左栏顶部是上页题目(实验题,含(3)(4)小问)的续;第6题题干从左栏底续到右栏顶;含\"题型3 阿伏伽德罗常量及相关计算\"标签;右栏下半部有大片空白和水印;页脚印刷页码2。",
+      "questions": [
+        {
+          "n": 4,
+          "column": "L",
+          "y": 1883,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "L",
+          "y": 2482,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "L",
+          "y": 3422,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 1456,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 6,
+      "printedPage": 3,
+      "pageKind": "习题页",
+      "sectionHeader": "第一章 分子动理论 第二节 分子热运动与分子力",
+      "notes": "刷基础板块;题3从左栏底部续到右栏顶部;题6跨页续到下一页;右上有\"答案P70\"引用和视频微课二维码",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 793,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1398,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3320,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1233,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2733,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 3416,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 7,
+      "printedPage": 4,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(第一章 分子动理论 习题,含\"题型4 分子力\"\"题型5 分子动理论\"\"刷易错\")",
+      "notes": "左栏顶部为上一页第6题的续(选项A-D);第9题选项续到右栏顶部;第12题(刷易错)题干延续到下页可能;页脚印刷页码4",
+      "questions": [
+        {
+          "n": 7,
+          "column": "L",
+          "y": 1174,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "L",
+          "y": 2250,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 2747,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 743,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 1436,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 2446,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 8,
+      "printedPage": 5,
+      "pageKind": "习题页",
+      "sectionHeader": "第一章 分子动理论 第三节 气体分子运动的统计规律",
+      "notes": "第3题从左栏底部续到右栏顶部(右栏开头是第3题的B/C/D选项);右上角有\"答案P72\"引用;印刷页码5",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 714,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1423,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2770,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1235,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2170,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 9,
+      "printedPage": 6,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体 第一节 气体实验定律(Ⅰ)",
+      "notes": "第3题从左栏续到右栏(右栏上部为其(1)(2)(3)小问及图线选项);右上有\"视频微课\"二维码和\"答案P73\"引用;印刷页码为6",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 936,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1670,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2677,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2618,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 10,
+      "printedPage": 7,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体(续上页)",
+      "notes": "左栏顶部是上页第4题的选项A-D续排;左栏中部有\"活塞和气缸内密封气体状态参量的计算\"题型标签,右栏有\"题型4 气体等温变化的图像\"和\"刷易错 易错点\"标签;页面中央有公众号水印文字;印刷页码7。",
+      "questions": [
+        {
+          "n": 5,
+          "column": "L",
+          "y": 702,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "L",
+          "y": 2548,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 301,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 2154,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 3092,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 11,
+      "printedPage": 8,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(刷提升:液体密封气体的计算、活塞和气缸内密封气体的计算)",
+      "notes": "第3题题干从左栏续到右栏顶部;右栏仅新出现题4;页脚印刷页码8;顶部有\"答案P74\"引用",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 467,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1585,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2789,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1490,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 12,
+      "printedPage": 9,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体 第二节 气体实验定律(Ⅱ) 课时1 气体的等容变化",
+      "notes": "第3题选项B、C、D续到右栏顶部;本页为\"刷基础\"板块,标注\"答案P75\";印刷页码9",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 881,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2087,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2858,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1056,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 13,
+      "printedPage": 10,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(页首为\"题型3 查理定律的应用\",书眉:高中必刷题 物理)",
+      "notes": "左栏含\"题型3 查理定律的应用\"标签(第5题前),右栏下部含\"题型4 气体等容变化的图像\"标签(第8题前);页面中部有公众号水印广告文字;印刷页码10。",
+      "questions": [
+        {
+          "n": 5,
+          "column": "L",
+          "y": 369,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "L",
+          "y": 2095,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 283,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 2857,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 14,
+      "printedPage": 11,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体 课时2 气体的等压变化(刷基础)",
+      "notes": "右栏顶部是第3题的选项D续排;第5题(1)小问延续到下页;页首有\"答案P77\"引用和视频微课二维码;印刷页码11。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 769,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2014,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2445,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 856,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2742,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 15,
+      "printedPage": 12,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(页眉仅\"高中必刷题 物理\",栏内小节:题型3 气体状态变化的图像)",
+      "notes": "左栏顶部为上一页题目的续((2)(3)小问),不计入;右栏含\"题型3 气体状态变化的图像\"和\"刷易错/易错点\"标签;页脚印刷页码12。",
+      "questions": [
+        {
+          "n": 6,
+          "column": "L",
+          "y": 1658,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 372,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 1228,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 2315,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 16,
+      "printedPage": 13,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体 第三节 气体实验定律的微观解释",
+      "notes": "页面为\"刷基础\"板块,含题型1-4标签;右上有视频微课二维码和\"答案P78\"引用;第3题从左栏续到右栏;印刷页码13。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 787,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1956,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3126,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1133,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1822,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2710,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 17,
+      "printedPage": 14,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(高中必刷题 物理,气体实验定律相关习题;含\"题型5 理想气体的图像问题\"与\"刷易错\"板块)",
+      "notes": "右栏顶部的\"D. 当温度升高至492 K…\"是左栏第8题选项的跨栏续文,不是新题号;右栏有\"刷易错/易错点1/易错点2\"标签;页面中部有公众号水印文字;页脚印刷页码14。",
+      "questions": [
+        {
+          "n": 7,
+          "column": "L",
+          "y": 287,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "L",
+          "y": 2084,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 817,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 1468,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 18,
+      "printedPage": 15,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体 — 刷提升(必刷题型:理想气体的图像问题 T1、T4;理想气体状态方程的应用 T2、T3)",
+      "notes": "第3题题干从左栏续到右栏顶部(右栏上方为第3题的续文及小问(1)(2)和配图);右上角有\"答案P80\"引用;页面中部有水印/公众号推广文字。印刷页码15。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 484,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1340,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2805,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 395,
+          "via": "image"
+        }
+      ]
+    },
+    {
+      "wbPage": 19,
+      "printedPage": 16,
+      "pageKind": "习题页",
+      "sectionHeader": "第一~三节综合训练(刷综合)",
+      "notes": "第3题题干从左栏底部续到右栏顶部(选项A-D在右栏);第5题(1)小问在页底,可能跨页续到下一页;页面标注\"建议用时:30分钟 答案P81\";印刷页码16",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 652,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1881,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2824,
+          "via": "loose-ocr"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1594,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2629,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 20,
+      "printedPage": 17,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体(续上页)",
+      "notes": "左栏顶部为上页题目的续((2)(3)小问及配图);第7题题干在右栏,其配图横跨版面下部。页面有水印二维码类推广文字覆盖。印刷页码17。",
+      "questions": [
+        {
+          "n": 6,
+          "column": "L",
+          "y": 1428,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 321,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 21,
+      "printedPage": 18,
+      "pageKind": "习题页",
+      "sectionHeader": "专题一 双气缸问题(刷难关,答案P82)",
+      "notes": "第2题选项B、C、D续到右栏顶部;右栏仅第3题一道新题,题号带\"教材变式\"标签;页脚印刷页码18,右上角有视频微课二维码",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 735,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2361,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 2680,
+          "via": "loose-ocr"
+        }
+      ]
+    },
+    {
+      "wbPage": 22,
+      "printedPage": 19,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体(续上页)",
+      "notes": "本页仅两道大题,均为计算题;第4题带蜂鸣器装置图,第5题带双气缸装置图,页面下半部大量留白(答题空间)。印刷页码19。",
+      "questions": [
+        {
+          "n": 4,
+          "column": "L",
+          "y": 287,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 291,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 23,
+      "printedPage": 20,
+      "pageKind": "习题页",
+      "sectionHeader": "专题二 变质量问题(刷题型)",
+      "notes": "第3题题干从左栏底部续到右栏顶部;右栏中部有\"题型2 抽气问题\"标签,第4题跨页续到下一页;页面右上角有视频微课二维码及\"答案P84\"引用;印刷页码20",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 801,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2203,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3500,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 3050,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 24,
+      "printedPage": 21,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体(续上页)",
+      "notes": "左栏顶部为上页续题的(1)(2)小问及插图;右栏有\"题型3 分装问题\"标签;印刷页码21",
+      "questions": [
+        {
+          "n": 5,
+          "column": "L",
+          "y": 1584,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 1690,
+          "via": "loose-ocr"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 1770,
+          "via": "image"
+        }
+      ]
+    },
+    {
+      "wbPage": 25,
+      "printedPage": 22,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(题型4 漏气问题)",
+      "notes": "印刷页码22。左栏顶部有\"题型4 漏气问题\"标签;第10题的配图(气窑)排在右栏中下部;页面中部有水印和推广文字。",
+      "questions": [
+        {
+          "n": 8,
+          "column": "L",
+          "y": 390,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 1668,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 295,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 26,
+      "printedPage": 23,
+      "pageKind": "习题页",
+      "sectionHeader": "第二章 气体、液体和固体 第四节 液体的表面张力",
+      "notes": "页面顶部有\"视频微课\"二维码;右上标\"答案P86\";第3题续到右栏(D选项在右栏顶部);右栏下方有\"刷易错\"板块含第6题;印刷页码23",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 797,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1510,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2487,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1010,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1588,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 3110,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 27,
+      "printedPage": 24,
+      "pageKind": "习题页",
+      "sectionHeader": "第五~六节 晶体/新材料",
+      "notes": "第4题题干及配图从左栏续到右栏顶部;右栏含\"刷易错\"板块(第6题);页首有视频微课二维码,页脚印刷页码24,答案引用\"答案P87\"",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 802,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1889,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2568,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "L",
+          "y": 3340,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 792,
+          "via": "image"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2906,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 28,
+      "printedPage": 25,
+      "pageKind": "习题页",
+      "sectionHeader": "第三章 热力学定律 第一~二节 热力学第一定律/能量守恒定律及其应用",
+      "notes": "第4题题干从左栏底部续到右栏顶部;页面有\"答案P87\"引用和视频微课二维码;印刷页码25",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 972,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1743,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2283,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "L",
+          "y": 3407,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1867,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2555,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 29,
+      "printedPage": 26,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(页眉仅\"高中必刷题 物理\",内容为热力学定律/能量守恒与分子动理论易错练习)",
+      "notes": "第9题选项从左栏底部续到右栏顶部;左栏有\"题型4 能量守恒定律\"标签;右栏有\"刷易错\"板块及\"易错点1/易错点2\"标签;页面中部有水印文字;印刷页码26。",
+      "questions": [
+        {
+          "n": 7,
+          "column": "L",
+          "y": 301,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "L",
+          "y": 2059,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 3283,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 978,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 1605,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 30,
+      "printedPage": 27,
+      "pageKind": "习题页",
+      "sectionHeader": "第三章 热力学定律(刷提升:能量守恒定律/热力学第一定律的应用/热力学第一定律的图像问题)",
+      "notes": "第3题题干在左栏末尾,选项A-D续到右栏顶部;右栏中部有\"刷素养\"栏目,第5题属于该栏目;页首标注\"答案P89\";印刷页码27",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 466,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1580,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2879,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1160,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2442,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 31,
+      "printedPage": 28,
+      "pageKind": "习题页",
+      "sectionHeader": "专题三 热力学第一定律和气体实验定律综合",
+      "notes": "第3题选项从左栏续到右栏顶部(C、D选项在右栏);右栏中部有\"题型2\"标签;页面有\"刷题型/题型1\"栏目标签及二维码\"视频微课\"、\"答案P90\"引用,均未计入题号;印刷页码28",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 886,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1896,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2993,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1117,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2596,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 32,
+      "printedPage": 29,
+      "pageKind": "习题页",
+      "sectionHeader": "第三章 热力学定律(页眉;正文续上页)",
+      "notes": "左栏顶部是上页某题的 C、D 选项(跨页续题);右栏顶部的(2)(3)及U形管插图是第7题从左栏续到右栏的小问;印刷页码29",
+      "questions": [
+        {
+          "n": 6,
+          "column": "L",
+          "y": 624,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "L",
+          "y": 2844,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 1766,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 33,
+      "printedPage": 30,
+      "pageKind": "习题页",
+      "sectionHeader": "第三节 热力学第二定律(刷基础)",
+      "notes": "右栏顶部为第3题的选项D(跨栏续题);页面右上有\"答案P91\"引用;印刷页码30",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 717,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1572,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2715,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 823,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1449,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2389,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 34,
+      "printedPage": 31,
+      "pageKind": "试卷页",
+      "sectionHeader": "第一~三章素养检测 刷速度(建议用时:60分钟 答案P92)",
+      "notes": "章末检测卷首页;第2题选项C、D续到右栏顶部;第5题选项未完跨到下页;印刷页码31",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 875,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 3024,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 973,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1234,
+          "via": "image"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2896,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 35,
+      "printedPage": 32,
+      "pageKind": "试卷页",
+      "sectionHeader": "续上页(章末素养综合测评卷,卷名未在本页出现)",
+      "notes": "页首左栏为上页第5题的C、D选项续排;左栏中部有\"二、多项选择题(本题共3小题,每小题6分,共18分)\"分节;第8题题号在左栏底部,题干与选项续到右栏顶部;第10题题干延续到下页;页面中部有水印及\"更多免费资料\"广告文字;印刷页码32。",
+      "questions": [
+        {
+          "n": 6,
+          "column": "L",
+          "y": 813,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "L",
+          "y": 1967,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "L",
+          "y": 3576,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 1669,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 3055,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 36,
+      "printedPage": 33,
+      "pageKind": "试卷页",
+      "sectionHeader": "第一~三章素养检测",
+      "notes": "左栏顶部为上页题目(选择题)的续,含选项A-D;左栏中部有\"三、非选择题\"标题;第11题(2)问续到右栏顶部(含甲乙丙量筒图);页面有公众号水印",
+      "questions": [
+        {
+          "n": 11,
+          "column": "L",
+          "y": 2213,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 1057,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 37,
+      "printedPage": 34,
+      "pageKind": "习题页",
+      "sectionHeader": "第一~三章高考强化(刷真题)",
+      "notes": "第2题(2)(3)小问续到右栏顶部;左栏有考点1\"分子动理论\"、考点2\"气体等温变化的探究实验\"标签,右栏有考点3\"气体实验定律\";右上角标注\"答案P94\";印刷页码34",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 695,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1723,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 1324,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 38,
+      "printedPage": 35,
+      "pageKind": "习题页",
+      "sectionHeader": "第一~三章高考强化",
+      "notes": "右栏第6题上方有\"考点4 变质量问题\"标签;右栏下半部分为空白(含题6配图甲/乙)",
+      "questions": [
+        {
+          "n": 4,
+          "column": "L",
+          "y": 296,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "L",
+          "y": 1582,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 379,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 39,
+      "printedPage": 36,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(页眉仅\"高中必刷题 物理\";页内出现\"考点5 理想气体状态变化图像\"、\"考点6 理想气体状态方程\")",
+      "notes": "第7题题干很长带装置图,占左栏大部分;第9、10题为计算题带图;页脚印刷页码36;页面中部有\"更多免费资料,关注公众号\"水印",
+      "questions": [
+        {
+          "n": 7,
+          "column": "L",
+          "y": 286,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "L",
+          "y": 2879,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 290,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 730,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 40,
+      "printedPage": 37,
+      "pageKind": "习题页",
+      "sectionHeader": "第一~三章高考强化",
+      "notes": "左栏第12题前有\"考点7 热力学第一定律的理解和应用\"小节标题;页面中部有公众号水印广告;印刷页码37;第14题题干延续到下页",
+      "questions": [
+        {
+          "n": 11,
+          "column": "L",
+          "y": 302,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "L",
+          "y": 2541,
+          "via": "plan"
+        },
+        {
+          "n": 13,
+          "column": "R",
+          "y": 303,
+          "via": "plan"
+        },
+        {
+          "n": 14,
+          "column": "R",
+          "y": 2922,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 41,
+      "printedPage": 38,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(考点8 热力学第二定律的理解和应用;下半部为\"刷原创\"栏目)",
+      "notes": "页面上半部为考点题(左栏顶部为上页题的续,左栏15题续到右栏;右栏16题后为\"刷原创\"栏目,题号重新从1开始:左栏1、右栏2),右上角有\"答案P96\"引用;印刷页码38。",
+      "questions": [
+        {
+          "n": 15,
+          "column": "L",
+          "y": 1831,
+          "via": "plan"
+        },
+        {
+          "n": 1,
+          "column": "L",
+          "y": 2515,
+          "via": "plan"
+        },
+        {
+          "n": 16,
+          "column": "R",
+          "y": 1751,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "R",
+          "y": 2518,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 42,
+      "printedPage": 39,
+      "pageKind": "习题页",
+      "sectionHeader": "第四章 波粒二象性 第一~二节 光电效应/光电效应方程及其意义",
+      "notes": "第3题题干从左栏底部续到右栏上半部;第5题题干在右栏底部开始并跨页续到下一页;页面有\"答案P97\"引用和视频微课二维码;印刷页码39",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 983,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1856,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3128,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2366,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 3499,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 43,
+      "printedPage": 40,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(高中必刷题 物理;光电效应/量子化相关小节,含题型4 对量子化概念的理解、题型5 康普顿效应和光子的动量、刷易错)",
+      "notes": "左栏顶部是上页某题(约第5题)的题干和选项续文,题号不在本页;第7题选项续到右栏顶部(B/C/D)。页脚印刷页码40。页面中部有水印及公众号推广文字。",
+      "questions": [
+        {
+          "n": 6,
+          "column": "L",
+          "y": 1710,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "L",
+          "y": 2850,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 635,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 2130,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 44,
+      "printedPage": 41,
+      "pageKind": "习题页",
+      "sectionHeader": "第四章 波粒二象性(刷提升:光电效应图像问题、爱因斯坦光电效应方程的应用)",
+      "notes": "第3题题干从左栏底部续到右栏顶部;右栏中部有\"刷素养\"栏目标签,第4题属于该栏目;页面标注\"答案P98\";印刷页码41",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 470,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1266,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3487,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 3684,
+          "via": "loose-ocr"
+        }
+      ]
+    },
+    {
+      "wbPage": 45,
+      "printedPage": 42,
+      "pageKind": "习题页",
+      "sectionHeader": "第三~五节 光的波粒二象性/德布罗意波/不确定性关系",
+      "notes": "第4题选项从左栏续到右栏顶部(B/C/D选项在右栏);第7题题干延续到下一页;右上角有\"视频微课\"二维码及\"答案P98\"引用;印刷页码42",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 794,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1848,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2361,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "L",
+          "y": 3047,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1333,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2187,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 3068,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 46,
+      "printedPage": 43,
+      "pageKind": "习题页",
+      "sectionHeader": "第四章 波粒二象性(续上页)",
+      "notes": "左栏顶部是上页题目(选项C、D)的跨页续;第10题从左栏底部续到右栏顶部;右栏中部有\"刷易错\"栏目及易错点标题,第12题属于该栏目;页面有水印和公众号广告文字,印刷页码43。",
+      "questions": [
+        {
+          "n": 8,
+          "column": "L",
+          "y": 635,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 1664,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "L",
+          "y": 2744,
+          "via": "image"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 557,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 2126,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 47,
+      "printedPage": 44,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核 第一节 原子的结构 课时1 原子核式结构的提出",
+      "notes": "第3题题干从左栏底部续到右栏顶部(含(1)(2)小问和装置图);右栏有\"视频微课\"二维码和\"答案P100\"引用;板块为\"刷基础\",含题型1~4标签;页脚印刷页码44",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 1074,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2124,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3328,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2463,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 48,
+      "printedPage": 45,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核(页眉;栏内含题型5 对核式结构的认识和理解、题型6 应用核式结构模型分析求解问题、刷易错)",
+      "notes": "印刷页码45;第5题从上页续来的可能性低,本页以5.开头;右栏末\"刷易错\"板块含第10题,四个径迹图选项A-D;页面中部有公众号水印文字。",
+      "questions": [
+        {
+          "n": 5,
+          "column": "L",
+          "y": 293,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "L",
+          "y": 1262,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "L",
+          "y": 2462,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 383,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "R",
+          "y": 1654,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 3008,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 49,
+      "printedPage": 46,
+      "pageKind": "习题页",
+      "sectionHeader": "课时2 氢原子光谱和原子的能级结构(刷基础)",
+      "notes": "第4题选项B/C/D续到右栏顶部;第7题只有A、B选项在本页,余下跨到下一页;右上有\"视频微课\"二维码及\"答案P101\"引用;题型1/2/3标签分别位于1、3、6题前",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 723,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1410,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2295,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "L",
+          "y": 2897,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 975,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 1501,
+          "via": "image"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 3241,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 50,
+      "printedPage": 47,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核(续上页,页面含\"题型4 光子的发射和吸收\"\"题型5 玻尔理论对氢原子光谱的解释\"\"刷易错\")",
+      "notes": "第10题选项B、C、D从左栏续到右栏顶部;右栏中部有\"刷易错\"栏目分隔(易错点:不能正确理解原子跃迁问题而出错),第12题为多选题;页面中央有水印及公众号推广文字;印刷页码47",
+      "questions": [
+        {
+          "n": 8,
+          "column": "L",
+          "y": 571,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 1716,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "L",
+          "y": 2516,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 1060,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 2657,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 51,
+      "printedPage": 48,
+      "pageKind": "习题页",
+      "sectionHeader": "刷提升(必刷题型:光谱和光谱分析 T1;氢原子跃迁时光子的发射与吸收 T2、T3、T4、T5)——续上页章节",
+      "notes": "第3题选项从左栏底续到右栏顶;右上角标\"答案P102\";印刷页码48",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 469,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1056,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 1426,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 882,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 967,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 52,
+      "printedPage": 49,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核 专题四 光电效应与原子能级跃迁问题",
+      "notes": "专题页顶部有\"刷难关\"栏目标签、视频微课二维码和\"答案P103\"引用;第2、3题的选项从左栏续到右栏(右栏顶部为第2/3题的选项A-D,第4题题号在右栏中部);印刷页码49。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 705,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1247,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2846,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 1679,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 53,
+      "printedPage": 50,
+      "pageKind": "习题页",
+      "sectionHeader": "第二节 放射性元素的衰变(刷基础,答案P104)",
+      "notes": "印刷页码为50。左栏含题型1/题型2标签,右栏含题型3/题型4标签;右上角有\"视频微课\"二维码;第6题选项延续到栏底。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 795,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1676,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2873,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 704,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2112,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 3037,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 54,
+      "printedPage": 51,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核(续上页,含题型5 对半衰期的理解及计算、题型6 α衰变和β衰变后粒子在磁场中的轨迹、刷易错)",
+      "notes": "印刷页码51;第7题为上页题目延续编号;右栏含\"刷易错\"板块(第12题);页面中部有公众号水印文字",
+      "questions": [
+        {
+          "n": 7,
+          "column": "L",
+          "y": 303,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "L",
+          "y": 1054,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 1832,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "L",
+          "y": 2666,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 395,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 2304,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 55,
+      "printedPage": 52,
+      "pageKind": "习题页",
+      "sectionHeader": "刷提升(必刷题型:半衰期的应用及计算、匀强磁场中衰变的轨迹分析)",
+      "notes": "第2题选项A-D续到右栏顶部;右栏中部有\"刷素养\"分隔条,第4题为教材变式题;页脚印刷页码52,右上角\"答案P105\"",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 477,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2214,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 1064,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2305,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 56,
+      "printedPage": 53,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核 第三节 核力与核反应方程(刷基础,答案P106)",
+      "notes": "印刷页码53;含题型1-5标签;右上角有视频微课二维码;页面中部有水印和第三方广告文字",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 799,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1424,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2314,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "L",
+          "y": 2856,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 718,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 1497,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 2836,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 57,
+      "printedPage": 54,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(题型6 结合能与动量和能量守恒的综合;刷易错 对爱因斯坦质能方程理解错误)",
+      "notes": "左栏中部含\"题型6\"标签;右栏下部有\"刷易错\"栏目(题11);右栏中部有大片水印/公众号广告文字覆盖,印刷页码54。",
+      "questions": [
+        {
+          "n": 8,
+          "column": "L",
+          "y": 302,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 1526,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 297,
+          "via": "loose-ocr"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 2770,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 58,
+      "printedPage": 55,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核 专题五 质能方程与核能的计算(刷难关)",
+      "notes": "第2题选项C、D续到右栏顶部;右栏第3题之后为空白;页首有\"答案P107\"引用和视频微课二维码;印刷页码55",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 706,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1473,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 1131,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 59,
+      "printedPage": 56,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 第四节 放射性同位素(刷基础)",
+      "notes": "第3题题干在左栏底部,其配图和选项A-D续到右栏顶部;右栏中部有\"题型2 放射性的污染和防护\"标签,第5题在其下;页面右上标\"答案P108\";印刷页码56。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 728,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1628,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3045,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 807,
+          "via": "image"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 2805,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 60,
+      "printedPage": 57,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核 第五节 裂变和聚变",
+      "notes": "\"刷基础\"栏目起始页,含\"题型1~题型4\"标签和\"答案P108\"引用;第7题题干跨页续到下一页;页首有视频微课二维码,页面中部有水印文字",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 798,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1453,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2524,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 800,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1746,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2461,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 3238,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 61,
+      "printedPage": 58,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(题型5 核聚变反应的能量计算 等,第五节 裂变和聚变)",
+      "notes": "左栏第10题题干与选项A在栏底,续到右栏顶部(B/C/D选项);右栏含\"刷易错\"板块,第13题属其中;第9题含装置照片;页面有水印文字",
+      "questions": [
+        {
+          "n": 8,
+          "column": "L",
+          "y": 669,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 1489,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "L",
+          "y": 3397,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 730,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 1551,
+          "via": "plan"
+        },
+        {
+          "n": 13,
+          "column": "R",
+          "y": 2602,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 62,
+      "printedPage": 59,
+      "pageKind": "习题页",
+      "sectionHeader": "第五章 原子与原子核(刷提升,必刷题型:对核聚变的理解/裂变反应的能量计算/聚变反应的能量计算,答案P110)",
+      "notes": "印刷页码59。右栏第3题属\"刷素养\"板块;右栏下半为\"必刷题\"水印空白;页面中部有公众号广告水印文字;顶部标注\"答案P110\"。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 465,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1837,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 638,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 63,
+      "printedPage": 60,
+      "pageKind": "试卷页",
+      "sectionHeader": "第四~五章素养检测(刷速度,建议用时60分钟,答案P110)",
+      "notes": "试卷首页,含\"一、单项选择题(共5小题,每小题6分,共30分)\"。第3题题干在左栏底部开始,选项续到右栏顶部;第4题选项跨到下一页。印刷页码60。",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 875,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 2154,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3527,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2139,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 64,
+      "printedPage": 61,
+      "pageKind": "试卷页",
+      "sectionHeader": "第四~五章素养检测",
+      "notes": "左栏顶部为上页第4题的D选项续文;左栏中部有\"二、多项选择题(本题共3小题,每小题6分,共18分)\"分节标题,第6题起为多选;第6题题干和图(甲/乙)在左栏,其选项A续到右栏之前实际从左栏底部开始;第8题选项B之后内容跨到下页",
+      "questions": [
+        {
+          "n": 5,
+          "column": "L",
+          "y": 466,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "L",
+          "y": 2184,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 644,
+          "via": "plan"
+        },
+        {
+          "n": 8,
+          "column": "R",
+          "y": 2155,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 65,
+      "printedPage": 62,
+      "pageKind": "试卷页",
+      "sectionHeader": "续上页(页眉仅\"高中必刷题 物理\",系某章末测评卷非选择题部分)",
+      "notes": "左栏顶部为上页题目(选择题)的 C、D 选项跨页续接;左栏中部有\"三、非选择题(本题共3小题,共52分)\"分节标题;第10题题干从左栏续到右栏顶部((1)(2)(3)小问在右栏);印刷页脚页码62;页面中部有公众号水印文字。",
+      "questions": [
+        {
+          "n": 9,
+          "column": "L",
+          "y": 970,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "L",
+          "y": 2701,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 1708,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 66,
+      "printedPage": 63,
+      "pageKind": "习题页",
+      "sectionHeader": "第四~五章高考强化 刷真题",
+      "notes": "第4题题干从左栏底部续到右栏顶部(选项在右栏);第7题跨页续至下一页;考点1~5小标题分组;右上角有\"答案P112\"引用",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 705,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1672,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 2554,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "L",
+          "y": 3325,
+          "via": "plan"
+        },
+        {
+          "n": 5,
+          "column": "R",
+          "y": 1652,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 2276,
+          "via": "plan"
+        },
+        {
+          "n": 7,
+          "column": "R",
+          "y": 3312,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 67,
+      "printedPage": 64,
+      "pageKind": "习题页",
+      "sectionHeader": "续上页(页眉仅\"高中必刷题 物理\",疑为第四/五章章末高考真题演练部分)",
+      "notes": "左栏顶部为上一页第7题的续(题干与选项,无题号)。左栏含考点6标签,右栏含考点7、考点8标签。第14题题干在本页底部未完,续到下一页。印刷页码64。页面中部有\"更多免费资料,关注公众号\"水印。",
+      "questions": [
+        {
+          "n": 8,
+          "column": "L",
+          "y": 1167,
+          "via": "plan"
+        },
+        {
+          "n": 9,
+          "column": "L",
+          "y": 3067,
+          "via": "plan"
+        },
+        {
+          "n": 10,
+          "column": "R",
+          "y": 297,
+          "via": "plan"
+        },
+        {
+          "n": 11,
+          "column": "R",
+          "y": 1307,
+          "via": "plan"
+        },
+        {
+          "n": 12,
+          "column": "R",
+          "y": 1426,
+          "via": "image"
+        },
+        {
+          "n": 13,
+          "column": "R",
+          "y": 2434,
+          "via": "plan"
+        },
+        {
+          "n": 14,
+          "column": "R",
+          "y": 3153,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 68,
+      "printedPage": 65,
+      "pageKind": "习题页",
+      "sectionHeader": "第四~五章高考强化",
+      "notes": "页面中部有\"刷原创\"分节标记(标注\"答案P113\"),其后题号重新从1开始;左栏顶部是上一页续来的题(第14题末尾)及15题;右栏顶部先是15题选项续排和第2题的D选项续排,再接3、4题;印刷页码65",
+      "questions": [
+        {
+          "n": 15,
+          "column": "L",
+          "y": 552,
+          "via": "plan"
+        },
+        {
+          "n": 1,
+          "column": "L",
+          "y": 1194,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1994,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "R",
+          "y": 1370,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2758,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 69,
+      "printedPage": 66,
+      "pageKind": "习题页",
+      "sectionHeader": "题型专练1 新定义 新情景专练",
+      "notes": "第3题题干从左栏底部续到右栏上半部分(选项A-D在右栏);右栏顶部有\"答案P114\"引用;印刷页码66;第4题带光学插图",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 609,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "L",
+          "y": 1622,
+          "via": "plan"
+        },
+        {
+          "n": 3,
+          "column": "L",
+          "y": 3234,
+          "via": "plan"
+        },
+        {
+          "n": 4,
+          "column": "R",
+          "y": 2394,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 70,
+      "printedPage": 67,
+      "pageKind": "习题页",
+      "sectionHeader": "题型专练1 新定义 新情景专练",
+      "notes": "页面下半部约三分之一为空白;第5题配图(甲/乙装置图)位于左栏底部并延伸到栏间;印刷页码67。",
+      "questions": [
+        {
+          "n": 5,
+          "column": "L",
+          "y": 301,
+          "via": "plan"
+        },
+        {
+          "n": 6,
+          "column": "R",
+          "y": 303,
+          "via": "plan"
+        }
+      ]
+    },
+    {
+      "wbPage": 71,
+      "printedPage": 68,
+      "pageKind": "习题页",
+      "sectionHeader": "题型专练2 开放题专练",
+      "notes": "\"刷素养\"栏目页,右上标注\"答案P115\";第2题末尾附甲/乙/丙三幅图",
+      "questions": [
+        {
+          "n": 1,
+          "column": "L",
+          "y": 620,
+          "via": "plan"
+        },
+        {
+          "n": 2,
+          "column": "R",
+          "y": 617,
+          "via": "plan"
+        }
+      ]
+    }
+  ]
+}

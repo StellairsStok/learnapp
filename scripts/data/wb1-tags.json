@@ -1,0 +1,6170 @@
+{
+ "pages": [
+  {
+   "wbPage": 4,
+   "items": [
+    {
+     "qid": "q-wb1-p004-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "分子模型概念辨析"
+     ],
+     "situation": "关于构成物质的分子的概念判断(分子定义、密度与分子质量、分子尺度数量级)",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p004-02",
+     "label": "刷基础T2",
+     "qtype": "实验",
+     "kp_primary": "exp-x3-01",
+     "kp_secondary": [
+      "kp-x3-01-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "油膜法测分子直径",
+      "球体模型微观量估算"
+     ],
+     "situation": "油膜法估测油酸分子大小:数格求面积算直径、实验措施判断,并由铁的密度和摩尔质量估算量子围栏中铁原子直径",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "油膜轮廓坐标格图与量子围栏STM照片"
+    },
+    {
+     "qid": "q-wb1-p004-03",
+     "label": "刷基础T3",
+     "qtype": "实验",
+     "kp_primary": "exp-x3-01",
+     "kp_secondary": [
+      "kp-x3-01-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "油膜法测分子直径",
+      "实验误差分析"
+     ],
+     "situation": "油膜法估测油酸分子大小:配液浓度计算、数格求直径、操作说法判断及玻璃板与油膜不平行时的误差分析",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "油膜轮廓坐标格图与玻璃板-油膜侧视示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 5,
+   "items": [
+    {
+     "qid": "q-wb1-p005-01",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-001",
+     "kp_secondary": [
+      "kp-x3-01-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "摩尔量桥梁计算"
+     ],
+     "situation": "判断由哪组物理量(阿伏伽德罗常量、摩尔质量、密度、质量、体积)可估算固体物质中的分子总数",
+     "difficulty": "D1",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p005-02",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-002",
+     "kp_secondary": [
+      "kp-x3-01-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "大气层总重估算",
+      "分子立方体模型"
+     ],
+     "situation": "由地面大气压强、地球半径、摩尔质量等估算地球大气层空气总重力、分子总数、每个分子所占体积和分子平均间距",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p005-03",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-002",
+     "kp_secondary": [
+      "kp-x3-01-001",
+      "kp-x3-01-006"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "分子球模型",
+      "紧密排列估算"
+     ],
+     "situation": "铁质晶须被力F恰好拉断,用密度、摩尔质量和阿伏伽德罗常量估算单位体积原子数、原子直径、断面原子数及相邻原子间作用力",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p005-04",
+     "label": "刷基础T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-01-002",
+     "kp_secondary": [
+      "kp-x3-01-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "分子立方体模型",
+      "分子球模型"
+     ],
+     "situation": "标准状况下由水蒸气摩尔体积、水的摩尔质量和密度估算水蒸气分子平均间距和水分子直径",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 6,
+   "items": [
+    {
+     "qid": "q-wb1-p006-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-003",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "扩散现象概念辨析"
+     ],
+     "situation": "实验室用酒精做实验闻到酒精气味,判断关于扩散现象的错误说法",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p006-02",
+     "label": "刷基础T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-01-003",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "二氧化氮气体扩散",
+      "墨水温水冷水扩散",
+      "金铅固体扩散"
+     ],
+     "situation": "四幅扩散现象图片(二氧化氮/墨水/液溴/金铅)判断说法正误",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "扩散现象实验示意图与照片"
+    },
+    {
+     "qid": "q-wb1-p006-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-004",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "布朗运动概念辨析"
+     ],
+     "situation": "关于布朗运动的成因、显著性与悬浮微粒运动特点的说法判断",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p006-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-004",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "炭粒布朗运动位置连线"
+     ],
+     "situation": "两张水中炭粒每30s位置连线记录图,比较颗粒大小与水温对布朗运动的影响",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "布朗运动位置连线方格图"
+    },
+    {
+     "qid": "q-wb1-p006-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-005",
+     "kp_secondary": [
+      "kp-x3-01-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "分子热运动概念辨析"
+     ],
+     "situation": "对分子热运动的理解,辨析热运动与温度、布朗运动、宏观运动的关系",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p006-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-004",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "PM2.5微粒运动"
+     ],
+     "situation": "雾霾PM2.5微粒在空气中的运动性质判断(是否属于分子热运动/布朗运动)",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 7,
+   "items": [
+    {
+     "qid": "q-wb1-p007-01",
+     "label": "刷提升T7",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-006",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "分子力随距离变化"
+     ],
+     "situation": "两分子间距为r0时处于平衡,判断分子间引力、斥力随距离变化的说法",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p007-02",
+     "label": "刷提升T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-006",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "蒸发中分子间距增大"
+     ],
+     "situation": "清晨草叶露珠在阳光下蒸发消失,判断水分子间引力、斥力如何变化",
+     "difficulty": "D1",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p007-03",
+     "label": "刷提升T9",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-01-006",
+     "kp_secondary": [
+      "kp-x3-01-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "F-r引斥力曲线辨识"
+     ],
+     "situation": "给出引力、斥力大小随分子间距变化的两条曲线及交点e,判断曲线归属与e点坐标数量级",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "F-r图像"
+    },
+    {
+     "qid": "q-wb1-p007-04",
+     "label": "刷提升T10",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-007",
+     "kp_secondary": [
+      "kp-x3-01-004",
+      "kp-x3-01-005",
+      "kp-x3-01-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "分子动理论正误判断"
+     ],
+     "situation": "关于分子动理论的四个说法(0℃热运动、尘埃与布朗运动、温度与扩散、氧分子体积估算)正误判断",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p007-05",
+     "label": "刷提升T11",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-007",
+     "kp_secondary": [
+      "kp-x3-01-006",
+      "kp-x3-01-004",
+      "kp-x3-01-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "分子动理论正误判断"
+     ],
+     "situation": "依据分子动理论判断气体分子体积估算、墨水中炭粒运动、分子力做功及引斥力变化的说法",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p007-06",
+     "label": "刷易错T12",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-04-004",
+     "kp_secondary": [
+      "kp-x3-01-006",
+      "kp-x3-04-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "F-r图像动力学分析",
+      "分子从静止释放"
+     ],
+     "situation": "甲分子固定于原点,乙分子从a处由静止释放,依据带正负号的F-r图像分析加速减速、做功与动量最大位置",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "F-r图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 8,
+   "items": [
+    {
+     "qid": "q-wb1-p008-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-03-001",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "统计规律辨析"
+     ],
+     "situation": "密闭容器内气体静置足够长时间后分子运动特征的判断",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p008-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-03-002",
+     "kp_secondary": [
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "速率分布曲线"
+     ],
+     "situation": "某气体在两种温度下的分子速率分布曲线(实线与虚线)比较",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "分子速率分布图像"
+    },
+    {
+     "qid": "q-wb1-p008-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-03-002",
+     "kp_secondary": [
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "速率分布曲线",
+      "气体混合分布"
+     ],
+     "situation": "氧气在T1、T2两温度下的速率分布图像及混合后分布曲线的推断",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "分子速率分布图像"
+    },
+    {
+     "qid": "q-wb1-p008-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-03-002",
+     "kp_secondary": [
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "速率分布曲线",
+      "同温不同气体比较"
+     ],
+     "situation": "三种气体在相同温度下的f(v)速率分布曲线比较平均动能、平均速率与分子质量",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "分子速率分布图像"
+    },
+    {
+     "qid": "q-wb1-p008-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-03-002",
+     "kp_secondary": [
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "速率分布曲线"
+     ],
+     "situation": "氧气分子在0℃和100℃下各速率区间分子数占比曲线的辨析",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "分子速率分布图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 9,
+   "items": [
+    {
+     "qid": "q-wb1-p009-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "U形管水银封气",
+      "液柱压强平衡"
+     ],
+     "situation": "竖直U形管左右两侧用水银封闭A、B两部分气体,已知大气压和液面高度差求两气体压强",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "U形管装置图"
+    },
+    {
+     "qid": "q-wb1-p009-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "斜面圆板受力平衡"
+     ],
+     "situation": "圆桶容器内下表面倾斜的金属圆板封闭气体,对圆板受力分析求封闭气体压强",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "圆桶容器与斜底圆板装置图"
+    },
+    {
+     "qid": "q-wb1-p009-03",
+     "label": "刷基础T3",
+     "qtype": "实验",
+     "kp_primary": "exp-x3-02",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "注射器-压强传感器",
+      "V-1/p图像分析"
+     ],
+     "situation": "用压强传感器和注射器探究气体等温变化,分析操作规范及V-1/p图线不过原点、末端弯曲的原因并选p-1/V图线",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实验装置图与V-1/p、p-1/V图像"
+    },
+    {
+     "qid": "q-wb1-p009-04",
+     "label": "刷基础T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "玻璃管水银柱封气",
+      "转管多状态",
+      "自由落体失重"
+     ],
+     "situation": "水平封闭玻璃管先后旋转90°和53°,等温条件下用玻意耳定律求各状态气柱长度并判断自由下落时的变化",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "玻璃管三种放置状态示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 10,
+   "items": [
+    {
+     "qid": "q-wb1-p010-01",
+     "label": "刷题型T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "玻璃管封闭气柱",
+      "水银柱封气",
+      "插入活塞"
+     ],
+     "situation": "竖直开口向上的玻璃管内水银柱封闭空气柱,先转至水平再从管口插入活塞,求气柱长度与活塞位置",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "玻璃管装置示意图"
+    },
+    {
+     "qid": "q-wb1-p010-02",
+     "label": "刷题型T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "测不规则物体体积"
+     ],
+     "situation": "导热汽缸内放不规则物体,活塞上加重物后等温下移,由前后状态求物体体积",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸装置示意图"
+    },
+    {
+     "qid": "q-wb1-p010-03",
+     "label": "刷题型T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "汽缸翻转",
+      "电梯加速(超重)"
+     ],
+     "situation": "电梯内汽缸旋转180°后又随电梯以g/2向上加速,对活塞受力分析求气体压强变化和气柱长度",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸示意图"
+    },
+    {
+     "qid": "q-wb1-p010-04",
+     "label": "刷题型T8",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-06-003",
+     "kp_secondary": [
+      "kp-x3-09-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-1/V图像",
+      "等温线判断"
+     ],
+     "situation": "p-1/V图上D→A→B→C状态变化过程,判断等温过程与各状态温度、体积压强变化",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "p-1/V图像"
+    },
+    {
+     "qid": "q-wb1-p010-05",
+     "label": "刷易错T9",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "气泡上升",
+      "液柱压强"
+     ],
+     "situation": "气泡从湖面下20m缓慢上升到10m深处,等温变化求体积变为原来的多少倍",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 11,
+   "items": [
+    {
+     "qid": "q-wb1-p011-01",
+     "label": "T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "玻璃管水银柱封闭气体",
+      "加速运动中的液柱压强(超重)"
+     ],
+     "situation": "下端封闭竖直玻璃管内水银柱封闭空气柱,玻璃管以a=5m/s²向上匀加速,求气柱压强与长度变化",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "玻璃管水银柱示意图"
+    },
+    {
+     "qid": "q-wb1-p011-02",
+     "label": "T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "关联气体-水银联通",
+      "活塞封闭气柱",
+      "假设法动态分析"
+     ],
+     "situation": "竖直平面内a、b、c三管水银联通,a管活塞封闭气柱、b管封闭气体,缓慢拉活塞后定性判断b管水银面变化与a管气柱长短",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "连通玻璃管装置图"
+    },
+    {
+     "qid": "q-wb1-p011-03",
+     "label": "T3",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-09-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "倒扣圆筒浮体封闭气体",
+      "变质量-吹气(灌气)",
+      "浮力与压强综合"
+     ],
+     "situation": "倒扣水中的开口圆筒测肺活量,由浮力平衡求筒内气压和水面高度,再由吹气后浮出高度变化求肺活量",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "肺活量测定装置示意图"
+    },
+    {
+     "qid": "q-wb1-p011-04",
+     "label": "T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-09-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "双缸刚性杆连接活塞",
+      "关联气体",
+      "变质量-抽气"
+     ],
+     "situation": "截面2S和S的两气缸由刚性杆连接的活塞分隔出氢气、空气、氮气,抽尽中部空气后求氢气的压强和体积",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "双气缸活塞装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 12,
+   "items": [
+    {
+     "qid": "q-wb1-p012-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "竖直与水平汽缸对比"
+     ],
+     "situation": "两个绝热汽缸开口分别竖直向上和水平向右,重活塞封闭等质量等体积同种理想气体,比较压强与温度",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p012-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-07-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "轮胎等容变化"
+     ],
+     "situation": "轮胎体积不变,要求在-40~90℃范围内胎压保持在正常区间,反推20℃充气时的胎压控制范围",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p012-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "关联气体",
+      "水银柱液柱"
+     ],
+     "situation": "两个容积不同的容器用细管相连,水平管中水银柱隔开两团气,两侧同时降低相同温度判断水银柱移动方向",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "连通容器装置图"
+    },
+    {
+     "qid": "q-wb1-p012-04",
+     "label": "刷基础T4",
+     "qtype": "简答",
+     "kp_primary": "kp-x3-07-002",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-05-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "伽利略气体温度计",
+      "水柱压强"
+     ],
+     "situation": "伽利略测温装置:玻璃泡封闭空气、玻璃管插入水槽,用水柱高度标定温度,分析刻度方向、均匀性及大气压变化带来的误差",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "测温装置示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 13,
+   "items": [
+    {
+     "qid": "q-wb1-p013-01",
+     "label": "刷基础T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "先等温后等压升温复位"
+     ],
+     "situation": "竖直汽缸轻质活塞封气,加2kg物块等温下压求活塞移动距离,再升温使活塞回到原位求温度",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p013-02",
+     "label": "刷基础T6",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "U形管水银封闭气柱",
+      "变截面粗细管",
+      "补充水银"
+     ],
+     "situation": "粗细不同的U形管左管封19cm气柱,向右管缓慢补水银至两管液面相平求气柱长,再加热使气柱回到19cm求温度",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "U形管装置图"
+    },
+    {
+     "qid": "q-wb1-p013-03",
+     "label": "刷基础T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-002",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "杠杆-电子天平测温",
+      "等容变化"
+     ],
+     "situation": "活塞经杠杆细绳与放在电子天平上的铁块相连,由天平示数变化求缸内气压并求装置可测的最低环境温度",
+     "difficulty": "D4",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实验装置示意图"
+    },
+    {
+     "qid": "q-wb1-p013-04",
+     "label": "刷基础T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-T图像多过程",
+      "等容线判断"
+     ],
+     "situation": "理想气体在p-T图上经a→b→c→a系列变化,判断各过程温度、压强、体积的变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "p-T图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 14,
+   "items": [
+    {
+     "qid": "q-wb1-p014-01",
+     "label": "刷基础T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "烧瓶+U形水银压强计",
+      "等压变化控制"
+     ],
+     "situation": "烧瓶封闭气体接U形水银压强计,加热/冷却时移动A管使两侧液面保持等高",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "装置图"
+    },
+    {
+     "qid": "q-wb1-p014-02",
+     "label": "刷基础T2",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-09-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "教室空气等压降温",
+      "变质量-灌气"
+     ],
+     "situation": "教室温度降低6℃时进入的空气占原体积2%,压强不变求原来温度",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p014-03",
+     "label": "刷基础T3",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-05-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "弹簧支撑气温计"
+     ],
+     "situation": "弹簧支撑的导热气缸封闭气体做温度计,由缸底高度变化反映温度变化,判断刻度均匀性/量程/压强",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p014-04",
+     "label": "刷基础T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "倒置容器封闭气体",
+      "液柱压强+浮力平衡"
+     ],
+     "situation": "圆柱形容器倒置漂浮在水中封闭气体,升温后求容器露出水面高度变化",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "装置示意图"
+    },
+    {
+     "qid": "q-wb1-p014-05",
+     "label": "刷基础T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-05-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "油柱封闭气体",
+      "简易气温计"
+     ],
+     "situation": "铝罐插吸管内引入小段油柱做简易气温计,求油柱到管口时的温度并证明刻度均匀、分析竖直放置误差",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "装置示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 15,
+   "items": [
+    {
+     "qid": "q-wb1-p015-01",
+     "label": "刷基础T6",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "气压式升降椅",
+      "多过程气体"
+     ],
+     "situation": "气压式升降椅气缸封闭气体,人坐上等温压缩后再降温,求压强、下降距离及外界做功",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "升降椅气缸装置示意图"
+    },
+    {
+     "qid": "q-wb1-p015-02",
+     "label": "刷基础T7",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-07-001",
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "V-t图像循环",
+      "三过程循环"
+     ],
+     "situation": "理想气体在V-t图上经历a→b→c→a循环,判断各段压强、温度及分子数密度变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "V-t图像"
+    },
+    {
+     "qid": "q-wb1-p015-03",
+     "label": "刷基础T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-07-001",
+      "kp-x3-07-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "V-T图像循环",
+      "圆形循环图线"
+     ],
+     "situation": "理想气体在V-T图上沿圆形路径循环,借助等压线斜率比较各状态压强与分子数密度",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "V-T图像"
+    },
+    {
+     "qid": "q-wb1-p015-04",
+     "label": "刷基础T9",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "先等压后等容"
+     ],
+     "situation": "竖直汽缸内轻质活塞封闭空气缓慢加热,活塞升至顶部卡扣后继续升温,求温度与压强",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 16,
+   "items": [
+    {
+     "qid": "q-wb1-p016-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-03-003",
+     "kp_secondary": [
+      "kp-x3-08-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "压强微观模型"
+     ],
+     "situation": "关于气体压强的微观本质及体积、温度变化对分子碰撞的影响的说法判断",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p016-02",
+     "label": "刷基础T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-08-002",
+     "kp_secondary": [
+      "kp-x3-03-003",
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "两容器同质量气体比较"
+     ],
+     "situation": "甲乙两容器装同质量同种气体,已知V甲>V乙且压强相等,微观比较分子速率与碰撞情况",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p016-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "状态方程比值判断"
+     ],
+     "situation": "一定质量理想气体两平衡态参量给出比例关系,用pV/T=恒量判断哪组可能成立",
+     "difficulty": "D1",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p016-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-07-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "两步状态变化链"
+     ],
+     "situation": "理想气体经两步(等温+等容)状态变化后压强回到p,判断可实现的过程组合",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p016-05",
+     "label": "刷基础T5",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-08-002",
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "状态参量与数密度"
+     ],
+     "situation": "一定质量理想气体在体积、温度、压强变化时分子平均动能与数密度变化的判断",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p016-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "氦气球升空胀破",
+      "压强温度随高度变化"
+     ],
+     "situation": "氦气球脱手升空,大气压与气温随高度线性变化,求气球体积增至1.5V0胀破时的高度",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 17,
+   "items": [
+    {
+     "qid": "q-wb1-p017-01",
+     "label": "刷提升T7",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-08-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "T形管两团气",
+      "加水银-等温压缩",
+      "升温液面移动"
+     ],
+     "situation": "竖直T形细玻璃管内水银封闭两段理想气体,分析加水银长度和升温后水银升至管口时的温度",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "T形玻璃管装置图(标注各段长度)"
+    },
+    {
+     "qid": "q-wb1-p017-02",
+     "label": "刷提升T8",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变截面玻璃管封闭气体",
+      "p-V图像过程互译"
+     ],
+     "situation": "上端开口的⊥形变截面玻璃管内水银封闭气体,结合加热过程的p-V图线求初始压强及升温后水银位置",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "装置图与p-V图像"
+    },
+    {
+     "qid": "q-wb1-p017-03",
+     "label": "刷易错T9",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-08-002",
+     "kp_secondary": [
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "单位时间碰壁分子数分析"
+     ],
+     "situation": "用单位时间内碰撞单位面积器壁的分子数N,微观分析体积、温度、压强变化时N的变化",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p017-04",
+     "label": "刷易错T10",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-用气",
+      "等效整体法"
+     ],
+     "situation": "贮气桶氢气使用后温度和压强均降低,求用掉的氢气占原有氢气的百分比",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 18,
+   "items": [
+    {
+     "qid": "q-wb1-p018-01",
+     "label": "刷提升T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-07-001",
+     "kp_secondary": [
+      "kp-x3-09-001",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "V-t图像",
+      "等压变化比较"
+     ],
+     "situation": "A、B两部分同种等质量理想气体的V-t图像,比较体积与压强关系",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "V-t图像"
+    },
+    {
+     "qid": "q-wb1-p018-02",
+     "label": "刷提升T2",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "水银气压计",
+      "封闭气柱"
+     ],
+     "situation": "水银气压计混入空气泡使读数偏小,由A、B两地读数和实际气压求B地气温",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "水银气压计装置图"
+    },
+    {
+     "qid": "q-wb1-p018-03",
+     "label": "刷提升T3",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "弹簧关联",
+      "临界条件"
+     ],
+     "situation": "倒立无盖汽缸内活塞下端拴弹簧封闭气体,电热丝加热,求弹簧触桌面和汽缸刚离开桌面时的气体温度",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞弹簧装置图"
+    },
+    {
+     "qid": "q-wb1-p018-04",
+     "label": "刷提升T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-V图像循环",
+      "几何面积条件"
+     ],
+     "situation": "理想气体沿p-V图像经A→B→C回到A的循环,由三角形面积和B态温度求A态温度与C态压强",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 19,
+   "items": [
+    {
+     "qid": "q-wb1-p019-01",
+     "label": "刷综合T1",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "U形管液柱",
+      "两团气关联"
+     ],
+     "situation": "竖直U形管两端封闭理想气体置于A、B两容器中,同时升高相同温度,判断水银面高度差与两侧气体压强、体积的变化",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "U形管装置图"
+    },
+    {
+     "qid": "q-wb1-p019-02",
+     "label": "刷综合T2",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "两团气关联",
+      "水银柱移动判断"
+     ],
+     "situation": "10℃氧气与20℃氢气体积相同,由细管中央水银柱隔开,升温后判断水银柱移动方向",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "连通容器装置图"
+    },
+    {
+     "qid": "q-wb1-p019-03",
+     "label": "刷综合T3",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-07-002",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "自制气温计",
+      "液柱封闭气体"
+     ],
+     "situation": "倒置玻璃瓶接玻璃管插入红墨水制成气温计,由管内外水面高度差分析温度、气压变化并推导温度表达式",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "气温计装置图"
+    },
+    {
+     "qid": "q-wb1-p019-04",
+     "label": "刷综合T4",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-08-001",
+      "kp-x3-08-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-T图像循环过程"
+     ],
+     "situation": "一定质量理想气体经a→b→c→a系列过程的p-T图像,判断各过程中体积、分子数密度及分子碰撞的变化",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "p-T图像"
+    },
+    {
+     "qid": "q-wb1-p019-05",
+     "label": "刷综合T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "弹簧-活塞系统",
+      "多状态降温过程"
+     ],
+     "situation": "弹簧竖直举起活塞悬吊气缸封闭气体,降温过程中依次求初始压强、气缸着地温度和弹簧恢复原长的温度",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞弹簧装置图"
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p020-01",
+     "label": "T6",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "U形管水银柱",
+      "放液-变质量水银"
+     ],
+     "situation": "左闭右开U形管封闭空气柱,打开下端阀门放出部分水银后左管水银面下降,分析封闭气体状态变化",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p020-02",
+     "label": "T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-08-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "关联气体-两活塞三气体"
+     ],
+     "situation": "左右两气缸经细管连通,A、B两活塞封闭甲乙丙三部分气体,对甲加热使活塞移动,求乙气体温度及甲的温度",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    }
+   ],
+   "wbPage": 20
+  },
+  {
+   "wbPage": 21,
+   "items": [
+    {
+     "qid": "q-wb1-p021-01",
+     "label": "刷难关T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-08-001",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "双气缸连杆活塞",
+      "汽缸活塞",
+      "缓慢加热升温"
+     ],
+     "situation": "两个内径不同的导热气缸通过细管相连,一定质量气体封闭在由金属细杆相连的两活塞之间,缓慢加热升温,分析连杆受力与各温度下的气体压强",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "双气缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p021-02",
+     "label": "刷难关T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "鱼鳔双气室",
+      "变质量-充气",
+      "浮沉平衡"
+     ],
+     "situation": "鱼通过阀门在鱼鳔A、B两气室间交换气体调节体积实现浮沉,结合浮力平衡与等温变质量气体分析所需充气质量和不同深度下的气体质量",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "鱼鳔气室结构示意图"
+    },
+    {
+     "qid": "q-wb1-p021-03",
+     "label": "刷难关T3",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-05-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变截面汽缸",
+      "弹簧连接双活塞",
+      "多状态过程链"
+     ],
+     "situation": "变截面水平气缸内活塞A、B用轻弹簧连接封闭理想气体,气体先降温至380 K求活塞位移,再与外界大气达到热平衡求弹簧长度",
+     "difficulty": "D5",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "变截面汽缸弹簧活塞装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 22,
+   "items": [
+    {
+     "qid": "q-wb1-p022-01",
+     "label": "T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-08-001",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "关联气体-双活塞三气室",
+      "轻绳悬挂重物临界"
+     ],
+     "situation": "竖直绝热柱状气缸被两活塞A、B分成三部分,甲乙封闭理想气体,加热甲使活塞上移顶起悬挂重物,轻绳拉力为零时蜂鸣器报警,求两阶段温度",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "蜂鸣器温度报警装置图(竖直气缸双活塞)"
+    },
+    {
+     "qid": "q-wb1-p022-02",
+     "label": "T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "双气缸连通",
+      "测水深装置",
+      "活塞到底临界"
+     ],
+     "situation": "两气缸M(开口)N(封闭)经细管连通制成测水深装置,置入不同深度水中活塞移动,由活塞位移用玻意耳定律反求水深及60m深处活塞B移动距离",
+     "difficulty": "D5",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "双气缸连通测水深装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 23,
+   "items": [
+    {
+     "qid": "q-wb1-p023-01",
+     "label": "刷题型T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "打气-变质量",
+      "血压仪气囊充气"
+     ],
+     "situation": "血压仪加压气囊向臂带充气5次,等温条件下求压强计(表压)示数",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "血压仪装置示意图"
+    },
+    {
+     "qid": "q-wb1-p023-02",
+     "label": "刷题型T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "打气-变质量",
+      "打气筒充气次数范围"
+     ],
+     "situation": "用打气筒给气压不足的篮球打气,使球内气压回到1.5~1.6 atm正常范围,求打气次数范围",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "篮球打气实物图"
+    },
+    {
+     "qid": "q-wb1-p023-03",
+     "label": "刷题型T3",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "等容升温",
+      "灌气-变质量"
+     ],
+     "situation": "汽车胎压监测系统显示行驶前后胎压变化,求胎内气体升温摄氏度数及充气至2.5 bar时充入气体与原有气体的质量比",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "汽车胎压监测系统示意图"
+    },
+    {
+     "qid": "q-wb1-p023-04",
+     "label": "刷题型T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "抽气-变质量",
+      "汽缸活塞",
+      "单向阀门"
+     ],
+     "situation": "活塞式抽气机经单向阀门对容器抽气,求第一次抽气中手对活塞拉力的最大值及抽气5次后容器内剩余气体压强",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "抽气机装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 24,
+   "items": [
+    {
+     "qid": "q-wb1-p024-01",
+     "label": "T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-抽气",
+      "气闸舱抽气"
+     ],
+     "situation": "月面着陆飞船气闸舱等温抽气降压,求抽出气体体积及存留气体质量比",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "太空舱与气闸舱装置示意图"
+    },
+    {
+     "qid": "q-wb1-p024-02",
+     "label": "T6",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-分装",
+      "钢瓶分装氧气"
+     ],
+     "situation": "20L钢瓶145atm氧气分装到5L小瓶(10atm),讨论真空/有初压两种情形最多分装瓶数",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p024-03",
+     "label": "T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-灌气",
+      "气球升空爆炸"
+     ],
+     "situation": "氦气罐给气球充气求可充个数,再由升高压强递减规律求气球膨胀爆炸时的离地高度",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 25,
+   "items": [
+    {
+     "qid": "q-wb1-p025-01",
+     "label": "刷基础T8",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "储气钢瓶",
+      "变质量-漏气",
+      "等容升温"
+     ],
+     "situation": "40L氧气瓶经阳光暴晒温度从27℃升至57℃,先求等容升温后压强,再开安全阀卸压求剩余气体与原有气体质量比",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p025-02",
+     "label": "刷基础T9",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "悬挂汽缸",
+      "变质量-漏气"
+     ],
+     "situation": "绝热汽缸用绳经活塞悬挂在天花板上,内部电阻丝加热使气体从300K升到700K,再在700K下漏气使活塞回到距底0.5H处,求泄漏气体与漏气前气体质量比",
+     "difficulty": "D4",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p025-03",
+     "label": "刷基础T10",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "气窑烧制",
+      "单向排气阀",
+      "变质量-漏气"
+     ],
+     "situation": "气窑烧制瓷器,封闭气体先等容升温到压强2p0时单向排气阀开始排气,之后维持2p0等压升温到1327℃,求开始排气时温度及排出气体与原有气体质量比",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "气窑装置示意图"
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p026-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "表面张力概念辨析"
+     ],
+     "situation": "关于液体表面张力的性质、方向及昆虫停在水面的原因的概念判断",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p026-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "肥皂膜棉线实验"
+     ],
+     "situation": "铁丝环肥皂膜上系松弛棉线,刺破一侧薄膜后判断棉线形状与受力",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实验示意图"
+    },
+    {
+     "qid": "q-wb1-p026-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-002",
+     "kp_secondary": [
+      "kp-x3-11-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "浸润与不浸润对比"
+     ],
+     "situation": "水在玻璃面上扩展成薄层而在蜡面上成滚动水珠,判断浸润与分子力的解释",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实物照片图"
+    },
+    {
+     "qid": "q-wb1-p026-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "毛细管插入水银"
+     ],
+     "situation": "粗细不同的两端开口玻璃细管插入水银中,判断管内液面升降与弯月面形状",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "装置示意图"
+    },
+    {
+     "qid": "q-wb1-p026-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "液滴形状与毛细现象互推"
+     ],
+     "situation": "同种液体在固体A表面成球状不浸润、在毛细管B中却上升浸润,推断材料与附着层分子力",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "示意图"
+    },
+    {
+     "qid": "q-wb1-p026-06",
+     "label": "刷易错T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-002",
+     "kp_secondary": [
+      "kp-x3-11-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "附着层微观分析"
+     ],
+     "situation": "判断液体附着层具有收缩趋势发生在浸润还是不浸润固体的情形",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 26
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p027-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-10-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "熔蜡法辨晶体",
+      "熔化温度-时间图像"
+     ],
+     "situation": "三种固体薄片涂蜡加热,由蜡熔化范围形状和熔化温度-时间图像判断晶体与非晶体",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "熔化范围示意图与温度-时间图像"
+    },
+    {
+     "qid": "q-wb1-p027-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-10-001",
+     "kp_secondary": [
+      "kp-x3-04-003",
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "晶体性质判断"
+     ],
+     "situation": "关于晶体熔点、单晶多晶、熔化时分子动能与内能变化的说法辨析",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p027-03",
+     "label": "刷基础T3",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-10-002",
+     "kp_secondary": [
+      "kp-x3-10-001",
+      "kp-x3-01-005"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "微观结构判晶体"
+     ],
+     "situation": "由合成云母的微观结构示意图判断其是否为晶体及熔化、分子运动特征",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "微观结构示意图"
+    },
+    {
+     "qid": "q-wb1-p027-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-11-003",
+     "kp_secondary": [
+      "kp-x3-10-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "液晶雾化玻璃"
+     ],
+     "situation": "通电雾化玻璃中液晶分子排列随电场变化,判断液晶的性质与光学行为",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "通电雾化玻璃装置示意图"
+    },
+    {
+     "qid": "q-wb1-p027-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-10-001",
+     "kp_secondary": [
+      "kp-x3-11-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "新材料应用辨析"
+     ],
+     "situation": "关于半导体、磁性材料、纳米材料、光纤通信等新材料应用的说法找错误项",
+     "difficulty": "D1",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p027-06",
+     "label": "刷易错T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-10-001",
+     "kp_secondary": [
+      "kp-x3-10-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "各向异性辨晶体"
+     ],
+     "situation": "利用各向同性/各向异性判别单晶体、多晶体与非晶体的易错说法辨析",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 27
+  },
+  {
+   "wbPage": 28,
+   "items": [
+    {
+     "qid": "q-wb1-p028-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-04-003",
+     "kp_secondary": [
+      "kp-x3-04-001",
+      "kp-x3-01-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "概念辨析"
+     ],
+     "situation": "热学基本概念辨析:分子平均动能与温度、分子组成、内能与温度关系",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p028-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-04-001",
+     "kp_secondary": [
+      "kp-x3-04-002",
+      "kp-x3-04-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "物态变化-冰熔化"
+     ],
+     "situation": "0℃的冰熔化成0℃的水,判断分子动能之和与分子势能之和的变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p028-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-12-002",
+     "kp_secondary": [
+      "kp-x3-03-003",
+      "kp-x3-04-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "孔明灯-气体受热膨胀"
+     ],
+     "situation": "孔明灯点燃后升空,分析灯内空气温度、内能、压强及分子撞击的变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实物照片"
+    },
+    {
+     "qid": "q-wb1-p028-04",
+     "label": "刷基础T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-12-001",
+     "kp_secondary": [
+      "kp-x3-03-003",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "绝热压缩"
+     ],
+     "situation": "绝热容器中活塞受力向下压缩理想气体,分析温度、压强、内能及微观撞击变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p028-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-001",
+     "kp_secondary": [
+      "kp-x3-13-002",
+      "kp-x3-13-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "热一律符号判断"
+     ],
+     "situation": "依据热力学定律判断气体压缩内能变化、能源危机及理想气体吸放热的说法正误",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p028-06",
+     "label": "刷基础T6",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-12-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "车胎爆胎-绝热膨胀",
+      "等容升温"
+     ],
+     "situation": "夏季车胎曝晒后爆胎,爆胎前等容升温、爆胎时绝热膨胀过程的热一律分析",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 29,
+   "items": [
+    {
+     "qid": "q-wb1-p029-01",
+     "label": "刷提升T7",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "滑轮悬桶平衡",
+      "电热丝加热"
+     ],
+     "situation": "绝热汽缸内活塞经绳跨定滑轮连小桶,电热丝加热后活塞缓慢右移L,分析压强变化与内能变化量",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p029-02",
+     "label": "刷提升T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-001",
+     "kp_secondary": [
+      "kp-x3-04-003",
+      "kp-x3-12-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "真空自由扩散",
+      "绝热压缩"
+     ],
+     "situation": "绝热汽缸抽走隔板气体向真空自由扩散,再缓慢压回原体积,判断内能与做功情况的错误说法",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸隔板装置图"
+    },
+    {
+     "qid": "q-wb1-p029-03",
+     "label": "刷提升T9",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-13-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "永动机辨析"
+     ],
+     "situation": "关于能量守恒定律与第一类永动机、能量转化转移的概念判断",
+     "difficulty": "D1",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p029-04",
+     "label": "刷易错T10",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-12-002",
+     "kp_secondary": [
+      "kp-x3-14-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "热传递方向判断"
+     ],
+     "situation": "两物体间发生热传递,辨析传热方向由温度而非内能、比热容或热量多少决定",
+     "difficulty": "D2",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p029-05",
+     "label": "刷易错T11",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-04-004",
+     "kp_secondary": [
+      "kp-x3-04-002",
+      "kp-x3-01-006"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "双分子由静止释放",
+      "Ep-r图像分析"
+     ],
+     "situation": "两相同分子从r1间距静止释放,结合分子势能随间距变化图像分析分子力、最大动能与无穷远速度",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "分子势能Ep-r图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 30,
+   "items": [
+    {
+     "qid": "q-wb1-p030-01",
+     "label": "刷提升T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-002",
+     "kp_secondary": [
+      "kp-x3-14-002",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "饮水鸟玩具",
+      "永动机辨析"
+     ],
+     "situation": "中国传统玩具饮水鸟周而复始点头喝水,判断其能量来源与是否为永动机",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "实物照片(饮水鸟装置)"
+    },
+    {
+     "qid": "q-wb1-p030-02",
+     "label": "刷提升T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "绝热过程",
+      "热敏电阻测温"
+     ],
+     "situation": "绝热汽缸活塞下挂沙桶,细沙缓缓漏出,分析气体做功、内能变化及热敏电阻阻值指示",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p030-03",
+     "label": "刷提升T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-09-003",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "关联气体(气球内外两团气)"
+     ],
+     "situation": "绝热汽缸内活塞与缸底之间夹一导热气球,缓慢下推活塞,比较甲乙两部分气体内能与做功关系",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞与气球装置示意图"
+    },
+    {
+     "qid": "q-wb1-p030-04",
+     "label": "刷提升T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-09-001",
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "V-T图像",
+      "等容+等温过程"
+     ],
+     "situation": "理想气体在V-T图上经等容过程a→b再等温过程b→c且ac过原点,分析压强、吸放热与微观碰撞",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "V-T图像"
+    },
+    {
+     "qid": "q-wb1-p030-05",
+     "label": "刷素养T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-09-001",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-V图像循环过程",
+      "面积求功"
+     ],
+     "situation": "浙大强基题:理想气体在p-V图上经acb过程吸热500J,求经历acbda循环吸收的热量",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 31,
+   "items": [
+    {
+     "qid": "q-wb1-p031-01",
+     "label": "刷题型T1",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-09-001",
+      "kp-x3-03-002",
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-T图像循环",
+      "气体三状态循环"
+     ],
+     "situation": "理想气体在p-T图上经a→b→c→a三状态循环,ba延长线过原点,判断分子数密度、速率分布及吸放热情况",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-T图像"
+    },
+    {
+     "qid": "q-wb1-p031-02",
+     "label": "刷题型T2",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-09-001",
+      "kp-x3-06-002",
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "V-T图像循环",
+      "热一律定量计算"
+     ],
+     "situation": "理想气体在V-T图上经A→B→C→A循环,已知B态压强和全程放热32.8J,判断各过程压强变化、做功与吸放热",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "V-T图像"
+    },
+    {
+     "qid": "q-wb1-p031-03",
+     "label": "刷题型T3",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-12-001",
+      "kp-x3-09-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "奥托循环",
+      "内燃机",
+      "p-V图像面积做功"
+     ],
+     "situation": "四冲程内燃机奥托循环由两个绝热过程和两个等容过程组成,在p-V图上分析各过程内能变化与吸放热",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    },
+    {
+     "qid": "q-wb1-p031-04",
+     "label": "刷题型T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-08-001",
+      "kp-x3-09-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "V-T图像循环",
+      "循环吸放热计算"
+     ],
+     "situation": "理想气体在V-T图上经A→B→C→D→A循环,BA、CD延长线过原点,求B态温度、C态压强及一个循环的热交换量",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "V-T图像"
+    },
+    {
+     "qid": "q-wb1-p031-05",
+     "label": "刷题型T5",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001",
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "等压升温"
+     ],
+     "situation": "竖直汽缸内活塞封闭气体,环境升温使活塞缓慢上升d并吸热Q,分析做功、温度变化、分子撞击与内能增量",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 32,
+   "items": [
+    {
+     "qid": "q-wb1-p032-01",
+     "label": "刷提升T6",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "等压升温",
+      "热一律求吸热"
+     ],
+     "situation": "竖直圆柱形容器内活塞封闭气体,升温后活塞等压上升到卡口触发报警器,求初态压强、报警温度及吸热量",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "汽缸活塞报警装置示意图"
+    },
+    {
+     "qid": "q-wb1-p032-02",
+     "label": "刷提升T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-13-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "U形管水银柱",
+      "关联气体-两团气",
+      "等温压缩求放热"
+     ],
+     "situation": "竖直U形管一端封闭一端开口,水银隔开两段空气柱,只对A柱加热使两侧水银面等高,求初压强、加热后温度及B柱与外界交换的热量",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "U形管水银柱装置图"
+    },
+    {
+     "qid": "q-wb1-p032-03",
+     "label": "刷提升T8",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "倒扣汽缸活塞",
+      "U形管测压",
+      "等压膨胀热一律"
+     ],
+     "situation": "倒扣绝热汽缸内活塞封闭理想气体,缸底接U形水银细管,求水银高度差、加热活塞下降后的温度及气体吸收的热量(字母运算)",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "倒扣汽缸接U形管装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 33,
+   "items": [
+    {
+     "qid": "q-wb1-p033-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [
+      "kp-x3-14-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "热二律两种表述辨析",
+      "热机效率"
+     ],
+     "situation": "根据热力学定律判断热传导方向性、单一热源热机与热机效率能否达100%等说法正误",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p033-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "电冰箱制冷循环"
+     ],
+     "situation": "电冰箱工作原理示意图,判断热量自发传递方向、封闭房间开冰箱降温及是否违反热一律热二律",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "电冰箱工作原理示意图"
+    },
+    {
+     "qid": "q-wb1-p033-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [
+      "kp-x3-14-002",
+      "kp-x3-13-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽车发动机热效率"
+     ],
+     "situation": "以某品牌发动机热效率46.03%为背景,判断热效率能否达100%、耗散能量能否全部收回做功等说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p033-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-14-002",
+     "kp_secondary": [
+      "kp-x3-13-002",
+      "kp-x3-14-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "两类永动机辨析"
+     ],
+     "situation": "辨析第一类、第二类永动机分别违反哪条热力学定律及永动机能否制成",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p033-05",
+     "label": "刷基础T5",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "分子热运动无序性与过程方向性"
+     ],
+     "situation": "从分子无序运动角度判断热传递等自然过程是否沿无序性增大方向进行",
+     "difficulty": "D2",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p033-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [
+      "kp-x3-13-003",
+      "kp-x3-03-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "气体向真空自由膨胀",
+      "空间站气闸舱"
+     ],
+     "situation": "空间站气闸舱开阀后座舱气体向真空舱自由膨胀,判断做功吸热、微观碰撞频率及过程能否自发逆转",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "气闸舱装置示意图"
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p034-01",
+     "label": "素养检测T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-01-007",
+     "kp_secondary": [
+      "exp-x3-01",
+      "kp-x3-01-006",
+      "kp-x3-01-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "油膜法测分子直径",
+      "分子力F-r图像",
+      "布朗运动"
+     ],
+     "situation": "以油膜实验、分子力F-r图像、速率分布曲线、布朗运动四幅图综合考查分子动理论基本概念",
+     "difficulty": "D2",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "组合示意图(油膜装置/F-r图像/速率分布图/布朗运动示意图)"
+    },
+    {
+     "qid": "q-wb1-p034-02",
+     "label": "素养检测T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-001",
+     "kp_secondary": [
+      "kp-x3-04-001",
+      "kp-x3-14-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "气泡上浮",
+      "理想气体热一律定性分析"
+     ],
+     "situation": "海底火山附近水蒸气气泡上浮过程中温度、压强、体积均减小,用热一律和热二律判断吸放热与内能变化",
+     "difficulty": "D2",
+     "stage": "review_test",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p034-03",
+     "label": "素养检测T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-07-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "等压加热"
+     ],
+     "situation": "水平绝热汽缸内轻质活塞封闭理想气体,电热丝缓慢加热,判断压强、内能及吸热与做功的关系",
+     "difficulty": "D2",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    },
+    {
+     "qid": "q-wb1-p034-04",
+     "label": "素养检测T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-07-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "水银气压计",
+      "超重情境",
+      "等容变化"
+     ],
+     "situation": "火箭以a=g竖直加速起飞,密封仪器舱内水银气压计示数0.6p0,结合超重效应求舱内实际气压和温度",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "水银气压计装置图"
+    },
+    {
+     "qid": "q-wb1-p034-05",
+     "label": "素养检测T5",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-13-003",
+      "kp-x3-03-003",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-V图像多过程",
+      "热一律与图像结合"
+     ],
+     "situation": "理想气体经A→B→C→D多过程变化,p-V图像结合状态方程和热一律分析各状态温度、内能及微观撞击情况",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    }
+   ],
+   "wbPage": 34
+  },
+  {
+   "wbPage": 35,
+   "items": [
+    {
+     "qid": "q-wb1-p035-01",
+     "label": "素养检测T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-06-002",
+     "kp_secondary": [
+      "kp-x3-06-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "水银封闭气柱",
+      "超失重中的液柱压强"
+     ],
+     "situation": "三根相同开口玻璃管分别沿光滑斜面上滑、自由下落、随水平转台匀速转动,比较管内封闭气柱长度",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "三种运动情境的玻璃管装置示意图"
+    },
+    {
+     "qid": "q-wb1-p035-02",
+     "label": "素养检测T7",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-09-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "弹簧连接活塞",
+      "函数图像判别"
+     ],
+     "situation": "水平圆柱容器内活塞左侧真空、右侧理想气体经弹簧连缸壁,缓慢升温后判断弹簧伸长量x随温度T变化的图线",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "汽缸活塞弹簧装置图与x-T图像"
+    },
+    {
+     "qid": "q-wb1-p035-03",
+     "label": "素养检测T8",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-01-006",
+     "kp_secondary": [
+      "kp-x3-04-002",
+      "kp-x3-04-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "F-r图线",
+      "Ep-r图线",
+      "斜率与面积物理意义"
+     ],
+     "situation": "给出分子间作用力F-r图和分子势能Ep-r图,分析引力斥力变化、切线斜率与阴影面积的物理意义",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "F-r图线与Ep-r图线"
+    },
+    {
+     "qid": "q-wb1-p035-04",
+     "label": "素养检测T9",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-08-001",
+      "kp-x3-13-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-V循环图像",
+      "面积表示做功"
+     ],
+     "situation": "理想气体在p-V图上经A→B→C→A循环,AC为双曲线段,已知B、C温度和阴影面积S,判断各状态参量与做功",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    },
+    {
+     "qid": "q-wb1-p035-05",
+     "label": "素养检测T10",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-13-003",
+      "kp-x3-09-002",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "变质量-漏气",
+      "热一律吸热判断"
+     ],
+     "situation": "气压调节式自行车座椅:骑手坐上使气缸等温压缩,升温后活塞再移动,综合判断压力、位置、吸热及漏气质量比",
+     "difficulty": "D4",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "座椅气缸活塞装置示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 36,
+   "items": [
+    {
+     "qid": "q-wb1-p036-01",
+     "label": "素养检测T11",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-07-001",
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "等压降温",
+      "等温加压"
+     ],
+     "situation": "带刻度容器加轻质活塞测药丸和宝塔糖体积,先放冰箱降温后加重物,用气体实验定律反推物品体积",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图(甲乙丙三个量筒图)"
+    },
+    {
+     "qid": "q-wb1-p036-02",
+     "label": "素养检测T12",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002",
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "弹簧-气体关联",
+      "能量守恒链"
+     ],
+     "situation": "氮气减震器竖直放置,外力压活塞下降压缩气体并压缩弹簧,求状态B压强、外力大小及外力做功(结合热一律与弹簧弹性势能)",
+     "difficulty": "D4",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "减震器实物图与结构简图"
+    }
+   ]
+  },
+  {
+   "wbPage": 37,
+   "items": [
+    {
+     "qid": "q-wb1-p037-01",
+     "label": "高考强化T1",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-04-002",
+     "kp_secondary": [
+      "kp-x3-01-006"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "两分子靠近模型",
+      "分子力-分子势能随距离变化"
+     ],
+     "situation": "海南2023真题:两分子从远处靠近的示意图,r0为平衡距离,判断分子力与分子势能随距离的变化规律",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "两分子间距示意图"
+    },
+    {
+     "qid": "q-wb1-p037-02",
+     "label": "高考强化T2",
+     "qtype": "实验",
+     "kp_primary": "exp-x3-02",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-003",
+      "kp-x3-02-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "注射器+压强传感器探究等温变化",
+      "p-1/V图像",
+      "系统误差分析"
+     ],
+     "situation": "山东2023真题:竖直注射器加砝码封闭气体,采集p-V数据拟合p-1/V直线,读图求压强并分析漏记ΔV的误差随p的变化",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "实验装置图与p-1/V图像"
+    },
+    {
+     "qid": "q-wb1-p037-03",
+     "label": "高考强化T3",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-08-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "气球封闭气体等温膨胀",
+      "电子天平示数+空气浮力测体积"
+     ],
+     "situation": "湖南2024真题:薄壁气球内理想气体先求等温膨胀到大气压时的体积,再结合天平示数、浮力和(p-p0)(V-VB0)=c关系式求气球内气体体积",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 38,
+   "items": [
+    {
+     "qid": "q-wb1-p038-01",
+     "label": "高考强化T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-06-002",
+      "kp-x3-09-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变径玻璃管水银柱",
+      "玻璃管倒置",
+      "两团气"
+     ],
+     "situation": "全国乙2023真题:粗细两段玻璃管组成的竖直封闭管内水银柱隔开两段气柱,倒置后由A管气柱长度变化求两部分气体压强",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "玻璃管水银柱装置图"
+    },
+    {
+     "qid": "q-wb1-p038-02",
+     "label": "高考强化T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-08-001",
+     "kp_secondary": [
+      "kp-x3-09-003",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "差压阀关联气体",
+      "变质量-气体转移"
+     ],
+     "situation": "广东2024真题:A、B两气缸经差压阀单向连通,降温过程分析阀门开闭、气体转移,求B内压强、A内体积及倒入铁砂质量",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "汽缸差压阀装置图"
+    },
+    {
+     "qid": "q-wb1-p038-03",
+     "label": "高考强化T6",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汲液器封闭气体",
+      "变质量-灌气",
+      "液柱封闭气体"
+     ],
+     "situation": "山东2024真题:仿战国青铜汲酒器的长柄储液罐汲液器,等温条件下求浸入深度x及放液后进入空气体积V",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "汲液器装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 39,
+   "items": [
+    {
+     "qid": "q-wb1-p039-01",
+     "label": "高考强化T7",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-抽气",
+      "汽缸活塞",
+      "递推多次抽气"
+     ],
+     "situation": "汽车刹车助力装置:抽气气室多次抽气降低助力气室压强,求第1次及第n次抽气后压强与省力大小(湖南2023真题)",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "装置图"
+    },
+    {
+     "qid": "q-wb1-p039-02",
+     "label": "高考强化T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-08-002",
+     "kp_secondary": [
+      "kp-x3-03-003",
+      "kp-x3-09-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-T图像过等容线",
+      "压强微观解释"
+     ],
+     "situation": "密闭容器理想气体沿p-T图像由A变到B,判断分子数密度、平均动能及碰壁情况的变化(江苏2023真题)",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-T图像"
+    },
+    {
+     "qid": "q-wb1-p039-03",
+     "label": "高考强化T9",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-07-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "斯特林循环",
+      "等温+等容组合过程"
+     ],
+     "situation": "可逆斯特林热机p-V循环图,气体经两等温两等容过程,求状态D压强与状态B体积(江西2024真题)",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    },
+    {
+     "qid": "q-wb1-p039-04",
+     "label": "高考强化T10",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-06-001",
+     "kp_secondary": [
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "玻璃瓶封闭气柱",
+      "液柱-水深压强关联"
+     ],
+     "situation": "潜水员用装水玻璃瓶带入水底测水深,瓶内气体等温压缩,求水底压强和水深(广东2022真题)",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "装置示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 40,
+   "items": [
+    {
+     "qid": "q-wb1-p040-01",
+     "label": "高考强化T11",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-07-002",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "轮胎充气",
+      "变质量-充气",
+      "等容降温"
+     ],
+     "situation": "汽车从北京开到哈尔滨,轮胎内气体等容降温压强下降,需充入空气恢复压强,求充气前压强与充入空气体积",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p040-02",
+     "label": "高考强化T12",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-13-001",
+      "kp-x3-09-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "循环过程",
+      "p-V图像分析",
+      "绝热过程"
+     ],
+     "situation": "理想气体经历等压—绝热—等温的循环过程,结合p-V图判断各过程吸放热与内能变化关系",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    },
+    {
+     "qid": "q-wb1-p040-03",
+     "label": "高考强化T13",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "气泡胀缩",
+      "等温+绝热多过程",
+      "p-V图像"
+     ],
+     "situation": "驻波声场中水中气泡先等温膨胀再绝热收缩,依p-V图像求压强、温度表达式及绝热过程内能变化",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "p-V图像"
+    },
+    {
+     "qid": "q-wb1-p040-04",
+     "label": "高考强化T14",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-13-003",
+     "kp_secondary": [
+      "kp-x3-07-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "汽缸活塞",
+      "等压升温",
+      "热一律求吸热"
+     ],
+     "situation": "竖直汽缸内活塞封闭气体吸热后等压缓慢上升,由ΔU=CΔT求再次平衡时温度及吸收热量",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "汽缸活塞装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 41,
+   "items": [
+    {
+     "qid": "q-wb1-p041-01",
+     "label": "高考强化T15",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [
+      "kp-x3-04-001",
+      "kp-x3-13-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "涡流管冷热分离",
+      "分子速率与温度"
+     ],
+     "situation": "涡流效应装置将高压氮气分离为冷热两股气流,判断冷热端、内能及是否违背热力学第二定律(湖南2022真题)",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "涡流分离装置示意图"
+    },
+    {
+     "qid": "q-wb1-p041-02",
+     "label": "刷原创T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-04-004",
+     "kp_secondary": [
+      "kp-x3-01-006",
+      "kp-x3-04-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "F-r与Ep-r图像对照"
+     ],
+     "situation": "给出分子力F-r曲线(甲)与分子势能Ep-r曲线(乙),判断r0处分子力、分子势能的取值与变化规律",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "F-r与Ep-r函数图像"
+    },
+    {
+     "qid": "q-wb1-p041-03",
+     "label": "高考强化T16",
+     "qtype": "填空",
+     "kp_primary": "kp-x3-14-001",
+     "kp_secondary": [
+      "kp-x3-13-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "空调制冷(热泵)"
+     ],
+     "situation": "空调把热量从低温室内传到高温室外,判断是否自发过程及排放热量与吸收热量的大小关系(广东2022真题)",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p041-04",
+     "label": "刷原创T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-001",
+     "kp_secondary": [
+      "kp-x3-13-003",
+      "kp-x3-07-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "p-t图像循环过程",
+      "图像过程互译"
+     ],
+     "situation": "理想气体经A→B→C→D→A循环,由p-t(摄氏温度)图像逐段判断做功、吸放热与内能变化",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "p-t图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 42,
+   "items": [
+    {
+     "qid": "q-wb1-p042-01",
+     "label": "T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-001",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电效应规律判断"
+     ],
+     "situation": "考查光电效应基本规律:逸出功、最大初动能、光强与极限频率关系的说法判断",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p042-02",
+     "label": "T2",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-001",
+      "kp-x3-16-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电管遏止电压",
+      "光电效应实验电路"
+     ],
+     "situation": "真空光电管实验,用2.82 eV光子照射K极,由遏止电压1 V求最大初动能与逸出功并分析电流表读数",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "光电效应实验装置电路图"
+    },
+    {
+     "qid": "q-wb1-p042-03",
+     "label": "T3",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "双频率遏止电压联立",
+      "光电管反向电压"
+     ],
+     "situation": "用频率ν1、ν2的光照射阴极测得遏止电压U1、U2,联立光电效应方程推导逸出功、极限频率和普朗克常量表达式",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "光电效应实验电路图"
+    },
+    {
+     "qid": "q-wb1-p042-04",
+     "label": "T4",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "Ekm-ν图像斜率截距"
+     ],
+     "situation": "由最大初动能Ekm与入射光频率ν的图像及图上一点(a,b),求斜率、逸出功、截止频率和临界波长",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "Ekm-ν图像"
+    },
+    {
+     "qid": "q-wb1-p042-05",
+     "label": "T5",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "Uc-1/λ图像",
+      "遏止电压与波长关系"
+     ],
+     "situation": "由光电管遏止电压Uc与入射光波长倒数1/λ的图像(横截距a、纵截距-b),判断逸出功、最大初动能与发生光电效应的条件",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "Uc-1/λ图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 43,
+   "items": [
+    {
+     "qid": "q-wb1-p043-01",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-15-002",
+     "kp_secondary": [
+      "kp-x3-15-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能量子假说概念辨析"
+     ],
+     "situation": "普朗克研究黑体辐射提出能量子假说,判断关于能量子假说的说法正误",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p043-02",
+     "label": "刷基础T7",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "康普顿散射",
+      "光子-电子碰撞"
+     ],
+     "situation": "康普顿研究石墨对X射线的散射,散射后波长改变,结合碰撞前后示意图判断光子能量动量说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "康普顿散射示意图"
+    },
+    {
+     "qid": "q-wb1-p043-03",
+     "label": "刷基础T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "电子显微镜",
+      "分辨距离-波长正比换算"
+     ],
+     "situation": "透射电子显微镜用高能电子作光源,由分辨距离与波长成正比及可见光动量,估算高能电子的波长和动量",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p043-04",
+     "label": "刷易错T9",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-16-001",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电管实验",
+      "Uc-ν图像斜率截距"
+     ],
+     "situation": "两小组用相同频率单色光分别照射锌和银发生光电效应,结合光电管装置图与Uc-ν图像比较遏止电压、饱和电流、最大初动能及图线斜率",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "光电管装置图与Uc-ν图像"
+    }
+   ]
+  },
+  {
+   "wbPage": 44,
+   "items": [
+    {
+     "qid": "q-wb1-p044-01",
+     "label": "刷提升T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "Uc-ν图像",
+      "斜率截距求逸出功"
+     ],
+     "situation": "由遏止电压-入射光频率图像上两点数据(U1,ν1)(U2,ν2)推算光电管阴极材料的逸出功",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "Uc-ν图像"
+    },
+    {
+     "qid": "q-wb1-p044-02",
+     "label": "刷提升T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-001",
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电管电路",
+      "饱和电流计数光电子",
+      "加速电压求到达阳极最大速率"
+     ],
+     "situation": "光电管接入滑动变阻器电路,由饱和电流、正向电压结合光电效应方程分析光子能量、光电子数、光子动量与到达阳极最大速率",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "光电效应实验电路图"
+    },
+    {
+     "qid": "q-wb1-p044-03",
+     "label": "刷提升T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-16-001",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电效应实验电路",
+      "伏安特性曲线双光对比"
+     ],
+     "situation": "a、b两种单色光照射光电管得到I-U伏安特性曲线,结合正接/反接电路分析遏止电压、饱和电流与波长关系",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "实验电路图与伏安特性曲线"
+    },
+    {
+     "qid": "q-wb1-p044-04",
+     "label": "刷素养T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "条形码扫描笔",
+      "截止频率判断能否发生光电效应"
+     ],
+     "situation": "条形码扫描笔中反射光照射光电管产生光电流,结合截止频率ν0分析光电效应发生条件与最大初动能",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "扫描笔工作原理示意图"
+    }
+   ]
+  },
+  {
+   "wbPage": 45,
+   "items": [
+    {
+     "qid": "q-wb1-p045-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "波粒二象性概念辨析"
+     ],
+     "situation": "教材变式:关于光的本性(波动性与粒子性关系)的说法判断",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p045-02",
+     "label": "刷基础T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "粒子性现象辨识"
+     ],
+     "situation": "从光学发展史引入,判断哪些现象体现光的粒子性(干涉/衍射/光电效应/康普顿效应)",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p045-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-19-001",
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "波粒二象性概念辨析",
+      "德布罗意波长比较"
+     ],
+     "situation": "关于光的波粒二象性的说法判断,含动能相等的电子与质子波长比较",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p045-04",
+     "label": "刷基础T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-15-002",
+     "kp_secondary": [
+      "kp-x3-19-001",
+      "kp-x3-16-003",
+      "kp-x3-19-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "量子物理学史辨析",
+      "德布罗意波长比较"
+     ],
+     "situation": "以'十四五'量子通信技术为背景,判断能量子、物质波、康普顿效应等物理学史与概念说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p045-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "物质波概念辨析",
+      "德布罗意波长比较"
+     ],
+     "situation": "广东东莞期末题:关于德布罗意物质波的说法判断,含电子/质子/中子波长比较",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p045-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "德布罗意波长计算"
+     ],
+     "situation": "碳60分子束以已知速度射向光栅产生条纹,求其物质波波长",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "碳60足球状分子结构示意图"
+    },
+    {
+     "qid": "q-wb1-p045-07",
+     "label": "刷基础T7",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-19-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "概率波与统计规律"
+     ],
+     "situation": "单缝衍射中让光子逐个通过狭缝,按90%概率判断光子落点的随机性与统计规律",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p046-01",
+     "label": "T8",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [
+      "kp-x3-19-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "电子加速-衍射",
+      "德布罗意波长"
+     ],
+     "situation": "电子束经电压U加速后照射金属晶格观察衍射图样,判断波动性与波长表达式",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p046-02",
+     "label": "T9",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-15-002",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "圆柱线光源-光膜片",
+      "光子动量与光压"
+     ],
+     "situation": "真空圆柱筒中心线光源径向射紫光照到光膜片,部分吸收部分反射,求单位时间照到膜片的光子数",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "装置示意图"
+    },
+    {
+     "qid": "q-wb1-p046-03",
+     "label": "教材变式T10",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-19-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "不确定性关系"
+     ],
+     "situation": "根据不确定性关系ΔxΔp≥h/4π判断测量精度相互制约的说法",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p046-04",
+     "label": "T11",
+     "qtype": "简答",
+     "kp_primary": "kp-x3-19-002",
+     "kp_secondary": [
+      "kp-x3-19-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "示波管电子束",
+      "不确定性关系估算"
+     ],
+     "situation": "示波管电子加速电压1e4V、荧光屏位置确定在0.1mm内,判断速度能否完全确定、能否用经典力学处理",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "示波管示意图"
+    },
+    {
+     "qid": "q-wb1-p046-05",
+     "label": "刷易错T12",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [
+      "kp-x3-19-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "电子显微镜-德布罗意波",
+      "加速电压与波长"
+     ],
+     "situation": "电子显微镜拍摄新冠病毒图像,判断分辨率与德布罗意波长、加速电压关系及波长对应加速电压",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 46
+  },
+  {
+   "wbPage": 47,
+   "items": [
+    {
+     "qid": "q-wb1-p047-01",
+     "label": "刷基础T1",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-17-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "物理学史判断"
+     ],
+     "situation": "围绕汤姆孙发现电子的过程与电子性质(比荷测定、质量与质子对比、电子是原子组成部分)进行史实判断",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p047-02",
+     "label": "刷基础T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-17-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "阴极射线在电磁场中偏转",
+      "气体放电管"
+     ],
+     "situation": "汤姆孙气体放电管示意图,判断阴极射线在加/不加电场磁场时的偏转方向",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "气体放电管装置图"
+    },
+    {
+     "qid": "q-wb1-p047-03",
+     "label": "刷基础T3",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-17-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "汤姆孙比荷测定",
+      "电场偏转+磁场平衡(速度选择)"
+     ],
+     "situation": "汤姆孙测电子比荷装置:先加偏转电压使亮点偏移d,再加垂直纸面磁场使亮点回到O点,求电子速度并推导比荷表达式",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "比荷测定装置图"
+    },
+    {
+     "qid": "q-wb1-p047-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "α粒子散射实验"
+     ],
+     "situation": "α粒子轰击金箔的散射实验装置,判断实验条件、大角度散射原因及核式结构模型结论",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": true,
+     "figure_type": "α粒子散射实验装置图"
+    }
+   ]
+  },
+  {
+   "wbPage": 48,
+   "items": [
+    {
+     "qid": "q-wb1-p048-01",
+     "label": "题型5T5",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "α粒子散射实验装置"
+     ],
+     "situation": "α粒子散射实验装置图,判断荧光屏不同位置亮斑多少及实验结论",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "实验装置示意图"
+    },
+    {
+     "qid": "q-wb1-p048-02",
+     "label": "题型5T6",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "α粒子散射实验装置"
+     ],
+     "situation": "铅盒包裹钋源发射α粒子束射向金箔,判断散射现象与核式结构结论",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "实验装置示意图"
+    },
+    {
+     "qid": "q-wb1-p048-03",
+     "label": "题型5T7",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [
+      "kp-x3-17-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "原子模型物理学史"
+     ],
+     "situation": "关于原子模型及其建立过程(汤姆孙、卢瑟福)的物理学史叙述判断",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p048-04",
+     "label": "题型6T8",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "α粒子散射径迹分析"
+     ],
+     "situation": "α粒子散射三条轨迹示意图,分析沿轨迹2运动时加速度与电势能的变化",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "径迹示意图"
+    },
+    {
+     "qid": "q-wb1-p048-05",
+     "label": "题型6T9",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "α粒子散射径迹分析"
+     ],
+     "situation": "α粒子被重核散射,比较轨迹上M、N、Q三点的速率、电势与电势能及电场力做功",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "径迹示意图"
+    },
+    {
+     "qid": "q-wb1-p048-06",
+     "label": "刷易错T10",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-17-002",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "α粒子散射径迹判断"
+     ],
+     "situation": "给出金原子核与两个α粒子的四组径迹图,判断哪种径迹可能正确",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "径迹图选项"
+    }
+   ]
+  },
+  {
+   "wbPage": 49,
+   "items": [
+    {
+     "qid": "q-wb1-p049-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "光谱分类辨析"
+     ],
+     "situation": "判断太阳光谱、月光光谱、吸收光谱暗线、钠蒸气线状谱等光谱类型说法正误",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p049-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-001",
+     "kp_secondary": [
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "特征谱线概念辨析"
+     ],
+     "situation": "关于原子特征谱线的成因、光谱分析用途及其与核式结构关系的正误判断(选不正确项)",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p049-03",
+     "label": "刷基础T3",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-001",
+     "kp_secondary": [
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "氢原子光谱概念辨析"
+     ],
+     "situation": "天津部分区期中题:判断氢原子吸收光谱、线状谱与能级分立关系的说法正误",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p049-04",
+     "label": "刷基础T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-001",
+     "kp_secondary": [
+      "kp-x3-18-003",
+      "kp-x3-16-003",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "巴耳末系谱线图",
+      "光子能量-波长比较"
+     ],
+     "situation": "由氢原子可见光区四条谱线Hα~Hδ的波长分布图,判断能级差、光子动量及能否发生光电效应",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "氢原子光谱谱线波长分布图"
+    },
+    {
+     "qid": "q-wb1-p049-05",
+     "label": "刷基础T5",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-001",
+     "kp_secondary": [
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "巴耳末公式应用"
+     ],
+     "situation": "吉林市高二期中题:结合可见光波长范围400~760nm理解巴耳末公式中n的取值与谱线特征",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p049-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-18-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "弗兰克-赫兹碰撞激发",
+      "能级跃迁能量计算"
+     ],
+     "situation": "河北沧州五校检测题:加速电子轰击氢原子使其从r1跃迁到9r1轨道,求加速电压最小值并判断电势能变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p049-07",
+     "label": "刷基础T7",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-004",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-18-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "跃迁中轨道半径与动能电势能变化"
+     ],
+     "situation": "山东枣庄月考题:氢原子吸收一个光子后,判断轨道半径、动能、电势能和能级的变化",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 50,
+   "items": [
+    {
+     "qid": "q-wb1-p050-01",
+     "label": "题型4T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁-电离",
+      "类氢能级公式E_n=-A/n²"
+     ],
+     "situation": "原子从n=4跃迁到n=2放出的能量被n=3能级原子吸收使电子电离,用能级公式求脱离电子的动能",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p050-02",
+     "label": "题型4T9",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-16-002",
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁发光",
+      "光电效应方程求逸出功"
+     ],
+     "situation": "一群n=3氢原子跃迁发出的光照射金属钛,由最大初动能8.42eV求钛的逸出功",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    },
+    {
+     "qid": "q-wb1-p050-03",
+     "label": "题型5T10",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-002",
+     "kp_secondary": [
+      "kp-x3-18-004",
+      "kp-x3-17-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "库仑力提供向心力",
+      "轨道周期/动能比值",
+      "跃迁中动能电势能变化"
+     ],
+     "situation": "以玻尔理论结合电子绕核匀速圆周运动模型,判断不同轨道周期比、动能比及基态电势能、跃迁中能量变化",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    },
+    {
+     "qid": "q-wb1-p050-04",
+     "label": "题型5T11",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁光子波长比较",
+      "跃迁光子引发光电效应"
+     ],
+     "situation": "依据氢原子能级图判断跃迁辐射波长长短、轨道半径大小及3→2跃迁光子能否使逸出功2.5eV金属发生光电效应",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    },
+    {
+     "qid": "q-wb1-p050-05",
+     "label": "刷易错T12",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-004",
+     "kp_secondary": [
+      "kp-x3-18-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "一群原子与一个原子谱线条数"
+     ],
+     "situation": "一群氢原子处于n=4、一个氢原子处于n=3,比较各自最多能辐射出的光子频率种数",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    }
+   ]
+  },
+  {
+   "wbPage": 51,
+   "items": [
+    {
+     "qid": "q-wb1-p051-01",
+     "label": "刷提升T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-004",
+     "kp_secondary": [
+      "kp-x3-18-001",
+      "kp-x3-18-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁",
+      "谱线条数计数"
+     ],
+     "situation": "大量n=5氢原子向低能级跃迁,求巴耳末系谱线数占全部谱线数之比",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p051-02",
+     "label": "刷提升T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-18-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁",
+      "光子发射与吸收",
+      "波长间接计算"
+     ],
+     "situation": "由能级间跃迁辐射光子波长示意图,判断a、b光干涉条纹、吸收跃迁、波长组合计算及电子碰撞激发",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "能级跃迁波长示意图"
+    },
+    {
+     "qid": "q-wb1-p051-03",
+     "label": "刷提升T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-18-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁",
+      "玻尔模型圆周运动",
+      "最长波长"
+     ],
+     "situation": "n=3能级氢原子向低能级跃迁,结合能级公式与轨道半径判断谱线数、动能势能变化、线速度之比与最长波长",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p051-04",
+     "label": "刷提升T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-004",
+      "kp-x3-18-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁",
+      "光子吸收激发",
+      "可见光判别"
+     ],
+     "situation": "n=2氢原子吸收某频率光后发出6种光,结合能级图与可见光光子能量范围判断入射光与可见光条数",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    },
+    {
+     "qid": "q-wb1-p051-05",
+     "label": "刷提升T5",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "电子碰撞激发",
+      "谱线条数计数",
+      "能量区间讨论"
+     ],
+     "situation": "电子轰击基态氢原子,调高电子能量后谱线增加5条,由能级图判断最高激发态量子数差Δn与电子能量E的取值范围",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    }
+   ]
+  },
+  {
+   "wbPage": 52,
+   "items": [
+    {
+     "qid": "q-wb1-p052-01",
+     "label": "刷难关T1",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "氢原子能级",
+      "电离条件"
+     ],
+     "situation": "已知氢原子基态能量E1和激发态能量En=E1/n²,求能使氢原子从第一激发态电离的光子最大波长",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p052-02",
+     "label": "刷难关T2",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-16-002",
+      "kp-x3-18-004",
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁-光电效应综合",
+      "光电管遏止电压电路"
+     ],
+     "situation": "n=4激发态氢原子跃迁发出的最高频率光子照射光电管阴极K,电压表读数7V时电流恰为零,判断电源极性、逸出功、谱线条数及能发生光电效应的光子种数",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "氢原子能级图与光电管电路图"
+    },
+    {
+     "qid": "q-wb1-p052-03",
+     "label": "刷难关T3",
+     "qtype": "选择未注明",
+     "kp_primary": "kp-x3-18-004",
+     "kp_secondary": [
+      "kp-x3-18-003",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁谱线条数",
+      "跃迁光照锌板光电效应"
+     ],
+     "situation": "由氢原子能级图和锌的逸出功3.34eV,判断n=5向基态跃迁的谱线条数、能使锌板发生光电效应的光的种数、光子吸收条件及按概率统计的辐射光子总数",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    },
+    {
+     "qid": "q-wb1-p052-04",
+     "label": "刷难关T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-16-004",
+      "kp-x3-16-002",
+      "kp-x3-18-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁-伏安特性曲线对应",
+      "单个原子与大量原子跃迁"
+     ],
+     "situation": "n=3能级氢原子跃迁辐射的三种光照射同种材料得到三条光电流-电压曲线a、b、c,判断曲线与跃迁的对应、最大初动能、波长关系及单个原子最多辐射的光子种数",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "氢原子能级图与光电流-电压伏安特性曲线"
+    }
+   ]
+  },
+  {
+   "wbPage": 53,
+   "items": [
+    {
+     "qid": "q-wb1-p053-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "天然放射性与三种射线",
+     "models": [
+      "放射性概念辨析"
+     ],
+     "situation": "关于天然放射性的说法正误判断(贝可勒尔发现、化合物放射性、射线穿透能力)",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p053-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "三种射线在电场中的偏转与性质",
+     "models": [
+      "射线在电场中偏转"
+     ],
+     "situation": "放射源射线经平行金属板电场偏转,判断到达A、B板射线的种类与性质",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实验装置图"
+    },
+    {
+     "qid": "q-wb1-p053-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "三种射线在磁场中的偏转",
+     "models": [
+      "射线在磁场中偏转"
+     ],
+     "situation": "三种射线沿Ob方向进入垂直纸面向外的匀强磁场,判断打到屏上a、b、c三点的射线种类",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "磁场偏转示意图"
+    },
+    {
+     "qid": "q-wb1-p053-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "三种射线的穿透与电离本领鉴别",
+     "models": [
+      "未知射线鉴别实验"
+     ],
+     "situation": "用薄铝片、电场和荧光屏观察闪烁亮点变化,推断放射源发出的射线种类",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "实验装置图"
+    },
+    {
+     "qid": "q-wb1-p053-05",
+     "label": "刷基础T5",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "α衰变与β衰变的核子数守恒",
+     "models": [
+      "衰变方程守恒推理"
+     ],
+     "situation": "核A发生α衰变、核B发生β衰变,由中子数相同推断生成核中子数及a、b、c、d的关系",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p053-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变方程与质量数电荷数守恒",
+     "models": [
+      "核反应方程配平"
+     ],
+     "situation": "嫦娥五号月球样品富铀矿物,由铀235衰变为铅207的方程求α、β衰变次数m和n",
+     "difficulty": "D1",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 54,
+   "items": [
+    {
+     "qid": "q-wb1-p054-01",
+     "label": "T7",
+     "qtype": "选择未注明",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "α衰变和β衰变(衰变次数计算)",
+     "models": [
+      "系列衰变次数计算"
+     ],
+     "situation": "钍232经一系列α、β衰变变为铅208,判断衰变次数、质子中子数变化及β电子来源",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p054-02",
+     "label": "题型5T8",
+     "qtype": "选择未注明",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期(多种元素混合计算)",
+     "models": [
+      "双放射源半衰期联立"
+     ],
+     "situation": "两种半衰期分别为t0和2t0的元素共N个核,由t=2t0时刻剩余5N/12反推初始配比,再求t=6t0时刻剩余核数",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p054-03",
+     "label": "题型5T9",
+     "qtype": "选择未注明",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期(核反应方程与半衰期统计性)",
+     "models": [
+      "核反应方程判粒子",
+      "半衰期统计规律"
+     ],
+     "situation": "火星探测车用PuO2作燃料,238Pu衰变为234U并放出粒子X,考查X种类、半衰期的统计意义及与温度无关",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p054-04",
+     "label": "题型5T10",
+     "qtype": "选择未注明",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期(剩余质量图像)",
+     "models": [
+      "m/m0-t衰变曲线读图"
+     ],
+     "situation": "医用放射性元素Y的剩余质量比m/m0随时间t变化图像,48天剩1/8,求半衰期",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "m/m0-t衰变曲线图"
+    },
+    {
+     "qid": "q-wb1-p054-05",
+     "label": "题型6T11",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "α衰变和β衰变后粒子在磁场中的轨迹",
+     "models": [
+      "衰变反冲",
+      "带电粒子磁场圆轨迹"
+     ],
+     "situation": "静止原子核在匀强磁场中分别放出α粒子和β粒子,由动量守恒和轨迹圆内切/外切关系判断粒子种类与磁场方向",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "衰变粒子磁场轨迹示意图"
+    },
+    {
+     "qid": "q-wb1-p054-06",
+     "label": "刷易错T12",
+     "qtype": "选择未注明",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期(矿石中铀衰变剩余质量易错辨析)",
+     "models": [
+      "半衰期剩余质量计算"
+     ],
+     "situation": "质量M的矿石含铀质量m,铀半衰期为T,辨析经若干半衰期后铀剩余质量与矿石总质量的变化",
+     "difficulty": "D2",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 55,
+   "items": [
+    {
+     "qid": "q-wb1-p055-01",
+     "label": "刷提升T1",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期(衰变系列N-Z图)",
+     "models": [
+      "衰变系列N-Z图",
+      "半衰期统计规律"
+     ],
+     "situation": "天然放射系连续衰变的N-Z图,判断衰变类型、次数及半衰期统计意义",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "N-Z衰变链图像"
+    },
+    {
+     "qid": "q-wb1-p055-02",
+     "label": "刷提升T2",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期(半衰期计算与应用)",
+     "models": [
+      "烟雾探测器",
+      "半衰期剩余量计算"
+     ],
+     "situation": "镅241烟雾探测器,由衰变方程判断射线种类、新核中子质子数及经866年剩余质量",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "烟雾探测器装置示意图"
+    },
+    {
+     "qid": "q-wb1-p055-03",
+     "label": "刷提升T3",
+     "qtype": "选择未注明",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "匀强磁场中衰变的轨迹分析",
+     "models": [
+      "静止核衰变动量守恒",
+      "磁场中双圆轨迹(内切/外切)"
+     ],
+     "situation": "静止P核β+衰变与静止Th核β-衰变,在同一磁场中由轨迹相切方式和半径判断四条轨迹对应粒子",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "匀强磁场中衰变轨迹示意图"
+    },
+    {
+     "qid": "q-wb1-p055-04",
+     "label": "刷素养T4",
+     "qtype": "计算",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "匀强磁场中衰变的轨迹分析(教材变式)",
+     "models": [
+      "静止核α衰变动量守恒",
+      "带电粒子磁场中圆周运动半径与周期"
+     ],
+     "situation": "静止氡222核在匀强磁场中发生α衰变,写核反应方程、求α粒子与新核轨迹半径之比并画轨迹、求周期之比",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "匀强磁场中α粒子圆轨迹图"
+    }
+   ]
+  },
+  {
+   "wbPage": 56,
+   "items": [
+    {
+     "qid": "q-wb1-p056-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "原子核的组成与同位素",
+     "models": [
+      "同位素比较"
+     ],
+     "situation": "比较镭的两种同位素228Ra与226Ra原子的质子数、中子数、核电荷数、核外电子数等",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p056-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核反应方程与人工放射性",
+     "models": [
+      "人工核转变",
+      "衰变方程"
+     ],
+     "situation": "居里夫妇用α粒子轰击铝箔生成人工放射性同位素并衰变,判断反应中X、Y粒子种类与电荷数",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p056-03",
+     "label": "刷基础T3",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核力的性质",
+     "models": [
+      "核力概念判断"
+     ],
+     "situation": "判断核力的作用范围、本质及与β衰变关系等说法正误",
+     "difficulty": "D1",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p056-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "结合能与原子核稳定性",
+     "models": [
+      "结合能概念判断"
+     ],
+     "situation": "判断关于原子核核子聚集、结合能、质量亏损与稳定性、比结合能等说法正误",
+     "difficulty": "D2",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p056-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "比结合能与核聚变能量计算",
+     "models": [
+      "核聚变",
+      "比结合能"
+     ],
+     "situation": "中国人造太阳D-T聚变反应,已知2H、3H比结合能及释放能量,求4He的比结合能",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p056-06",
+     "label": "刷基础T6",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "比结合能曲线与核反应能量",
+     "models": [
+      "核子平均质量-Z曲线"
+     ],
+     "situation": "由核子平均质量m随原子序数Z变化曲线,判断各核比结合能大小、稳定性及裂变聚变能量吸放",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "核子平均质量m-原子序数Z曲线图"
+    },
+    {
+     "qid": "q-wb1-p056-07",
+     "label": "刷基础T7",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核聚变方程与质量亏损",
+     "models": [
+      "氦闪聚变",
+      "比结合能",
+      "质能方程"
+     ],
+     "situation": "太阳内部氦闪三个氦核聚变为X,已知比结合能与光速,判断反应方程、中子数、释放能量及质量亏损",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 57,
+   "items": [
+    {
+     "qid": "q-wb1-p057-01",
+     "label": "刷基础T8",
+     "qtype": "多选",
+     "kp_primary": "核反应方程与结合能(比结合能、质量亏损、质能方程)",
+     "kp_secondary": [
+      "核反应方程配平",
+      "比结合能与核反应释能",
+      "质能方程与质量亏损"
+     ],
+     "kp_proposed": "核反应方程与比结合能",
+     "models": [
+      "核反应方程配平",
+      "比结合能能量守恒"
+     ],
+     "situation": "硼核吸收慢中子放出α粒子转变为新核,由各核比结合能判断反应方程、衰变类型及质量亏损",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p057-02",
+     "label": "刷基础T9",
+     "qtype": "计算",
+     "kp_primary": "衰变与质能方程、动量守恒(α衰变反冲、质能方程、正负电子对产生)",
+     "kp_secondary": [
+      "α衰变核反应方程",
+      "动量守恒与动能分配",
+      "质能方程与光子对产生"
+     ],
+     "kp_proposed": "α衰变与质能方程综合",
+     "models": [
+      "静止核α衰变反冲",
+      "动量守恒分配动能"
+     ],
+     "situation": "静止镭核226Ra衰变为氡核放出α粒子,写方程并由动量守恒求氡核与α粒子动能,再求γ光子最多产生正负电子对数",
+     "difficulty": "D4",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p057-03",
+     "label": "刷基础T10",
+     "qtype": "计算",
+     "kp_primary": "核反应方程、质量亏损与质能方程、动量守恒(核能计算、动量守恒分配动能)",
+     "kp_secondary": [
+      "核反应方程配平",
+      "质量亏损求核能",
+      "动量守恒与动能分配"
+     ],
+     "kp_proposed": "核反应释能与动量守恒",
+     "models": [
+      "中子轰击锂核反应",
+      "正碰动量守恒分配动能"
+     ],
+     "situation": "中子轰击锂核6Li生成氚核和α粒子,由质量亏损求释放核能,再由动量守恒求生成粒子动能",
+     "difficulty": "D4",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p057-04",
+     "label": "刷易错T11",
+     "qtype": "单选",
+     "kp_primary": "质能方程与质量亏损的理解(质量与能量关系、能量守恒)",
+     "kp_secondary": [
+      "质能方程物理意义",
+      "核反应质量亏损",
+      "能量守恒定律"
+     ],
+     "kp_proposed": "质能方程的理解",
+     "models": [
+      "质能方程概念辨析"
+     ],
+     "situation": "辨析爱因斯坦质能方程含义、质量亏损本质及核反应中质量与能量是否守恒的四种说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 58,
+   "items": [
+    {
+     "qid": "q-wb1-p058-01",
+     "label": "刷难关T1",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "结合能与核能计算(质能方程)",
+     "models": [
+      "聚变反应",
+      "比结合能与质量亏损"
+     ],
+     "situation": "氘氚聚变(中国环流三号人造太阳),用比结合能判断粒子、质量亏损与经典力学适用性",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p058-02",
+     "label": "刷难关T2",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "β衰变与核能(质能方程)",
+     "models": [
+      "β衰变质量亏损",
+      "带电粒子在电场中加速",
+      "带电粒子在磁场中圆周运动"
+     ],
+     "situation": "Th的β衰变产生电子源,电子经电场加速后以45°射入匀强磁场做圆周运动,求质量亏损、初速度、磁感应强度与运动时间",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "电磁场中带电粒子运动示意图"
+    },
+    {
+     "qid": "q-wb1-p058-03",
+     "label": "刷难关T3",
+     "qtype": "计算",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "α衰变核反应方程与核能计算",
+     "models": [
+      "α衰变核反应方程",
+      "质能方程求核能",
+      "衰变动量守恒"
+     ],
+     "situation": "Pu静止α衰变为激发态U并放出γ光子,写核反应方程、求释放核能、由动量守恒求α粒子动能",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p059-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "放射性同位素的应用",
+     "models": [
+      "射线应用辨析"
+     ],
+     "situation": "判断放射性射线在科研医疗生产中的应用说法哪项不正确",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p059-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "半衰期",
+     "models": [
+      "半衰期选取"
+     ],
+     "situation": "心肌灌注显像用Tc,根据表中半衰期判断可能用哪种同位素",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p059-03",
+     "label": "刷基础T3",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期;核反应方程",
+     "models": [
+      "射线测厚仪",
+      "β衰变方程"
+     ],
+     "situation": "铱192作放射源的射线测厚仪,判断衰变方程、半衰期与测厚原理说法",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": true,
+     "figure_type": "射线测厚仪装置图"
+    },
+    {
+     "qid": "q-wb1-p059-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "同位素与衰变",
+     "models": [
+      "同位素辨析"
+     ],
+     "situation": "用13C检测幽门螺杆菌,判断碳同位素化学性质、光谱及衰变新核说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p059-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "放射性的污染和防护",
+     "models": [
+      "放射性防护辨析"
+     ],
+     "situation": "放射性应用于工农业生产,判断关于射线应用与防护的说法哪项不正确",
+     "difficulty": "D1",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 59
+  },
+  {
+   "wbPage": 60,
+   "items": [
+    {
+     "qid": "q-wb1-p060-01",
+     "label": "刷基础T1",
+     "qtype": "单选",
+     "kp_primary": "核反应方程与裂变反应的判断",
+     "kp_secondary": [
+      "核反应方程",
+      "衰变类型判断"
+     ],
+     "kp_proposed": "裂变与核反应方程",
+     "models": [
+      "核反应方程配平"
+     ],
+     "situation": "江苏南通期中,判断四个核反应方程中属于裂变的是哪个",
+     "difficulty": "D1",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p060-02",
+     "label": "刷基础T2",
+     "qtype": "单选",
+     "kp_primary": "裂变反应方程配平、比结合能与质能方程释放核能计算",
+     "kp_secondary": [
+      "核反应方程配平",
+      "比结合能",
+      "质能方程与质量亏损",
+      "β衰变"
+     ],
+     "kp_proposed": "裂变与核能计算",
+     "models": [
+      "玲珑一号核反应堆"
+     ],
+     "situation": "玲珑一号核反应堆铀235裂变,判断x、y取值、比结合能大小、衰变方程及释放核能",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p060-03",
+     "label": "刷基础T3",
+     "qtype": "计算",
+     "kp_primary": "平均结合能与裂变释放核能的计算",
+     "kp_secondary": [
+      "结合能",
+      "比结合能",
+      "裂变释放能量"
+     ],
+     "kp_proposed": "裂变与结合能计算",
+     "models": [
+      "铀核裂变能量"
+     ],
+     "situation": "河南焦作,已知U、Xe、Sr的平均结合能,求分解与结合能量及裂变释放能量",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p060-04",
+     "label": "刷基础T4",
+     "qtype": "单选",
+     "kp_primary": "核聚变的条件、比结合能变化与质量亏损",
+     "kp_secondary": [
+      "聚变",
+      "比结合能",
+      "质量亏损"
+     ],
+     "kp_proposed": "核聚变的理解",
+     "models": [
+      "EAST人造太阳"
+     ],
+     "situation": "EAST全超导托卡马克核聚变装置,判断关于核聚变的说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p060-05",
+     "label": "刷基础T5",
+     "qtype": "单选",
+     "kp_primary": "聚变与裂变的能量、比结合能及质量亏损比较",
+     "kp_secondary": [
+      "聚变",
+      "裂变",
+      "比结合能"
+     ],
+     "kp_proposed": "聚变与裂变的比较",
+     "models": [
+      "聚变裂变对比"
+     ],
+     "situation": "判断关于聚变与裂变反应释放能量、比结合能、质量变化的说法",
+     "difficulty": "D2",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p060-06",
+     "label": "刷基础T6",
+     "qtype": "多选",
+     "kp_primary": "太阳聚变核反应方程与质能方程亏损质量计算",
+     "kp_secondary": [
+      "聚变",
+      "核反应方程",
+      "质能方程与质量亏损"
+     ],
+     "kp_proposed": "太阳聚变与核能计算",
+     "models": [
+      "太阳聚变辐射"
+     ],
+     "situation": "北京十三中,太阳内部聚变每秒辐射能量,判断反应方程、聚变条件及每秒减少质量",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p060-07",
+     "label": "刷基础T7",
+     "qtype": "多选",
+     "kp_primary": "核反应方程配平、质量亏损与聚变判断",
+     "kp_secondary": [
+      "核反应方程配平",
+      "聚变",
+      "质量亏损"
+     ],
+     "kp_proposed": "聚变与核反应方程",
+     "models": [
+      "氘氚聚变获能"
+     ],
+     "situation": "科学家利用核反应获氚再聚变获能,判断X、Y粒子、质量亏损及反应类型",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p061-01",
+     "label": "T8",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核反应方程与质能方程(质量亏损与释放能量比较)",
+     "models": [
+      "核聚变反应方程",
+      "质量亏损"
+     ],
+     "situation": "年轻热星体中核聚变的两个核反应方程,给出相关原子核质量表,判断X是何种核及Q1、Q2大小关系",
+     "difficulty": "D3",
+     "stage": "basic_practice",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p061-02",
+     "label": "T9",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核聚变中的能量与动量守恒(质能方程)",
+     "models": [
+      "核聚变",
+      "对心碰撞",
+      "动量守恒"
+     ],
+     "situation": "中国环流三号氘氘聚变反应,两氘核以相等动能对心碰撞,判断吸收/释放能量、生成物动量动能及结合能关系",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": true,
+     "figure_type": "核聚变装置照片"
+    },
+    {
+     "qid": "q-wb1-p061-03",
+     "label": "T10",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "裂变、链式反应与核反应堆(聚变条件)",
+     "models": [
+      "核反应堆",
+      "链式反应",
+      "轻核聚变"
+     ],
+     "situation": "关于核反应堆和轻核聚变的说法判断(链式反应条件、镉棒控制、水做减速剂、聚变距离)",
+     "difficulty": "D2",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p061-04",
+     "label": "T11",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "中子慢化剂选择(弹性正碰传能)",
+     "models": [
+      "弹性正碰",
+      "中子慢化"
+     ],
+     "situation": "链式反应中慢化剂使快中子变慢,中子与静止原子核弹性正碰,判断电子/铀/铅/碳何者最适合做慢化剂",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p061-05",
+     "label": "T12",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "基本粒子的分类(夸克、强子、轻子)",
+     "models": [
+      "基本粒子分类"
+     ],
+     "situation": "关于粒子界的组成、强子与质子、电子质子中子是否可再分、夸克带电量等说法判断",
+     "difficulty": "D2",
+     "stage": "concept_check",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p061-06",
+     "label": "刷易错T13",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核反应类型辨析(衰变/裂变/聚变)与半衰期、比结合能",
+     "models": [
+      "核反应方程",
+      "衰变",
+      "裂变聚变"
+     ],
+     "situation": "给出四个核反应方程(α衰变、β衰变、铀裂变、氘氚聚变),判断反应类型、半衰期、射线电离本领、比结合能及热核反应等说法",
+     "difficulty": "D3",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 61
+  },
+  {
+   "wbPage": 62,
+   "items": [
+    {
+     "qid": "q-wb1-p062-01",
+     "label": "刷提升T1",
+     "qtype": "多选",
+     "kp_primary": "裂变与聚变;质能方程与核能计算",
+     "kp_secondary": [
+      "kp-x3-16-002",
+      "kp-x3-19-001"
+     ],
+     "kp_proposed": "聚变反应与质能方程",
+     "models": [
+      "核聚变反应",
+      "光电效应",
+      "物质波"
+     ],
+     "situation": "氘氚核聚变生成氦核并放出γ光子,γ光子照射逸出功W0金属发生光电效应,判断能量、来源、物质波波长与频率",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p062-02",
+     "label": "刷提升T2",
+     "qtype": "计算",
+     "kp_primary": "核反应方程;裂变;质能方程与核能计算",
+     "kp_secondary": [
+      "kp-x3-01-002"
+     ],
+     "kp_proposed": "铀235裂变反应与核能计算",
+     "models": [
+      "中子轰击裂变",
+      "质量亏损核能",
+      "阿伏加德罗常数估算"
+     ],
+     "situation": "中子轰击铀235生成钡和氪,写核反应方程,求单次裂变释放核能表达式,并估算60kg装料1.2%裂变释放的总能量",
+     "difficulty": "D4",
+     "stage": "standard",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p062-03",
+     "label": "刷素养T3",
+     "qtype": "计算",
+     "kp_primary": "核反应方程;聚变;质能方程与核能计算",
+     "kp_secondary": [],
+     "kp_proposed": "太阳内部聚变与核能计算",
+     "models": [
+      "质子聚变成氦",
+      "质量亏损核能",
+      "辐射功率与粒子数估算"
+     ],
+     "situation": "太阳内部4个氢核聚变成氦核放出2个正电子,写核反应方程,求单次聚变释放核能,并由地球接收辐射功率求每秒太阳辐射正电子个数",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ]
+  },
+  {
+   "wbPage": 63,
+   "items": [
+    {
+     "qid": "q-wb1-p063-01",
+     "label": "素养检测T1",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "衰变方程与质能方程",
+     "models": [
+      "正负电子湮灭",
+      "衰变"
+     ],
+     "situation": "氟18注入人体衰变放出正电子并与负电子湮灭产生一对光子",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "湮灭过程示意图"
+    },
+    {
+     "qid": "q-wb1-p063-02",
+     "label": "素养检测T2",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [
+      "kp-x3-18-003",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "衰变与半衰期",
+     "models": [
+      "能级跃迁",
+      "光电效应",
+      "半衰期"
+     ],
+     "situation": "氘原子能级跃迁辐射光子照射金属并结合氘核β衰变半衰期分析",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "氢原子能级图"
+    },
+    {
+     "qid": "q-wb1-p063-03",
+     "label": "素养检测T3",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-15-001",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "黑体辐射曲线",
+      "光电效应图像",
+      "伏安特性曲线"
+     ],
+     "situation": "辨析黑体辐射与光电效应四类图像的物理含义",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "黑体辐射及光电效应图像"
+    },
+    {
+     "qid": "q-wb1-p063-04",
+     "label": "素养检测T4",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-18-003",
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级图",
+      "光电效应电路",
+      "光子动量"
+     ],
+     "situation": "氢原子跃迁发出三种可见光照射光电管阴极分析光子动量与光电流",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "能级图与光电管电路图"
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p064-01",
+     "label": "素养检测T5",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [
+      "kp-x3-17-002"
+     ],
+     "kp_proposed": "核反应方程与质能方程(聚变)",
+     "models": [
+      "氘氚聚变",
+      "质能方程",
+      "核反应方程配平"
+     ],
+     "situation": "我国\"人造太阳\"氘氚聚变,球面装置接收核动能,时间t内质量减少Δm,判断比结合能、方程配平与输出功率",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "装置示意图"
+    },
+    {
+     "qid": "q-wb1-p064-02",
+     "label": "素养检测T6",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电管电路",
+      "红绿复合光光电效应",
+      "I-U曲线"
+     ],
+     "situation": "红绿复合光照射光电管阴极,作出I-U图像,已知两光频率与逸出功,判断最大初动能、遏止电压与饱和电流",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "电路图与I-U图像"
+    },
+    {
+     "qid": "q-wb1-p064-03",
+     "label": "素养检测T7",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [
+      "kp-x3-17-002"
+     ],
+     "kp_proposed": "β衰变核反应方程与质能方程",
+     "models": [
+      "中子β衰变",
+      "磁场中圆周运动",
+      "质能方程"
+     ],
+     "situation": "中子β衰变生成质子电子与反中微子,质子在磁场中匀速圆周运动动能为Ek,判断线速度、方程、能量与等效电流",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p064-04",
+     "label": "素养检测T8",
+     "qtype": "多选",
+     "kp_primary": "",
+     "kp_secondary": [
+      "kp-x3-17-002"
+     ],
+     "kp_proposed": "α衰变与质量亏损(质能方程)",
+     "models": [
+      "α衰变",
+      "磁场中双粒子圆周运动",
+      "质能方程与质量亏损"
+     ],
+     "situation": "静止放射性核α衰变,α粒子与新核在垂直磁场平面内圆周运动,判断轨迹图、相遇时间、等效电流与质量亏损",
+     "difficulty": "D4",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "磁场中运动轨迹示意图"
+    }
+   ],
+   "wbPage": 64
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p065-01",
+     "label": "素养检测T9",
+     "qtype": "填空",
+     "kp_primary": "kp-x3-16-004",
+     "kp_secondary": [
+      "kp-x3-16-002",
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电管",
+      "Uc-ν图线"
+     ],
+     "situation": "用铷阴极光电管观测光电效应,由Uc-ν图线求逸出功和最大初动能",
+     "difficulty": "D3",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "光电管装置图+Uc-ν图像"
+    },
+    {
+     "qid": "q-wb1-p065-02",
+     "label": "素养检测T10",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "氢原子能级跃迁",
+      "光电管遏止电压"
+     ],
+     "situation": "高能电子轰击基态氢原子发6种光,用发射光照射锌极光电管求逸出功、光子种数、遏止电压及电子动能范围",
+     "difficulty": "D4",
+     "stage": "review_test",
+     "has_figure": true,
+     "figure_type": "氢原子能级图+光电管电路图"
+    },
+    {
+     "qid": "q-wb1-p065-03",
+     "label": "素养检测T11",
+     "qtype": "计算",
+     "kp_primary": "第五章原子核:α衰变、核反应方程、比结合能",
+     "kp_secondary": [],
+     "kp_proposed": "α衰变与比结合能(结合磁场中带电粒子运动)",
+     "models": [
+      "α衰变",
+      "磁场中带电粒子圆周运动",
+      "比结合能"
+     ],
+     "situation": "铀238发生α衰变生成钍核,α粒子与钍核进入分界磁场,求磁感应强度之比、钍核动能及氦核比结合能",
+     "difficulty": "D5",
+     "stage": "review_test",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 65
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p066-01",
+     "label": "刷真题T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-15-002",
+     "kp_secondary": [
+      "kp-x3-16-001",
+      "kp-x3-16-003",
+      "kp-x3-19-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "量子论概念辨析"
+     ],
+     "situation": "量子技术热点,辨析普朗克能量子、光电效应、康普顿散射、德布罗意波说法",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p066-02",
+     "label": "刷真题T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-15-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "能级跃迁发光",
+      "E=hν代入"
+     ],
+     "situation": "硅衬底氮化镓LED能级差2.20eV,求发光频率",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "能级图"
+    },
+    {
+     "qid": "q-wb1-p066-03",
+     "label": "刷真题T3",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-16-001",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电效应-光强影响"
+     ],
+     "situation": "X射线光电子能谱仪,增大X光强度对逸出功、光子能量、初动能、电子数的影响",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p066-04",
+     "label": "刷真题T4",
+     "qtype": "多选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [
+      "kp-x3-16-002",
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "电子束双缝干涉",
+      "物质波波长",
+      "光电效应方程"
+     ],
+     "situation": "光电材料紫外光激发相干光电子束照射双缝,由条纹间距求电子动量动能及光子能量动量",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p066-05",
+     "label": "刷真题T5",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [],
+     "kp_proposed": "",
+     "models": [
+      "德布罗意波长比",
+      "同动能"
+     ],
+     "situation": "电子与直径4μm油滴动能相同,求德布罗意波长之比数量级",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p066-06",
+     "label": "刷真题T6",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "氢原子电离",
+      "电磁波谱读图"
+     ],
+     "situation": "n=20氢原子吸收光子电离,借电磁波谱判断被吸收光子所属波段",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "电磁波谱图"
+    },
+    {
+     "qid": "q-wb1-p066-07",
+     "label": "刷真题T7",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "四能级体系",
+      "光子频率叠加"
+     ],
+     "situation": "梦天号冷原子钟四能级体系,由各跃迁频率求钟激光频率ν2",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "能级图"
+    }
+   ],
+   "wbPage": 66
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p067-01",
+     "label": "高考强化T8",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-18-002",
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "玻尔氢原子能级",
+      "光子动量",
+      "双缝干涉"
+     ],
+     "situation": "玻尔氢原子n=3向低能级跃迁产生三种频率光,判断光子动量、光电效应及干涉条纹关系",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "电子轨道能级示意图"
+    },
+    {
+     "qid": "q-wb1-p067-02",
+     "label": "高考强化T9",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变",
+     "models": [
+      "α衰变",
+      "β+衰变"
+     ],
+     "situation": "新核素锇-160经1次α衰变、钨-156经1次β+衰变,比较两新核相同的量",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p067-03",
+     "label": "高考强化T10",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "衰变与半衰期",
+     "models": [
+      "核电池",
+      "半衰期指数衰减"
+     ],
+     "situation": "核电池中Sr-90与Pu-238半衰期不同,判断衰变类型及若干年后剩余核数目比较",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p067-04",
+     "label": "高考强化T11",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核反应方程",
+     "models": [
+      "硼中子俘获核反应"
+     ],
+     "situation": "硼中子俘获疗法核反应方程,用质量数和电荷数守恒求a、b",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p067-05",
+     "label": "高考强化T12",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核反应方程",
+     "models": [
+      "重离子合成新元素核反应"
+     ],
+     "situation": "重离子加速器合成119号元素核反应,由守恒判断入射核Y及质量数A",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p067-06",
+     "label": "高考强化T13",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核反应方程与射线性质",
+     "models": [
+      "恒星核反应",
+      "射线穿透电离能力"
+     ],
+     "situation": "恒星塌缩核反应C-12+Y→O-16,判断Y粒子种类及射线穿透/电离能力比较",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p067-07",
+     "label": "高考强化T14",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "质能方程",
+     "models": [
+      "伽马射线暴",
+      "质能方程E=mc²"
+     ],
+     "situation": "伽马射线暴1分钟释放10^48 J能量来自质量减少,估算每秒平均减少质量量级",
+     "difficulty": "D2",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 67
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p068-01",
+     "label": "高考强化T15",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核聚变与质能方程、比结合能",
+     "models": [
+      "核聚变反应",
+      "质能方程"
+     ],
+     "situation": "给定氘氚氦核及中子质量,判断氘氚聚变成氦核的核反应方程、比结合能与释放能量数量级",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p068-02",
+     "label": "刷原创T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-19-001",
+     "kp_secondary": [
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "德布罗意波与光子动量",
+      "非弹性碰撞动量守恒"
+     ],
+     "situation": "以p=h/λ将德布罗意波长视为动量,两物体相向运动发生能量损失最大的非弹性碰撞,求碰后甲的德布罗意波长",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p068-03",
+     "label": "刷原创T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-18-003",
+     "kp_secondary": [
+      "kp-x3-16-002",
+      "kp-x3-18-004"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "氢原子能级跃迁",
+      "光电效应电路"
+     ],
+     "situation": "氢原子群n能级向低能级跃迁辐射6种光,第2激发态到基态的光照射光电管阴极,结合能级图与电路判断跃迁、电流与最大初动能",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "氢原子能级图与光电管电路图"
+    },
+    {
+     "qid": "q-wb1-p068-04",
+     "label": "刷原创T3",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "结合能与比结合能",
+     "models": [
+      "比结合能曲线",
+      "核子平均质量曲线"
+     ],
+     "situation": "依据核子平均质量随原子序数、比结合能随质量数变化的曲线,判断结合能与比结合能的相关说法",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "核子平均质量曲线与比结合能曲线"
+    },
+    {
+     "qid": "q-wb1-p068-05",
+     "label": "刷原创T4",
+     "qtype": "单选",
+     "kp_primary": "",
+     "kp_secondary": [],
+     "kp_proposed": "核聚变、结合能与质能方程",
+     "models": [
+      "核聚变反应",
+      "质能方程质量亏损"
+     ],
+     "situation": "氘氚聚变成氦核放出一粒子释放17.6MeV,已知氘氚比结合能,判断放出粒子种类、结合能、氦核比结合能及质量亏损",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    }
+   ],
+   "wbPage": 68
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p069-01",
+     "label": "题型专练T1",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "点光源光子计数",
+      "球面均匀辐射"
+     ],
+     "situation": "手机摄像头对黄色点光源拍照,求单次曝光进入快门的光子个数",
+     "difficulty": "D3",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p069-02",
+     "label": "题型专练T2",
+     "qtype": "单选",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-08-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-抽气",
+      "活塞式真空泵"
+     ],
+     "situation": "活塞式真空泵多次抽气,比较第1次与第3次抽出气体质量之比",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "抽气泵装置图"
+    },
+    {
+     "qid": "q-wb1-p069-03",
+     "label": "题型专练T3",
+     "qtype": "单选",
+     "kp_primary": "第五章原子核-裂变与聚变、结合能与比结合能",
+     "kp_secondary": [
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "核聚变与热核反应",
+     "models": [
+      "核聚变",
+      "热核反应",
+      "质子相向正碰"
+     ],
+     "situation": "由四质子聚变为氦核释放28MeV等信息判断热核反应相关说法正误",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p069-04",
+     "label": "题型专练T4",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-16-003",
+     "kp_secondary": [
+      "kp-x3-16-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光子动量",
+      "玻璃球折射光路",
+      "平均作用力"
+     ],
+     "situation": "频率γ的光子射入折射率n的玻璃球,求玻璃球对光子的平均作用力",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "玻璃球折射光路示意图"
+    }
+   ],
+   "wbPage": 69
+  },
+  {
+   "wbPage": 70,
+   "items": [
+    {
+     "qid": "q-wb1-p070-01",
+     "label": "专练T5",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-09-002",
+     "kp_secondary": [
+      "kp-x3-06-001",
+      "kp-x3-06-002"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "变质量-充气抽气",
+      "汽缸活塞"
+     ],
+     "situation": "气钉枪以高压气体为动力，气泵向气罐充气、射钉时气罐向气缸压气，求充入空气体积及射出100颗钉后气罐压强",
+     "difficulty": "D5",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "气钉枪装置图(甲/乙)"
+    },
+    {
+     "qid": "q-wb1-p070-02",
+     "label": "专练T6",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-16-002",
+     "kp_secondary": [
+      "kp-x3-16-004",
+      "kp-x3-16-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "光电管电路",
+      "ν-Uab图像"
+     ],
+     "situation": "用ν-Uab坐标系阴影区研究光电管特性，求逸出功、光电子最大动能、激光器最小功率及阴极射线管最小工作电压",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "光电管电路图与ν-Uab图像"
+    }
+   ]
+  },
+  {
+   "items": [
+    {
+     "qid": "q-wb1-p071-01",
+     "label": "刷素养T1",
+     "qtype": "计算",
+     "kp_primary": "",
+     "kp_secondary": [
+      "kp-x3-16-003"
+     ],
+     "kp_proposed": "核聚变、质能方程与质量亏损",
+     "models": [
+      "太阳辐射球面功率",
+      "光压/光子动量",
+      "变质量-质子消耗"
+     ],
+     "situation": "太阳光辐射到地面,求总功率、光压、写核聚变方程算质量亏损及质子消耗比例",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": false,
+     "figure_type": ""
+    },
+    {
+     "qid": "q-wb1-p071-02",
+     "label": "刷素养T2",
+     "qtype": "计算",
+     "kp_primary": "kp-x3-04-004",
+     "kp_secondary": [
+      "kp-x3-04-002",
+      "kp-x3-04-001"
+     ],
+     "kp_proposed": "",
+     "models": [
+      "双原子分子简谐振动",
+      "分子势能-分子力图像互译"
+     ],
+     "situation": "由Ep-r曲线分析斜率意义,将双原子振动近似为简谐运动画F-r图并求最大动能分析温度对体积影响",
+     "difficulty": "D4",
+     "stage": "advanced",
+     "has_figure": true,
+     "figure_type": "Ep-r图像与F-r图像及振动示意图"
+    }
+   ],
+   "wbPage": 71
+  }
+ ],
+ "missingPages": []
+}
