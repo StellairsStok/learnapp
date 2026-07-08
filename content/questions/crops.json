@@ -3357,6 +3357,2462 @@
    "confidence": "medium",
    "label": "水平测评第18题",
    "informal": false
+  },
+  "q-wb1-p004-01": {
+   "file": "q-wb1-p004-01.webp",
+   "pages": [
+    4
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p004-02": {
+   "file": "q-wb1-p004-02.webp",
+   "pages": [
+    4
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p004-03": {
+   "file": "q-wb1-p004-03.webp",
+   "pages": [
+    4
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p005-01": {
+   "file": "q-wb1-p005-01.webp",
+   "pages": [
+    5
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p005-02": {
+   "file": "q-wb1-p005-02.webp",
+   "pages": [
+    5
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p005-03": {
+   "file": "q-wb1-p005-03.webp",
+   "pages": [
+    5
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p005-04": {
+   "file": "q-wb1-p005-04.webp",
+   "pages": [
+    5
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p006-01": {
+   "file": "q-wb1-p006-01.webp",
+   "pages": [
+    6
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p006-02": {
+   "file": "q-wb1-p006-02.webp",
+   "pages": [
+    6
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p006-03": {
+   "file": "q-wb1-p006-03.webp",
+   "pages": [
+    6
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p006-04": {
+   "file": "q-wb1-p006-04.webp",
+   "pages": [
+    6
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p006-05": {
+   "file": "q-wb1-p006-05.webp",
+   "pages": [
+    6
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p006-06": {
+   "file": "q-wb1-p006-06.webp",
+   "pages": [
+    6
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p007-01": {
+   "file": "q-wb1-p007-01.webp",
+   "pages": [
+    7
+   ],
+   "confidence": "high",
+   "label": "刷提升T7"
+  },
+  "q-wb1-p007-02": {
+   "file": "q-wb1-p007-02.webp",
+   "pages": [
+    7
+   ],
+   "confidence": "high",
+   "label": "刷提升T8"
+  },
+  "q-wb1-p007-03": {
+   "file": "q-wb1-p007-03.webp",
+   "pages": [
+    7
+   ],
+   "confidence": "high",
+   "label": "刷提升T9"
+  },
+  "q-wb1-p007-04": {
+   "file": "q-wb1-p007-04.webp",
+   "pages": [
+    7
+   ],
+   "confidence": "high",
+   "label": "刷提升T10"
+  },
+  "q-wb1-p007-05": {
+   "file": "q-wb1-p007-05.webp",
+   "pages": [
+    7
+   ],
+   "confidence": "high",
+   "label": "刷提升T11"
+  },
+  "q-wb1-p007-06": {
+   "file": "q-wb1-p007-06.webp",
+   "pages": [
+    7
+   ],
+   "confidence": "high",
+   "label": "刷易错T12"
+  },
+  "q-wb1-p008-01": {
+   "file": "q-wb1-p008-01.webp",
+   "pages": [
+    8
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p008-02": {
+   "file": "q-wb1-p008-02.webp",
+   "pages": [
+    8
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p008-03": {
+   "file": "q-wb1-p008-03.webp",
+   "pages": [
+    8
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p008-04": {
+   "file": "q-wb1-p008-04.webp",
+   "pages": [
+    8
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p008-05": {
+   "file": "q-wb1-p008-05.webp",
+   "pages": [
+    8
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p009-01": {
+   "file": "q-wb1-p009-01.webp",
+   "pages": [
+    9
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p009-02": {
+   "file": "q-wb1-p009-02.webp",
+   "pages": [
+    9
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p009-03": {
+   "file": "q-wb1-p009-03.webp",
+   "pages": [
+    9
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p009-04": {
+   "file": "q-wb1-p009-04.webp",
+   "pages": [
+    9
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p010-01": {
+   "file": "q-wb1-p010-01.webp",
+   "pages": [
+    10
+   ],
+   "confidence": "high",
+   "label": "刷题型T5"
+  },
+  "q-wb1-p010-02": {
+   "file": "q-wb1-p010-02.webp",
+   "pages": [
+    10
+   ],
+   "confidence": "high",
+   "label": "刷题型T6"
+  },
+  "q-wb1-p010-03": {
+   "file": "q-wb1-p010-03.webp",
+   "pages": [
+    10
+   ],
+   "confidence": "high",
+   "label": "刷题型T7"
+  },
+  "q-wb1-p010-04": {
+   "file": "q-wb1-p010-04.webp",
+   "pages": [
+    10
+   ],
+   "confidence": "high",
+   "label": "刷题型T8"
+  },
+  "q-wb1-p010-05": {
+   "file": "q-wb1-p010-05.webp",
+   "pages": [
+    10
+   ],
+   "confidence": "high",
+   "label": "刷易错T9"
+  },
+  "q-wb1-p011-01": {
+   "file": "q-wb1-p011-01.webp",
+   "pages": [
+    11
+   ],
+   "confidence": "high",
+   "label": "T1"
+  },
+  "q-wb1-p011-02": {
+   "file": "q-wb1-p011-02.webp",
+   "pages": [
+    11
+   ],
+   "confidence": "high",
+   "label": "T2"
+  },
+  "q-wb1-p011-03": {
+   "file": "q-wb1-p011-03.webp",
+   "pages": [
+    11
+   ],
+   "confidence": "high",
+   "label": "T3"
+  },
+  "q-wb1-p011-04": {
+   "file": "q-wb1-p011-04.webp",
+   "pages": [
+    11
+   ],
+   "confidence": "high",
+   "label": "T4"
+  },
+  "q-wb1-p012-01": {
+   "file": "q-wb1-p012-01.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p012-02": {
+   "file": "q-wb1-p012-02.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p012-03": {
+   "file": "q-wb1-p012-03.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p012-04": {
+   "file": "q-wb1-p012-04.webp",
+   "pages": [
+    12
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p013-01": {
+   "file": "q-wb1-p013-01.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p013-02": {
+   "file": "q-wb1-p013-02.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p013-03": {
+   "file": "q-wb1-p013-03.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p013-04": {
+   "file": "q-wb1-p013-04.webp",
+   "pages": [
+    13
+   ],
+   "confidence": "high",
+   "label": "刷基础T8"
+  },
+  "q-wb1-p014-01": {
+   "file": "q-wb1-p014-01.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p014-02": {
+   "file": "q-wb1-p014-02.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p014-03": {
+   "file": "q-wb1-p014-03.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p014-04": {
+   "file": "q-wb1-p014-04.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p014-05": {
+   "file": "q-wb1-p014-05.webp",
+   "pages": [
+    14
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p015-01": {
+   "file": "q-wb1-p015-01.webp",
+   "pages": [
+    15
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p015-02": {
+   "file": "q-wb1-p015-02.webp",
+   "pages": [
+    15
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p015-03": {
+   "file": "q-wb1-p015-03.webp",
+   "pages": [
+    15
+   ],
+   "confidence": "high",
+   "label": "刷基础T8"
+  },
+  "q-wb1-p015-04": {
+   "file": "q-wb1-p015-04.webp",
+   "pages": [
+    15
+   ],
+   "confidence": "high",
+   "label": "刷基础T9"
+  },
+  "q-wb1-p016-01": {
+   "file": "q-wb1-p016-01.webp",
+   "pages": [
+    16
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p016-02": {
+   "file": "q-wb1-p016-02.webp",
+   "pages": [
+    16
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p016-03": {
+   "file": "q-wb1-p016-03.webp",
+   "pages": [
+    16
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p016-04": {
+   "file": "q-wb1-p016-04.webp",
+   "pages": [
+    16
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p016-05": {
+   "file": "q-wb1-p016-05.webp",
+   "pages": [
+    16
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p016-06": {
+   "file": "q-wb1-p016-06.webp",
+   "pages": [
+    16
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p017-01": {
+   "file": "q-wb1-p017-01.webp",
+   "pages": [
+    17
+   ],
+   "confidence": "high",
+   "label": "刷提升T7"
+  },
+  "q-wb1-p017-02": {
+   "file": "q-wb1-p017-02.webp",
+   "pages": [
+    17
+   ],
+   "confidence": "high",
+   "label": "刷提升T8"
+  },
+  "q-wb1-p017-03": {
+   "file": "q-wb1-p017-03.webp",
+   "pages": [
+    17
+   ],
+   "confidence": "high",
+   "label": "刷易错T9"
+  },
+  "q-wb1-p017-04": {
+   "file": "q-wb1-p017-04.webp",
+   "pages": [
+    17
+   ],
+   "confidence": "high",
+   "label": "刷易错T10"
+  },
+  "q-wb1-p018-01": {
+   "file": "q-wb1-p018-01.webp",
+   "pages": [
+    18
+   ],
+   "confidence": "high",
+   "label": "刷提升T1"
+  },
+  "q-wb1-p018-02": {
+   "file": "q-wb1-p018-02.webp",
+   "pages": [
+    18
+   ],
+   "confidence": "high",
+   "label": "刷提升T2"
+  },
+  "q-wb1-p018-03": {
+   "file": "q-wb1-p018-03.webp",
+   "pages": [
+    18
+   ],
+   "confidence": "high",
+   "label": "刷提升T3"
+  },
+  "q-wb1-p018-04": {
+   "file": "q-wb1-p018-04.webp",
+   "pages": [
+    18
+   ],
+   "confidence": "high",
+   "label": "刷提升T4"
+  },
+  "q-wb1-p019-01": {
+   "file": "q-wb1-p019-01.webp",
+   "pages": [
+    19
+   ],
+   "confidence": "high",
+   "label": "刷综合T1"
+  },
+  "q-wb1-p019-02": {
+   "file": "q-wb1-p019-02.webp",
+   "pages": [
+    19
+   ],
+   "confidence": "high",
+   "label": "刷综合T2"
+  },
+  "q-wb1-p019-03": {
+   "file": "q-wb1-p019-03.webp",
+   "pages": [
+    19
+   ],
+   "confidence": "high",
+   "label": "刷综合T3"
+  },
+  "q-wb1-p019-04": {
+   "file": "q-wb1-p019-04.webp",
+   "pages": [
+    19
+   ],
+   "confidence": "high",
+   "label": "刷综合T4"
+  },
+  "q-wb1-p019-05": {
+   "file": "q-wb1-p019-05.webp",
+   "pages": [
+    19
+   ],
+   "confidence": "high",
+   "label": "刷综合T5"
+  },
+  "q-wb1-p020-01": {
+   "file": "q-wb1-p020-01.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "T6"
+  },
+  "q-wb1-p020-02": {
+   "file": "q-wb1-p020-02.webp",
+   "pages": [
+    20
+   ],
+   "confidence": "high",
+   "label": "T7"
+  },
+  "q-wb1-p021-01": {
+   "file": "q-wb1-p021-01.webp",
+   "pages": [
+    21
+   ],
+   "confidence": "high",
+   "label": "刷难关T1"
+  },
+  "q-wb1-p021-02": {
+   "file": "q-wb1-p021-02.webp",
+   "pages": [
+    21
+   ],
+   "confidence": "high",
+   "label": "刷难关T2"
+  },
+  "q-wb1-p021-03": {
+   "file": "q-wb1-p021-03.webp",
+   "pages": [
+    21
+   ],
+   "confidence": "high",
+   "label": "刷难关T3"
+  },
+  "q-wb1-p022-01": {
+   "file": "q-wb1-p022-01.webp",
+   "pages": [
+    22
+   ],
+   "confidence": "high",
+   "label": "T4"
+  },
+  "q-wb1-p022-02": {
+   "file": "q-wb1-p022-02.webp",
+   "pages": [
+    22
+   ],
+   "confidence": "high",
+   "label": "T5"
+  },
+  "q-wb1-p023-01": {
+   "file": "q-wb1-p023-01.webp",
+   "pages": [
+    23
+   ],
+   "confidence": "high",
+   "label": "刷题型T1"
+  },
+  "q-wb1-p023-02": {
+   "file": "q-wb1-p023-02.webp",
+   "pages": [
+    23
+   ],
+   "confidence": "high",
+   "label": "刷题型T2"
+  },
+  "q-wb1-p023-03": {
+   "file": "q-wb1-p023-03.webp",
+   "pages": [
+    23
+   ],
+   "confidence": "high",
+   "label": "刷题型T3"
+  },
+  "q-wb1-p023-04": {
+   "file": "q-wb1-p023-04.webp",
+   "pages": [
+    23
+   ],
+   "confidence": "high",
+   "label": "刷题型T4"
+  },
+  "q-wb1-p024-01": {
+   "file": "q-wb1-p024-01.webp",
+   "pages": [
+    24
+   ],
+   "confidence": "high",
+   "label": "T5"
+  },
+  "q-wb1-p024-02": {
+   "file": "q-wb1-p024-02.webp",
+   "pages": [
+    24
+   ],
+   "confidence": "high",
+   "label": "T6"
+  },
+  "q-wb1-p024-03": {
+   "file": "q-wb1-p024-03.webp",
+   "pages": [
+    24
+   ],
+   "confidence": "high",
+   "label": "T7"
+  },
+  "q-wb1-p025-01": {
+   "file": "q-wb1-p025-01.webp",
+   "pages": [
+    25
+   ],
+   "confidence": "high",
+   "label": "刷基础T8"
+  },
+  "q-wb1-p025-02": {
+   "file": "q-wb1-p025-02.webp",
+   "pages": [
+    25
+   ],
+   "confidence": "high",
+   "label": "刷基础T9"
+  },
+  "q-wb1-p025-03": {
+   "file": "q-wb1-p025-03.webp",
+   "pages": [
+    25
+   ],
+   "confidence": "high",
+   "label": "刷基础T10"
+  },
+  "q-wb1-p026-01": {
+   "file": "q-wb1-p026-01.webp",
+   "pages": [
+    26
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p026-02": {
+   "file": "q-wb1-p026-02.webp",
+   "pages": [
+    26
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p026-03": {
+   "file": "q-wb1-p026-03.webp",
+   "pages": [
+    26
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p026-04": {
+   "file": "q-wb1-p026-04.webp",
+   "pages": [
+    26
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p026-05": {
+   "file": "q-wb1-p026-05.webp",
+   "pages": [
+    26
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p026-06": {
+   "file": "q-wb1-p026-06.webp",
+   "pages": [
+    26
+   ],
+   "confidence": "high",
+   "label": "刷易错T6"
+  },
+  "q-wb1-p027-01": {
+   "file": "q-wb1-p027-01.webp",
+   "pages": [
+    27
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p027-02": {
+   "file": "q-wb1-p027-02.webp",
+   "pages": [
+    27
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p027-03": {
+   "file": "q-wb1-p027-03.webp",
+   "pages": [
+    27
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p027-04": {
+   "file": "q-wb1-p027-04.webp",
+   "pages": [
+    27
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p027-05": {
+   "file": "q-wb1-p027-05.webp",
+   "pages": [
+    27
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p027-06": {
+   "file": "q-wb1-p027-06.webp",
+   "pages": [
+    27
+   ],
+   "confidence": "high",
+   "label": "刷易错T6"
+  },
+  "q-wb1-p028-01": {
+   "file": "q-wb1-p028-01.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p028-02": {
+   "file": "q-wb1-p028-02.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p028-03": {
+   "file": "q-wb1-p028-03.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p028-04": {
+   "file": "q-wb1-p028-04.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p028-05": {
+   "file": "q-wb1-p028-05.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p028-06": {
+   "file": "q-wb1-p028-06.webp",
+   "pages": [
+    28
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p029-01": {
+   "file": "q-wb1-p029-01.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "刷提升T7"
+  },
+  "q-wb1-p029-02": {
+   "file": "q-wb1-p029-02.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "刷提升T8"
+  },
+  "q-wb1-p029-03": {
+   "file": "q-wb1-p029-03.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "刷提升T9"
+  },
+  "q-wb1-p029-04": {
+   "file": "q-wb1-p029-04.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "刷易错T10"
+  },
+  "q-wb1-p029-05": {
+   "file": "q-wb1-p029-05.webp",
+   "pages": [
+    29
+   ],
+   "confidence": "high",
+   "label": "刷易错T11"
+  },
+  "q-wb1-p030-01": {
+   "file": "q-wb1-p030-01.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "刷提升T1"
+  },
+  "q-wb1-p030-02": {
+   "file": "q-wb1-p030-02.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "刷提升T2"
+  },
+  "q-wb1-p030-03": {
+   "file": "q-wb1-p030-03.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "刷提升T3"
+  },
+  "q-wb1-p030-04": {
+   "file": "q-wb1-p030-04.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "刷提升T4"
+  },
+  "q-wb1-p030-05": {
+   "file": "q-wb1-p030-05.webp",
+   "pages": [
+    30
+   ],
+   "confidence": "high",
+   "label": "刷素养T5"
+  },
+  "q-wb1-p031-01": {
+   "file": "q-wb1-p031-01.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "刷题型T1"
+  },
+  "q-wb1-p031-02": {
+   "file": "q-wb1-p031-02.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "刷题型T2"
+  },
+  "q-wb1-p031-03": {
+   "file": "q-wb1-p031-03.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "刷题型T3"
+  },
+  "q-wb1-p031-04": {
+   "file": "q-wb1-p031-04.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "刷题型T4"
+  },
+  "q-wb1-p031-05": {
+   "file": "q-wb1-p031-05.webp",
+   "pages": [
+    31
+   ],
+   "confidence": "high",
+   "label": "刷题型T5"
+  },
+  "q-wb1-p032-01": {
+   "file": "q-wb1-p032-01.webp",
+   "pages": [
+    32
+   ],
+   "confidence": "high",
+   "label": "刷提升T6"
+  },
+  "q-wb1-p032-02": {
+   "file": "q-wb1-p032-02.webp",
+   "pages": [
+    32
+   ],
+   "confidence": "high",
+   "label": "刷提升T7"
+  },
+  "q-wb1-p032-03": {
+   "file": "q-wb1-p032-03.webp",
+   "pages": [
+    32
+   ],
+   "confidence": "high",
+   "label": "刷提升T8"
+  },
+  "q-wb1-p033-01": {
+   "file": "q-wb1-p033-01.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p033-02": {
+   "file": "q-wb1-p033-02.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p033-03": {
+   "file": "q-wb1-p033-03.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p033-04": {
+   "file": "q-wb1-p033-04.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p033-05": {
+   "file": "q-wb1-p033-05.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p033-06": {
+   "file": "q-wb1-p033-06.webp",
+   "pages": [
+    33
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p034-01": {
+   "file": "q-wb1-p034-01.webp",
+   "pages": [
+    34
+   ],
+   "confidence": "high",
+   "label": "素养检测T1"
+  },
+  "q-wb1-p034-02": {
+   "file": "q-wb1-p034-02.webp",
+   "pages": [
+    34
+   ],
+   "confidence": "high",
+   "label": "素养检测T2"
+  },
+  "q-wb1-p034-03": {
+   "file": "q-wb1-p034-03.webp",
+   "pages": [
+    34
+   ],
+   "confidence": "high",
+   "label": "素养检测T3"
+  },
+  "q-wb1-p034-04": {
+   "file": "q-wb1-p034-04.webp",
+   "pages": [
+    34
+   ],
+   "confidence": "high",
+   "label": "素养检测T4"
+  },
+  "q-wb1-p034-05": {
+   "file": "q-wb1-p034-05.webp",
+   "pages": [
+    34
+   ],
+   "confidence": "high",
+   "label": "素养检测T5"
+  },
+  "q-wb1-p035-01": {
+   "file": "q-wb1-p035-01.webp",
+   "pages": [
+    35
+   ],
+   "confidence": "high",
+   "label": "素养检测T6"
+  },
+  "q-wb1-p035-02": {
+   "file": "q-wb1-p035-02.webp",
+   "pages": [
+    35
+   ],
+   "confidence": "high",
+   "label": "素养检测T7"
+  },
+  "q-wb1-p035-03": {
+   "file": "q-wb1-p035-03.webp",
+   "pages": [
+    35
+   ],
+   "confidence": "high",
+   "label": "素养检测T8"
+  },
+  "q-wb1-p035-04": {
+   "file": "q-wb1-p035-04.webp",
+   "pages": [
+    35
+   ],
+   "confidence": "high",
+   "label": "素养检测T9"
+  },
+  "q-wb1-p035-05": {
+   "file": "q-wb1-p035-05.webp",
+   "pages": [
+    35
+   ],
+   "confidence": "high",
+   "label": "素养检测T10"
+  },
+  "q-wb1-p036-01": {
+   "file": "q-wb1-p036-01.webp",
+   "pages": [
+    36
+   ],
+   "confidence": "high",
+   "label": "素养检测T11"
+  },
+  "q-wb1-p036-02": {
+   "file": "q-wb1-p036-02.webp",
+   "pages": [
+    36
+   ],
+   "confidence": "high",
+   "label": "素养检测T12"
+  },
+  "q-wb1-p037-01": {
+   "file": "q-wb1-p037-01.webp",
+   "pages": [
+    37
+   ],
+   "confidence": "high",
+   "label": "高考强化T1"
+  },
+  "q-wb1-p037-02": {
+   "file": "q-wb1-p037-02.webp",
+   "pages": [
+    37
+   ],
+   "confidence": "high",
+   "label": "高考强化T2"
+  },
+  "q-wb1-p037-03": {
+   "file": "q-wb1-p037-03.webp",
+   "pages": [
+    37
+   ],
+   "confidence": "high",
+   "label": "高考强化T3"
+  },
+  "q-wb1-p038-01": {
+   "file": "q-wb1-p038-01.webp",
+   "pages": [
+    38
+   ],
+   "confidence": "high",
+   "label": "高考强化T4"
+  },
+  "q-wb1-p038-02": {
+   "file": "q-wb1-p038-02.webp",
+   "pages": [
+    38
+   ],
+   "confidence": "high",
+   "label": "高考强化T5"
+  },
+  "q-wb1-p038-03": {
+   "file": "q-wb1-p038-03.webp",
+   "pages": [
+    38
+   ],
+   "confidence": "high",
+   "label": "高考强化T6"
+  },
+  "q-wb1-p039-01": {
+   "file": "q-wb1-p039-01.webp",
+   "pages": [
+    39
+   ],
+   "confidence": "high",
+   "label": "高考强化T7"
+  },
+  "q-wb1-p039-02": {
+   "file": "q-wb1-p039-02.webp",
+   "pages": [
+    39
+   ],
+   "confidence": "high",
+   "label": "高考强化T8"
+  },
+  "q-wb1-p039-03": {
+   "file": "q-wb1-p039-03.webp",
+   "pages": [
+    39
+   ],
+   "confidence": "high",
+   "label": "高考强化T9"
+  },
+  "q-wb1-p039-04": {
+   "file": "q-wb1-p039-04.webp",
+   "pages": [
+    39
+   ],
+   "confidence": "high",
+   "label": "高考强化T10"
+  },
+  "q-wb1-p040-01": {
+   "file": "q-wb1-p040-01.webp",
+   "pages": [
+    40
+   ],
+   "confidence": "high",
+   "label": "高考强化T11"
+  },
+  "q-wb1-p040-02": {
+   "file": "q-wb1-p040-02.webp",
+   "pages": [
+    40
+   ],
+   "confidence": "high",
+   "label": "高考强化T12"
+  },
+  "q-wb1-p040-03": {
+   "file": "q-wb1-p040-03.webp",
+   "pages": [
+    40
+   ],
+   "confidence": "high",
+   "label": "高考强化T13"
+  },
+  "q-wb1-p040-04": {
+   "file": "q-wb1-p040-04.webp",
+   "pages": [
+    40
+   ],
+   "confidence": "high",
+   "label": "高考强化T14"
+  },
+  "q-wb1-p041-01": {
+   "file": "q-wb1-p041-01.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "高考强化T15"
+  },
+  "q-wb1-p041-02": {
+   "file": "q-wb1-p041-02.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "刷原创T1"
+  },
+  "q-wb1-p041-03": {
+   "file": "q-wb1-p041-03.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "高考强化T16"
+  },
+  "q-wb1-p041-04": {
+   "file": "q-wb1-p041-04.webp",
+   "pages": [
+    41
+   ],
+   "confidence": "high",
+   "label": "刷原创T2"
+  },
+  "q-wb1-p042-01": {
+   "file": "q-wb1-p042-01.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "T1"
+  },
+  "q-wb1-p042-02": {
+   "file": "q-wb1-p042-02.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "T2"
+  },
+  "q-wb1-p042-03": {
+   "file": "q-wb1-p042-03.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "T3"
+  },
+  "q-wb1-p042-04": {
+   "file": "q-wb1-p042-04.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "T4"
+  },
+  "q-wb1-p042-05": {
+   "file": "q-wb1-p042-05.webp",
+   "pages": [
+    42
+   ],
+   "confidence": "high",
+   "label": "T5"
+  },
+  "q-wb1-p043-01": {
+   "file": "q-wb1-p043-01.webp",
+   "pages": [
+    43
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p043-02": {
+   "file": "q-wb1-p043-02.webp",
+   "pages": [
+    43
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p043-03": {
+   "file": "q-wb1-p043-03.webp",
+   "pages": [
+    43
+   ],
+   "confidence": "high",
+   "label": "刷基础T8"
+  },
+  "q-wb1-p043-04": {
+   "file": "q-wb1-p043-04.webp",
+   "pages": [
+    43
+   ],
+   "confidence": "high",
+   "label": "刷易错T9"
+  },
+  "q-wb1-p044-01": {
+   "file": "q-wb1-p044-01.webp",
+   "pages": [
+    44
+   ],
+   "confidence": "high",
+   "label": "刷提升T1"
+  },
+  "q-wb1-p044-02": {
+   "file": "q-wb1-p044-02.webp",
+   "pages": [
+    44
+   ],
+   "confidence": "high",
+   "label": "刷提升T2"
+  },
+  "q-wb1-p044-03": {
+   "file": "q-wb1-p044-03.webp",
+   "pages": [
+    44
+   ],
+   "confidence": "high",
+   "label": "刷提升T3"
+  },
+  "q-wb1-p044-04": {
+   "file": "q-wb1-p044-04.webp",
+   "pages": [
+    44
+   ],
+   "confidence": "high",
+   "label": "刷素养T4"
+  },
+  "q-wb1-p045-01": {
+   "file": "q-wb1-p045-01.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p045-02": {
+   "file": "q-wb1-p045-02.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p045-03": {
+   "file": "q-wb1-p045-03.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p045-04": {
+   "file": "q-wb1-p045-04.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p045-05": {
+   "file": "q-wb1-p045-05.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p045-06": {
+   "file": "q-wb1-p045-06.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p045-07": {
+   "file": "q-wb1-p045-07.webp",
+   "pages": [
+    45
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p046-01": {
+   "file": "q-wb1-p046-01.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "T8"
+  },
+  "q-wb1-p046-02": {
+   "file": "q-wb1-p046-02.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "T9"
+  },
+  "q-wb1-p046-03": {
+   "file": "q-wb1-p046-03.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "教材变式T10"
+  },
+  "q-wb1-p046-04": {
+   "file": "q-wb1-p046-04.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "T11"
+  },
+  "q-wb1-p046-05": {
+   "file": "q-wb1-p046-05.webp",
+   "pages": [
+    46
+   ],
+   "confidence": "high",
+   "label": "刷易错T12"
+  },
+  "q-wb1-p047-01": {
+   "file": "q-wb1-p047-01.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p047-02": {
+   "file": "q-wb1-p047-02.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p047-03": {
+   "file": "q-wb1-p047-03.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p047-04": {
+   "file": "q-wb1-p047-04.webp",
+   "pages": [
+    47
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p048-01": {
+   "file": "q-wb1-p048-01.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "题型5T5"
+  },
+  "q-wb1-p048-02": {
+   "file": "q-wb1-p048-02.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "题型5T6"
+  },
+  "q-wb1-p048-03": {
+   "file": "q-wb1-p048-03.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "题型5T7"
+  },
+  "q-wb1-p048-04": {
+   "file": "q-wb1-p048-04.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "题型6T8"
+  },
+  "q-wb1-p048-05": {
+   "file": "q-wb1-p048-05.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "题型6T9"
+  },
+  "q-wb1-p048-06": {
+   "file": "q-wb1-p048-06.webp",
+   "pages": [
+    48
+   ],
+   "confidence": "high",
+   "label": "刷易错T10"
+  },
+  "q-wb1-p049-01": {
+   "file": "q-wb1-p049-01.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p049-02": {
+   "file": "q-wb1-p049-02.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p049-03": {
+   "file": "q-wb1-p049-03.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p049-04": {
+   "file": "q-wb1-p049-04.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p049-05": {
+   "file": "q-wb1-p049-05.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p049-06": {
+   "file": "q-wb1-p049-06.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p049-07": {
+   "file": "q-wb1-p049-07.webp",
+   "pages": [
+    49
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p050-01": {
+   "file": "q-wb1-p050-01.webp",
+   "pages": [
+    50
+   ],
+   "confidence": "high",
+   "label": "题型4T8"
+  },
+  "q-wb1-p050-02": {
+   "file": "q-wb1-p050-02.webp",
+   "pages": [
+    50
+   ],
+   "confidence": "high",
+   "label": "题型4T9"
+  },
+  "q-wb1-p050-03": {
+   "file": "q-wb1-p050-03.webp",
+   "pages": [
+    50
+   ],
+   "confidence": "high",
+   "label": "题型5T10"
+  },
+  "q-wb1-p050-04": {
+   "file": "q-wb1-p050-04.webp",
+   "pages": [
+    50
+   ],
+   "confidence": "high",
+   "label": "题型5T11"
+  },
+  "q-wb1-p050-05": {
+   "file": "q-wb1-p050-05.webp",
+   "pages": [
+    50
+   ],
+   "confidence": "high",
+   "label": "刷易错T12"
+  },
+  "q-wb1-p051-01": {
+   "file": "q-wb1-p051-01.webp",
+   "pages": [
+    51
+   ],
+   "confidence": "high",
+   "label": "刷提升T1"
+  },
+  "q-wb1-p051-02": {
+   "file": "q-wb1-p051-02.webp",
+   "pages": [
+    51
+   ],
+   "confidence": "high",
+   "label": "刷提升T2"
+  },
+  "q-wb1-p051-03": {
+   "file": "q-wb1-p051-03.webp",
+   "pages": [
+    51
+   ],
+   "confidence": "high",
+   "label": "刷提升T3"
+  },
+  "q-wb1-p051-04": {
+   "file": "q-wb1-p051-04.webp",
+   "pages": [
+    51
+   ],
+   "confidence": "high",
+   "label": "刷提升T4"
+  },
+  "q-wb1-p051-05": {
+   "file": "q-wb1-p051-05.webp",
+   "pages": [
+    51
+   ],
+   "confidence": "high",
+   "label": "刷提升T5"
+  },
+  "q-wb1-p052-01": {
+   "file": "q-wb1-p052-01.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "刷难关T1"
+  },
+  "q-wb1-p052-02": {
+   "file": "q-wb1-p052-02.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "刷难关T2"
+  },
+  "q-wb1-p052-03": {
+   "file": "q-wb1-p052-03.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "刷难关T3"
+  },
+  "q-wb1-p052-04": {
+   "file": "q-wb1-p052-04.webp",
+   "pages": [
+    52
+   ],
+   "confidence": "high",
+   "label": "刷难关T4"
+  },
+  "q-wb1-p053-01": {
+   "file": "q-wb1-p053-01.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p053-02": {
+   "file": "q-wb1-p053-02.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p053-03": {
+   "file": "q-wb1-p053-03.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p053-04": {
+   "file": "q-wb1-p053-04.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p053-05": {
+   "file": "q-wb1-p053-05.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p053-06": {
+   "file": "q-wb1-p053-06.webp",
+   "pages": [
+    53
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p054-01": {
+   "file": "q-wb1-p054-01.webp",
+   "pages": [
+    54
+   ],
+   "confidence": "high",
+   "label": "T7"
+  },
+  "q-wb1-p054-02": {
+   "file": "q-wb1-p054-02.webp",
+   "pages": [
+    54
+   ],
+   "confidence": "high",
+   "label": "题型5T8"
+  },
+  "q-wb1-p054-03": {
+   "file": "q-wb1-p054-03.webp",
+   "pages": [
+    54
+   ],
+   "confidence": "high",
+   "label": "题型5T9"
+  },
+  "q-wb1-p054-04": {
+   "file": "q-wb1-p054-04.webp",
+   "pages": [
+    54
+   ],
+   "confidence": "high",
+   "label": "题型5T10"
+  },
+  "q-wb1-p054-05": {
+   "file": "q-wb1-p054-05.webp",
+   "pages": [
+    54
+   ],
+   "confidence": "high",
+   "label": "题型6T11"
+  },
+  "q-wb1-p054-06": {
+   "file": "q-wb1-p054-06.webp",
+   "pages": [
+    54
+   ],
+   "confidence": "high",
+   "label": "刷易错T12"
+  },
+  "q-wb1-p055-01": {
+   "file": "q-wb1-p055-01.webp",
+   "pages": [
+    55
+   ],
+   "confidence": "high",
+   "label": "刷提升T1"
+  },
+  "q-wb1-p055-02": {
+   "file": "q-wb1-p055-02.webp",
+   "pages": [
+    55
+   ],
+   "confidence": "high",
+   "label": "刷提升T2"
+  },
+  "q-wb1-p055-03": {
+   "file": "q-wb1-p055-03.webp",
+   "pages": [
+    55
+   ],
+   "confidence": "high",
+   "label": "刷提升T3"
+  },
+  "q-wb1-p055-04": {
+   "file": "q-wb1-p055-04.webp",
+   "pages": [
+    55
+   ],
+   "confidence": "high",
+   "label": "刷素养T4"
+  },
+  "q-wb1-p056-01": {
+   "file": "q-wb1-p056-01.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p056-02": {
+   "file": "q-wb1-p056-02.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p056-03": {
+   "file": "q-wb1-p056-03.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p056-04": {
+   "file": "q-wb1-p056-04.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p056-05": {
+   "file": "q-wb1-p056-05.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p056-06": {
+   "file": "q-wb1-p056-06.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p056-07": {
+   "file": "q-wb1-p056-07.webp",
+   "pages": [
+    56
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p057-01": {
+   "file": "q-wb1-p057-01.webp",
+   "pages": [
+    57
+   ],
+   "confidence": "high",
+   "label": "刷基础T8"
+  },
+  "q-wb1-p057-02": {
+   "file": "q-wb1-p057-02.webp",
+   "pages": [
+    57
+   ],
+   "confidence": "high",
+   "label": "刷基础T9"
+  },
+  "q-wb1-p057-03": {
+   "file": "q-wb1-p057-03.webp",
+   "pages": [
+    57
+   ],
+   "confidence": "high",
+   "label": "刷基础T10"
+  },
+  "q-wb1-p057-04": {
+   "file": "q-wb1-p057-04.webp",
+   "pages": [
+    57
+   ],
+   "confidence": "high",
+   "label": "刷易错T11"
+  },
+  "q-wb1-p058-01": {
+   "file": "q-wb1-p058-01.webp",
+   "pages": [
+    58
+   ],
+   "confidence": "high",
+   "label": "刷难关T1"
+  },
+  "q-wb1-p058-02": {
+   "file": "q-wb1-p058-02.webp",
+   "pages": [
+    58
+   ],
+   "confidence": "high",
+   "label": "刷难关T2"
+  },
+  "q-wb1-p058-03": {
+   "file": "q-wb1-p058-03.webp",
+   "pages": [
+    58
+   ],
+   "confidence": "high",
+   "label": "刷难关T3"
+  },
+  "q-wb1-p059-01": {
+   "file": "q-wb1-p059-01.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p059-02": {
+   "file": "q-wb1-p059-02.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p059-03": {
+   "file": "q-wb1-p059-03.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p059-04": {
+   "file": "q-wb1-p059-04.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p059-05": {
+   "file": "q-wb1-p059-05.webp",
+   "pages": [
+    59
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p060-01": {
+   "file": "q-wb1-p060-01.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T1"
+  },
+  "q-wb1-p060-02": {
+   "file": "q-wb1-p060-02.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T2"
+  },
+  "q-wb1-p060-03": {
+   "file": "q-wb1-p060-03.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T3"
+  },
+  "q-wb1-p060-04": {
+   "file": "q-wb1-p060-04.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T4"
+  },
+  "q-wb1-p060-05": {
+   "file": "q-wb1-p060-05.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T5"
+  },
+  "q-wb1-p060-06": {
+   "file": "q-wb1-p060-06.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T6"
+  },
+  "q-wb1-p060-07": {
+   "file": "q-wb1-p060-07.webp",
+   "pages": [
+    60
+   ],
+   "confidence": "high",
+   "label": "刷基础T7"
+  },
+  "q-wb1-p061-01": {
+   "file": "q-wb1-p061-01.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "T8"
+  },
+  "q-wb1-p061-02": {
+   "file": "q-wb1-p061-02.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "T9"
+  },
+  "q-wb1-p061-03": {
+   "file": "q-wb1-p061-03.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "T10"
+  },
+  "q-wb1-p061-04": {
+   "file": "q-wb1-p061-04.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "T11"
+  },
+  "q-wb1-p061-05": {
+   "file": "q-wb1-p061-05.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "T12"
+  },
+  "q-wb1-p061-06": {
+   "file": "q-wb1-p061-06.webp",
+   "pages": [
+    61
+   ],
+   "confidence": "high",
+   "label": "刷易错T13"
+  },
+  "q-wb1-p062-01": {
+   "file": "q-wb1-p062-01.webp",
+   "pages": [
+    62
+   ],
+   "confidence": "high",
+   "label": "刷提升T1"
+  },
+  "q-wb1-p062-02": {
+   "file": "q-wb1-p062-02.webp",
+   "pages": [
+    62
+   ],
+   "confidence": "high",
+   "label": "刷提升T2"
+  },
+  "q-wb1-p062-03": {
+   "file": "q-wb1-p062-03.webp",
+   "pages": [
+    62
+   ],
+   "confidence": "high",
+   "label": "刷素养T3"
+  },
+  "q-wb1-p063-01": {
+   "file": "q-wb1-p063-01.webp",
+   "pages": [
+    63
+   ],
+   "confidence": "high",
+   "label": "素养检测T1"
+  },
+  "q-wb1-p063-02": {
+   "file": "q-wb1-p063-02.webp",
+   "pages": [
+    63
+   ],
+   "confidence": "high",
+   "label": "素养检测T2"
+  },
+  "q-wb1-p063-03": {
+   "file": "q-wb1-p063-03.webp",
+   "pages": [
+    63
+   ],
+   "confidence": "high",
+   "label": "素养检测T3"
+  },
+  "q-wb1-p063-04": {
+   "file": "q-wb1-p063-04.webp",
+   "pages": [
+    63
+   ],
+   "confidence": "high",
+   "label": "素养检测T4"
+  },
+  "q-wb1-p064-01": {
+   "file": "q-wb1-p064-01.webp",
+   "pages": [
+    64
+   ],
+   "confidence": "high",
+   "label": "素养检测T5"
+  },
+  "q-wb1-p064-02": {
+   "file": "q-wb1-p064-02.webp",
+   "pages": [
+    64
+   ],
+   "confidence": "high",
+   "label": "素养检测T6"
+  },
+  "q-wb1-p064-03": {
+   "file": "q-wb1-p064-03.webp",
+   "pages": [
+    64
+   ],
+   "confidence": "high",
+   "label": "素养检测T7"
+  },
+  "q-wb1-p064-04": {
+   "file": "q-wb1-p064-04.webp",
+   "pages": [
+    64
+   ],
+   "confidence": "high",
+   "label": "素养检测T8"
+  },
+  "q-wb1-p065-01": {
+   "file": "q-wb1-p065-01.webp",
+   "pages": [
+    65
+   ],
+   "confidence": "high",
+   "label": "素养检测T9"
+  },
+  "q-wb1-p065-02": {
+   "file": "q-wb1-p065-02.webp",
+   "pages": [
+    65
+   ],
+   "confidence": "high",
+   "label": "素养检测T10"
+  },
+  "q-wb1-p065-03": {
+   "file": "q-wb1-p065-03.webp",
+   "pages": [
+    65
+   ],
+   "confidence": "high",
+   "label": "素养检测T11"
+  },
+  "q-wb1-p066-01": {
+   "file": "q-wb1-p066-01.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T1"
+  },
+  "q-wb1-p066-02": {
+   "file": "q-wb1-p066-02.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T2"
+  },
+  "q-wb1-p066-03": {
+   "file": "q-wb1-p066-03.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T3"
+  },
+  "q-wb1-p066-04": {
+   "file": "q-wb1-p066-04.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T4"
+  },
+  "q-wb1-p066-05": {
+   "file": "q-wb1-p066-05.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T5"
+  },
+  "q-wb1-p066-06": {
+   "file": "q-wb1-p066-06.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T6"
+  },
+  "q-wb1-p066-07": {
+   "file": "q-wb1-p066-07.webp",
+   "pages": [
+    66
+   ],
+   "confidence": "high",
+   "label": "刷真题T7"
+  },
+  "q-wb1-p067-01": {
+   "file": "q-wb1-p067-01.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T8"
+  },
+  "q-wb1-p067-02": {
+   "file": "q-wb1-p067-02.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T9"
+  },
+  "q-wb1-p067-03": {
+   "file": "q-wb1-p067-03.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T10"
+  },
+  "q-wb1-p067-04": {
+   "file": "q-wb1-p067-04.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T11"
+  },
+  "q-wb1-p067-05": {
+   "file": "q-wb1-p067-05.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T12"
+  },
+  "q-wb1-p067-06": {
+   "file": "q-wb1-p067-06.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T13"
+  },
+  "q-wb1-p067-07": {
+   "file": "q-wb1-p067-07.webp",
+   "pages": [
+    67
+   ],
+   "confidence": "high",
+   "label": "高考强化T14"
+  },
+  "q-wb1-p068-01": {
+   "file": "q-wb1-p068-01.webp",
+   "pages": [
+    68
+   ],
+   "confidence": "high",
+   "label": "高考强化T15"
+  },
+  "q-wb1-p068-02": {
+   "file": "q-wb1-p068-02.webp",
+   "pages": [
+    68
+   ],
+   "confidence": "high",
+   "label": "刷原创T1"
+  },
+  "q-wb1-p068-03": {
+   "file": "q-wb1-p068-03.webp",
+   "pages": [
+    68
+   ],
+   "confidence": "high",
+   "label": "刷原创T2"
+  },
+  "q-wb1-p068-04": {
+   "file": "q-wb1-p068-04.webp",
+   "pages": [
+    68
+   ],
+   "confidence": "high",
+   "label": "刷原创T3"
+  },
+  "q-wb1-p068-05": {
+   "file": "q-wb1-p068-05.webp",
+   "pages": [
+    68
+   ],
+   "confidence": "high",
+   "label": "刷原创T4"
+  },
+  "q-wb1-p069-01": {
+   "file": "q-wb1-p069-01.webp",
+   "pages": [
+    69
+   ],
+   "confidence": "high",
+   "label": "题型专练T1"
+  },
+  "q-wb1-p069-02": {
+   "file": "q-wb1-p069-02.webp",
+   "pages": [
+    69
+   ],
+   "confidence": "high",
+   "label": "题型专练T2"
+  },
+  "q-wb1-p069-03": {
+   "file": "q-wb1-p069-03.webp",
+   "pages": [
+    69
+   ],
+   "confidence": "high",
+   "label": "题型专练T3"
+  },
+  "q-wb1-p069-04": {
+   "file": "q-wb1-p069-04.webp",
+   "pages": [
+    69
+   ],
+   "confidence": "high",
+   "label": "题型专练T4"
+  },
+  "q-wb1-p070-01": {
+   "file": "q-wb1-p070-01.webp",
+   "pages": [
+    70
+   ],
+   "confidence": "high",
+   "label": "专练T5"
+  },
+  "q-wb1-p070-02": {
+   "file": "q-wb1-p070-02.webp",
+   "pages": [
+    70
+   ],
+   "confidence": "high",
+   "label": "专练T6"
+  },
+  "q-wb1-p071-01": {
+   "file": "q-wb1-p071-01.webp",
+   "pages": [
+    71
+   ],
+   "confidence": "high",
+   "label": "刷素养T1"
+  },
+  "q-wb1-p071-02": {
+   "file": "q-wb1-p071-02.webp",
+   "pages": [
+    71
+   ],
+   "confidence": "high",
+   "label": "刷素养T2"
   }
  }
 }
