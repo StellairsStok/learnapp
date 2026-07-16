@@ -171,6 +171,18 @@ export function questionSourceLabel(qid: string, page: number): string {
   return qid.startsWith("q-wb1-") ? `必刷题 p${page - 3}` : `讲义 p${page}`;
 }
 
+// ---------- 微知识点清单(小步教学的骨架) ----------
+export interface Beat {
+  n: number;
+  point: string;
+  check: string;
+  trap?: string;
+}
+export async function getBeats(kpId: string): Promise<Beat[] | null> {
+  const b = await loadJson<{ kpId: string; beats: Beat[] }>(`beats/${kpId}.json`);
+  return b?.beats ?? null;
+}
+
 // ---------- 概念配图(从真题裁出的标准图) ----------
 export interface Figure {
   id: string;

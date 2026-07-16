@@ -1,5 +1,5 @@
 // 教学模式层(客户端):模式由内容状态×学生偏好的矩阵决定。取代原 server/lib/pedagogy.ts。
-import { getFigures, getKnowledgeCard, getKpMap, getPedagogyInject, getPersonaInject } from "./content";
+import { getBeats, getFigures, getKnowledgeCard, getKpMap, getPedagogyInject, getPersonaInject } from "./content";
 import { hasPracticeFor } from "./practice";
 import type { Student } from "./store";
 import { teacherModelBlock } from "./studentModel";
@@ -45,13 +45,33 @@ export function plainName(name: string): string {
   return name.replace(/\\frac1V/g, "1/V").replace(/\\frac\{1\}\{V\}/g, "1/V").replace(/[$\\]/g, "");
 }
 
-const TEACHING_QUALITY = `【把这节课讲好的要求】
-- 先点破再展开:开头用一句话或一个图景点破这个考点的核心,别一上来堆公式。
-- 公式要"讲活":每个公式都说清它的物理意义、成立条件、符号与单位约定,而不是只写出来。
-- 有配图就用:若下方列出了本考点的真实配图,在讲到对应内容时插入,不要只用文字描述图形;没有配图时用文字把图景讲清楚即可,不要凭空编图。
-- 举一个最小的具体例子走一遍,并就着易错点指出这里最容易踩的坑。
-- 边讲边验:讲完一小节,用一个简短问题检查学生是否真懂(让他用自己的话复述,或做一步),再往下走——不要一口气讲到底。
-- 口语、简洁、像面对面讲题;分点清楚,但不写成教科书。`;
+const TEACHING_QUALITY = `【小步教学法——这是讲课方式的铁律】
+你不是在"播讲义",是在一对一带学生。节奏永远是:讲一小步 → 用一个小问题收口 → 等学生回应 → 再进下一步。
+- 每轮回复只推进一小步(一到两个微知识点),篇幅短;绝对禁止把整个考点一口气讲完、禁止一次抛出全部公式。
+- 每轮结尾必须落在一个具体的检查问题上(让学生复述、判断或算一小步),不要用"明白了吗"这种空问。
+- 学生答对→一句具体的肯定(点出他对在哪),进下一步;答错→先用引导修复补断点,修好再前进;学生连续轻松答对→可以合并加速,但检查不能省。
+- 开课(学生刚选中考点)只用三四句话开场:这节课要拿下什么、高考怎么考它、大概分几步——然后直接进第一步,不要报菜单式罗列全部内容。
+- 公式出场时要"讲活":物理意义、成立条件、符号单位,一次只立一个公式。
+- 有配图就用:讲到对应内容时插入下方列出的真实配图,不要只用文字描述图形;没有配图就用文字把图景讲清楚,不要凭空编图。
+- 口语、像面对面;可以用"来""你看""注意"这类口头语,不写教科书腔。`;
+
+// 微知识点清单:小步教学的骨架。有清单时按清单逐条落实;从对话历史自行判断进度。
+async function beatsGuideFor(kpId: string | null | undefined): Promise<string | null> {
+  if (!kpId) return null;
+  const beats = await getBeats(kpId);
+  if (!beats || beats.length === 0) return null;
+  const rows = beats
+    .map((b) => `${b.n}. ${b.point}\n   检查:${b.check}${b.trap ? `\n   易错:${b.trap}` : ""}`)
+    .join("\n");
+  return `【本考点必须逐条落实的微知识点清单(只给你看,不要展示给学生)】
+${rows}
+
+清单用法:
+- 这是这节课的行军路线:按序号逐条教,每条就是一小步,讲完用该条"检查"收口。
+- 从对话历史判断已经落实到第几条,接着往下,不要从头重复;学生已答对的检查不再重问。
+- 学生的提问若跳到了后面的条目,可以先答,但答完回到主线补齐中间的条目。
+- 全部条目落实后:带学生做 1 分钟串联复盘(让他自己把主线复述一遍),然后按【课后出题】提议练题。`;
+}
 
 const PRACTICE_OFFER = `【课后出题】当这个考点讲清楚、且学生看起来跟上了,主动提议练一道("要不要拿一道题练练手?我挑一道跟这节课对得上的")。你只需口头提出——学生点"做一道相关的题"后,程序会从题库挑一道匹配题、以图片形式呈现,你届时再据此带他做。若学生正在作答你出的练习题:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;不要一上来直接报标准答案。`;
 
@@ -85,6 +105,8 @@ export async function buildSystemPrompt(
     const inject = await getPedagogyInject(mode);
     if (inject) parts.push(`【当前教学模式:${MODE_NAMES[mode]}】\n${inject}`);
     parts.push(TEACHING_QUALITY);
+    const beatsGuide = await beatsGuideFor(kpId);
+    if (beatsGuide) parts.push(beatsGuide);
     const figGuide = await figureGuideFor(kpId);
     if (figGuide) parts.push(figGuide);
     parts.push((await hasPracticeFor(kpId)) ? PRACTICE_OFFER : PRACTICE_OFFER_NO_BANK);
