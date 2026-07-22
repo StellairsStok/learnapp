@@ -4,6 +4,7 @@ import { MODEL } from "../config";
 import { presentPractice, runChat } from "../engine/chat";
 import { getTree } from "../engine/content";
 import { gradeAnswer, nextQuestion, questionMeta, stats } from "../engine/practice";
+import { dailyPlan, masteryLevel, overallMastery } from "../engine/progress";
 import { exportStudent, getStudent, importStudent, resetStudent, saveStudent, type Student } from "../engine/store";
 import { studentSignals } from "../engine/studentModel";
 import type { Chip } from "./types";
@@ -43,6 +44,15 @@ export async function getJSON<T>(url: string): Promise<T> {
     }
     case "/api/questions/stats":
       return (await stats()) as T;
+    case "/api/progress": {
+      const s = getStudent();
+      const now = Date.now();
+      const levels: Record<string, { level: string; due: boolean }> = {};
+      for (const [kp, m] of Object.entries(s.mastery)) {
+        levels[kp] = { level: masteryLevel(m, now), due: !!(m.dueAt && Date.parse(m.dueAt) <= now) };
+      }
+      return { plan: dailyPlan(s), overall: await overallMastery(s, now), levels } as T;
+    }
     case "/api/student":
       return publicStudent(getStudent()) as T;
     case "/api/student/model": {

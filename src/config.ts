@@ -7,6 +7,8 @@ export const PROXY_KEY =
   (import.meta.env.VITE_PROXY_KEY as string) ||
   "sk-JDEqsbumVknv4CsDStEaGEdJwlnlKlPZnPzKrA4GfkFstpVW";
 export const MODEL = "claude-opus-4-8";
+/** 高考日期(黑龙江),倒计时用 */
+export const EXAM_DATE = "2027-06-07";
 export const MAX_TOKENS = 2048;
 
 /** 静态资源基路径(GitHub Pages 子路径下如 /learnapp/)。 */

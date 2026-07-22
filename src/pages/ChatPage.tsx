@@ -194,8 +194,13 @@ export default function ChatPage() {
           })),
         );
         if (questionId) {
-          setMessages((m) => [...m, { role: "user", text: "请带我做这道题" }, { role: "assistant", text: "" }]);
-          await runStream("请带我做这道题");
+          const given = params.get("given");
+          const ans = params.get("ans");
+          const kickoff = given && ans
+            ? `我刚在练习里做错了这道题:我选了 ${given},正确答案是 ${ans}。先别直接讲答案——带我找到我到底错在哪一步,再让我自己重走一遍。`
+            : "请带我做这道题";
+          setMessages((m) => [...m, { role: "user", text: kickoff }, { role: "assistant", text: "" }]);
+          await runStream(kickoff);
         } else if (visible.length === 0) {
           setMessages([{ role: "assistant", text: "" }]);
           await runStream("__start__");

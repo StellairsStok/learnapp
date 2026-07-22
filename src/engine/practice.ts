@@ -8,6 +8,7 @@ import {
   questionSourceLabel,
   type SeedQuestion,
 } from "./content";
+import { scheduleReview, touchStreak } from "./progress";
 import { getStudent, saveStudent, touchMastery } from "./store";
 
 export type DifficultyLevel = "basic" | "advanced" | "challenge";
@@ -123,6 +124,7 @@ export async function nextQuestion(params: URLSearchParams): Promise<{ question:
   const kp = params.get("kp");
   const qid = params.get("qid");
   const level = parseLevel(params.get("level"));
+  const source = params.get("source");
   const excluded = new Set(
     (params.get("exclude") ?? "").split(",").map((x) => x.trim()).filter(Boolean),
   );
@@ -132,6 +134,19 @@ export async function nextQuestion(params: URLSearchParams): Promise<{ question:
   if (qid) {
     const hit = all.find((x) => x.qid === qid);
     return hit ? { question: hit } : { question: null, reason: "题目不存在" };
+  }
+
+  // 错题重练模式:只出还没攻克的错题,不偏好新题
+  if (source === "mistakes") {
+    const unresolved = [...new Set(s.mistakes.filter((m) => !m.resolvedAt).map((m) => m.qid))];
+    const pm = all.filter((x) => unresolved.includes(x.qid) && !excluded.has(x.qid));
+    if (pm.length === 0) {
+      return { question: null, reason: unresolved.length === 0 ? "错题全部攻克了——好样的!" : "这一轮错题都练过了,休息一下或去学新考点。" };
+    }
+    // 按错的时间从旧到新(先啃最老的账)
+    const order = new Map(s.mistakes.filter((m) => !m.resolvedAt).map((m, i) => [m.qid, i]));
+    pm.sort((a, b) => (order.get(b.qid) ?? 0) - (order.get(a.qid) ?? 0));
+    return { question: pm[0] };
   }
 
   const matchesKp = (x: Candidate) => !kp || x.kp_primary === kp || x.kp_secondary?.includes(kp);
@@ -182,7 +197,11 @@ export async function gradeAnswer(qid: string, given: string[]): Promise<{ corre
 
   const s = getStudent();
   s.answers[qid] = { correct, given: chosen.join(""), at: new Date().toISOString() };
-  if (q.kp_primary) touchMastery(s, q.kp_primary, correct);
+  if (q.kp_primary) {
+    touchMastery(s, q.kp_primary, correct);
+    scheduleReview(s.mastery[q.kp_primary], correct); // 间隔复习排期
+  }
+  touchStreak(s); // 连续学习天数
   if (!correct) {
     s.mistakes.unshift({
       qid,
@@ -194,6 +213,10 @@ export async function gradeAnswer(qid: string, given: string[]): Promise<{ corre
       answer: answer.join(""),
       at: new Date().toISOString(),
     });
+  } else {
+    // 错题攻克:重练做对,把这道题所有未销账的错题记录标记为已攻克
+    const now = new Date().toISOString();
+    for (const m of s.mistakes) if (m.qid === qid && !m.resolvedAt) m.resolvedAt = now;
   }
   saveStudent(s);
   return { correct, answer: answer.join(""), rationale: q.rationale_draft, review_status: q.review_status };

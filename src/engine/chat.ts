@@ -2,9 +2,10 @@
 // 真大脑讲课(流式)、视觉讲题、课后写笔记。取代原 server /api/chat。
 import { MAX_TOKENS, MODEL } from "../config";
 import { imageToBase64, ProxyError, streamProxy } from "./brain";
-import { getCrops, getKpMap, getQuestionIndex, getTree, questionImageUrl, questionSourceLabel } from "./content";
+import { getCrops, getKpMap, getQuestionIndex, getSeeds, getTree, questionImageUrl, questionSourceLabel } from "./content";
 import { buildSystemPrompt, masteryState, MODE_NAMES, pickMode, plainName, type Mode } from "./pedagogy";
 import { hasPracticeFor, nextQuestion } from "./practice";
+import { touchStreak, touchTaught } from "./progress";
 import { getStudent, saveStudent, type ChatEntry, type Student } from "./store";
 import { maybeWriteNotes } from "./studentModel";
 
@@ -200,25 +201,39 @@ export async function runChat(
     }
   }
 
-  // 讲题/批改上下文:题图视觉输入。qid 来自 URL(明确讲题)或 activeQid(学生正在做我出的练习题)。
+  // 讲题/批改上下文:图片题走视觉输入;文本题(seed)把题干+选项作为原文注入。
   const qid = explicitQid ?? s.activeQid ?? null;
   const isGrading = !teachKickoff && !explicitQid && !!s.activeQid && qid === s.activeQid;
   let questionImage: { dataB64: string; mediaType: string; caption: string } | null = null;
+  let questionText: string | null = null; // 文本题的题面注入
   let effectiveKp = kpId;
   if (qid) {
     const qmeta = (await getQuestionIndex()).find((x) => x.qid === qid);
     const crop = (await getCrops())[qid];
+    const kpName = qmeta ? ((await getKpMap()).get(qmeta.kp_primary)?.name ?? qmeta.kp_primary) : "";
+    const gradingNote = `这是学生正在做的练习题。下面是学生的作答或提问。请按引导修复讲评:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;做对了就确认并点出关键、可追问一句变式。`;
     if (qmeta && crop) {
       try {
         const { data, mediaType } = await imageToBase64(questionImageUrl(crop.file));
-        const kpName = (await getKpMap()).get(qmeta.kp_primary)?.name ?? qmeta.kp_primary;
         questionImage = {
           dataB64: data, mediaType,
           caption: isGrading
-            ? `这是你刚出给学生的练习题(${questionSourceLabel(qid, qmeta.page)} ${qmeta.label},考点:${kpName})。下面是学生的作答或提问。请按引导修复讲评:先肯定做对的部分,精准指出错在哪一步、只补断的那一环,再让他自己重走一遍;做对了就确认并点出关键、可追问一句变式。标准答案未录入时,你先自己解一遍并用第二种方法/量纲复核。`
+            ? `${gradingNote}(${questionSourceLabel(qid, qmeta.page)} ${qmeta.label},考点:${kpName})标准答案未录入时,你先自己解一遍并用第二种方法/量纲复核。`
             : `${questionSourceLabel(qid, qmeta.page)} ${qmeta.label},考点:${kpName},题型:${qmeta.qtype}。截图可能带到相邻内容,只讲 ${qmeta.label} 这道题。此题标准答案未录入,请你独立解出后按苏格拉底阶梯带学生做,最终答案要自己验算。`,
         };
-      } catch { /* 图取不到就当普通讲课 */ }
+      } catch { /* 图取不到则退回文本/普通讲课 */ }
+      if (!effectiveKp) effectiveKp = qmeta.kp_primary;
+    }
+    if (qmeta && !questionImage) {
+      // 文本题:从 seed 取题干与选项(答案是 AI 草稿,给老师参考但要求复核)
+      const seed = (await getSeeds()).find((x) => x.qid === qid);
+      if (seed) {
+        const opts = seed.options ? Object.entries(seed.options).map(([k, v]) => `${k}. ${v}`).join("\n") : "";
+        questionText =
+          `【当前讨论的题目(${questionSourceLabel(qid, qmeta.page)} ${qmeta.label},考点:${kpName})】\n${seed.stem_md}\n${opts}` +
+          (seed.answer_draft ? `\n(内部参考答案草稿:${seed.answer_draft},为 AI 起草未经核验——讲评前先独立验算,若不一致以你的验算为准并直说)` : "") +
+          `\n【${isGrading ? gradingNote : "请按苏格拉底阶梯带学生做这道题,不要直接报答案。"}】`;
+      }
       if (!effectiveKp) effectiveKp = qmeta.kp_primary;
     }
   }
@@ -227,7 +242,7 @@ export async function runChat(
 
   // —— 真教学轮:模式矩阵 + 真大脑流式 ——
   const state = masteryState(effectiveKp, s);
-  const mode: Mode = isGrading ? "guided-repair" : questionImage ? "socratic" : effectiveKp ? pickMode(state, s) : "chat";
+  const mode: Mode = isGrading ? "guided-repair" : questionImage || questionText ? "socratic" : effectiveKp ? pickMode(state, s) : "chat";
   const kpName = effectiveKp ? plainName((await getKpMap()).get(effectiveKp)?.name ?? effectiveKp) : undefined;
   h.onMeta?.(mode, MODE_NAMES[mode], undefined, kpName);
 
@@ -237,14 +252,15 @@ export async function runChat(
     .slice(-30)
     .map((c): { role: "user" | "assistant"; content: string | unknown[] } => ({ role: c.role, content: c.text }));
 
-  // 讲题轮把图片贴进当前消息
-  const kickoff = teachKickoff ?? message;
+  // 讲题轮把图片(或文本题原文)贴进当前消息
+  const kickoff0 = teachKickoff ?? message;
+  const kickoff = questionText ? `${questionText}\n\n${kickoff0}` : kickoff0;
   const lastUser: { role: "user"; content: string | unknown[] } = questionImage
     ? {
         role: "user",
         content: [
           { type: "image", source: { type: "base64", media_type: questionImage.mediaType, data: questionImage.dataB64 } },
-          { type: "text", text: `【当前正在讲的题目见上图。${questionImage.caption}】\n\n${kickoff}` },
+          { type: "text", text: `【当前正在讲的题目见上图。${questionImage.caption}】\n\n${kickoff0}` },
         ],
       }
     : { role: "user", content: kickoff };
@@ -308,7 +324,12 @@ export async function runChat(
     }
     const entry: ChatEntry = { role: "assistant", text: assistantText, at: new Date().toISOString(), mode, chips };
     s.chat.push(entry);
-    if (mode !== "chat" && !signal?.aborted) s.turnsSinceNotes += 1;
+    if (mode !== "chat" && !signal?.aborted) {
+      s.turnsSinceNotes += 1;
+      // 讲课留痕:点亮地图上的考点、排入复习管线、累计连续学习天数
+      if (effectiveKp) touchTaught(s, effectiveKp);
+      touchStreak(s);
+    }
   }
   saveStudent(s);
   void maybeWriteNotes();

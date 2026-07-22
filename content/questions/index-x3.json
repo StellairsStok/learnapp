@@ -12896,7 +12896,7 @@
    "label": "刷基础T1",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-20-002",
    "kp_secondary": [],
    "kp_proposed": "天然放射性与三种射线",
    "models": [
@@ -12918,7 +12918,7 @@
    "label": "刷基础T2",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-20-002",
    "kp_secondary": [],
    "kp_proposed": "三种射线在电场中的偏转与性质",
    "models": [
@@ -12940,7 +12940,7 @@
    "label": "刷基础T3",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-20-002",
    "kp_secondary": [],
    "kp_proposed": "三种射线在磁场中的偏转",
    "models": [
@@ -12962,7 +12962,7 @@
    "label": "刷基础T4",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-20-002",
    "kp_secondary": [],
    "kp_proposed": "三种射线的穿透与电离本领鉴别",
    "models": [
@@ -12984,8 +12984,10 @@
    "label": "刷基础T5",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-001",
+   "kp_secondary": [
+    "kp-x3-20-001"
+   ],
    "kp_proposed": "α衰变与β衰变的核子数守恒",
    "models": [
     "衰变方程守恒推理"
@@ -13006,8 +13008,10 @@
    "label": "刷基础T6",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-002",
+   "kp_secondary": [
+    "kp-x3-21-001"
+   ],
    "kp_proposed": "衰变方程与质量数电荷数守恒",
    "models": [
     "核反应方程配平"
@@ -13028,8 +13032,10 @@
    "label": "T7",
    "qtype": "选择未注明",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-002",
+   "kp_secondary": [
+    "kp-x3-21-001"
+   ],
    "kp_proposed": "α衰变和β衰变(衰变次数计算)",
    "models": [
     "系列衰变次数计算"
@@ -13050,7 +13056,7 @@
    "label": "题型5T8",
    "qtype": "选择未注明",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-21-003",
    "kp_secondary": [],
    "kp_proposed": "衰变与半衰期(多种元素混合计算)",
    "models": [
@@ -13072,8 +13078,11 @@
    "label": "题型5T9",
    "qtype": "选择未注明",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-003",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "衰变与半衰期(核反应方程与半衰期统计性)",
    "models": [
     "核反应方程判粒子",
@@ -13095,8 +13104,10 @@
    "label": "题型5T10",
    "qtype": "选择未注明",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-003",
+   "kp_secondary": [
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "衰变与半衰期(剩余质量图像)",
    "models": [
     "m/m0-t衰变曲线读图"
@@ -13117,8 +13128,11 @@
    "label": "题型6T11",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-004",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-24-002"
+   ],
    "kp_proposed": "α衰变和β衰变后粒子在磁场中的轨迹",
    "models": [
     "衰变反冲",
@@ -13140,7 +13154,7 @@
    "label": "刷易错T12",
    "qtype": "选择未注明",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-21-003",
    "kp_secondary": [],
    "kp_proposed": "衰变与半衰期(矿石中铀衰变剩余质量易错辨析)",
    "models": [
@@ -13162,8 +13176,11 @@
    "label": "刷提升T1",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-002",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-21-003"
+   ],
    "kp_proposed": "衰变与半衰期(衰变系列N-Z图)",
    "models": [
     "衰变系列N-Z图",
@@ -13185,8 +13202,11 @@
    "label": "刷提升T2",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-003",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "衰变与半衰期(半衰期计算与应用)",
    "models": [
     "烟雾探测器",
@@ -13208,8 +13228,11 @@
    "label": "刷提升T3",
    "qtype": "选择未注明",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-004",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-24-002"
+   ],
    "kp_proposed": "匀强磁场中衰变的轨迹分析",
    "models": [
     "静止核衰变动量守恒",
@@ -13231,8 +13254,11 @@
    "label": "刷素养T4",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-004",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-24-002"
+   ],
    "kp_proposed": "匀强磁场中衰变的轨迹分析(教材变式)",
    "models": [
     "静止核α衰变动量守恒",
@@ -13254,7 +13280,7 @@
    "label": "刷基础T1",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-20-001",
    "kp_secondary": [],
    "kp_proposed": "原子核的组成与同位素",
    "models": [
@@ -13276,8 +13302,11 @@
    "label": "刷基础T2",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-003",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "核反应方程与人工放射性",
    "models": [
     "人工核转变",
@@ -13299,8 +13328,10 @@
    "label": "刷基础T3",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-22-001",
+   "kp_secondary": [
+    "kp-x3-21-001"
+   ],
    "kp_proposed": "核力的性质",
    "models": [
     "核力概念判断"
@@ -13321,8 +13352,10 @@
    "label": "刷基础T4",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-22-001",
+   "kp_secondary": [
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "结合能与原子核稳定性",
    "models": [
     "结合能概念判断"
@@ -13343,8 +13376,11 @@
    "label": "刷基础T5",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-22-001",
+   "kp_secondary": [
+    "kp-x3-23-002",
+    "kp-x3-22-003"
+   ],
    "kp_proposed": "比结合能与核聚变能量计算",
    "models": [
     "核聚变",
@@ -13366,8 +13402,11 @@
    "label": "刷基础T6",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-22-001",
+   "kp_secondary": [
+    "kp-x3-23-001",
+    "kp-x3-23-002"
+   ],
    "kp_proposed": "比结合能曲线与核反应能量",
    "models": [
     "核子平均质量-Z曲线"
@@ -13388,8 +13427,11 @@
    "label": "刷基础T7",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-22-002",
+    "kp-x3-22-001"
+   ],
    "kp_proposed": "核聚变方程与质量亏损",
    "models": [
     "氦闪聚变",
@@ -13412,8 +13454,11 @@
    "label": "刷基础T8",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-003",
+   "kp_secondary": [
+    "kp-x3-22-001",
+    "kp-x3-22-003"
+   ],
    "kp_proposed": "核反应方程与比结合能",
    "models": [
     "核反应方程配平",
@@ -13435,8 +13480,11 @@
    "label": "刷基础T9",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-24-002",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "α衰变与质能方程综合",
    "models": [
     "静止核α衰变反冲",
@@ -13458,8 +13506,11 @@
    "label": "刷基础T10",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-24-002",
+   "kp_secondary": [
+    "kp-x3-22-002",
+    "kp-x3-23-003"
+   ],
    "kp_proposed": "核反应释能与动量守恒",
    "models": [
     "中子轰击锂核反应",
@@ -13481,7 +13532,7 @@
    "label": "刷易错T11",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-22-002",
    "kp_secondary": [],
    "kp_proposed": "质能方程的理解",
    "models": [
@@ -13503,8 +13554,11 @@
    "label": "刷难关T1",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-22-001",
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "结合能与核能计算(质能方程)",
    "models": [
     "聚变反应",
@@ -13526,8 +13580,11 @@
    "label": "刷难关T2",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-004",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "β衰变与核能(质能方程)",
    "models": [
     "β衰变质量亏损",
@@ -13550,8 +13607,11 @@
    "label": "刷难关T3",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-24-002",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-22-003"
+   ],
    "kp_proposed": "α衰变核反应方程与核能计算",
    "models": [
     "α衰变核反应方程",
@@ -13574,8 +13634,10 @@
    "label": "刷基础T1",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-20-003",
+   "kp_secondary": [
+    "kp-x3-20-002"
+   ],
    "kp_proposed": "放射性同位素的应用",
    "models": [
     "射线应用辨析"
@@ -13596,8 +13658,10 @@
    "label": "刷基础T2",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-003",
+   "kp_secondary": [
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "半衰期",
    "models": [
     "半衰期选取"
@@ -13618,8 +13682,11 @@
    "label": "刷基础T3",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-20-003",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-21-003"
+   ],
    "kp_proposed": "衰变与半衰期;核反应方程",
    "models": [
     "射线测厚仪",
@@ -13641,8 +13708,10 @@
    "label": "刷基础T4",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-20-001",
+   "kp_secondary": [
+    "kp-x3-21-001"
+   ],
    "kp_proposed": "同位素与衰变",
    "models": [
     "同位素辨析"
@@ -13663,8 +13732,10 @@
    "label": "刷基础T5",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-20-003",
+   "kp_secondary": [
+    "kp-x3-20-002"
+   ],
    "kp_proposed": "放射性的污染和防护",
    "models": [
     "放射性防护辨析"
@@ -13685,8 +13756,10 @@
    "label": "刷基础T1",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-001",
+   "kp_secondary": [
+    "kp-x3-23-003"
+   ],
    "kp_proposed": "裂变与核反应方程",
    "models": [
     "核反应方程配平"
@@ -13707,8 +13780,11 @@
    "label": "刷基础T2",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-001",
+   "kp_secondary": [
+    "kp-x3-22-001",
+    "kp-x3-22-003"
+   ],
    "kp_proposed": "裂变与核能计算",
    "models": [
     "玲珑一号核反应堆"
@@ -13729,8 +13805,11 @@
    "label": "刷基础T3",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-22-001",
+   "kp_secondary": [
+    "kp-x3-22-003",
+    "kp-x3-23-001"
+   ],
    "kp_proposed": "裂变与结合能计算",
    "models": [
     "铀核裂变能量"
@@ -13751,7 +13830,7 @@
    "label": "刷基础T4",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-23-002",
    "kp_secondary": [],
    "kp_proposed": "核聚变的理解",
    "models": [
@@ -13773,8 +13852,11 @@
    "label": "刷基础T5",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-23-001",
+    "kp-x3-22-001"
+   ],
    "kp_proposed": "聚变与裂变的比较",
    "models": [
     "聚变裂变对比"
@@ -13795,8 +13877,11 @@
    "label": "刷基础T6",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-22-002",
+    "kp-x3-23-003"
+   ],
    "kp_proposed": "太阳聚变与核能计算",
    "models": [
     "太阳聚变辐射"
@@ -13817,8 +13902,11 @@
    "label": "刷基础T7",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-23-003",
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "聚变与核反应方程",
    "models": [
     "氘氚聚变获能"
@@ -13839,8 +13927,11 @@
    "label": "T8",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-22-002",
+   "kp_secondary": [
+    "kp-x3-23-003",
+    "kp-x3-23-002"
+   ],
    "kp_proposed": "核反应方程与质能方程(质量亏损与释放能量比较)",
    "models": [
     "核聚变反应方程",
@@ -13862,8 +13953,11 @@
    "label": "T9",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-24-002",
+   "kp_secondary": [
+    "kp-x3-23-002",
+    "kp-x3-22-001"
+   ],
    "kp_proposed": "核聚变中的能量与动量守恒(质能方程)",
    "models": [
     "核聚变",
@@ -13886,8 +13980,10 @@
    "label": "T10",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-001",
+   "kp_secondary": [
+    "kp-x3-23-002"
+   ],
    "kp_proposed": "裂变、链式反应与核反应堆(聚变条件)",
    "models": [
     "核反应堆",
@@ -13910,8 +14006,10 @@
    "label": "T11",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-24-002",
+   "kp_secondary": [
+    "kp-x3-23-001"
+   ],
    "kp_proposed": "中子慢化剂选择(弹性正碰传能)",
    "models": [
     "弹性正碰",
@@ -13933,7 +14031,7 @@
    "label": "T12",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-24-001",
    "kp_secondary": [],
    "kp_proposed": "基本粒子的分类(夸克、强子、轻子)",
    "models": [
@@ -13955,8 +14053,11 @@
    "label": "刷易错T13",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-003",
+   "kp_secondary": [
+    "kp-x3-21-003",
+    "kp-x3-22-001"
+   ],
    "kp_proposed": "核反应类型辨析(衰变/裂变/聚变)与半衰期、比结合能",
    "models": [
     "核反应方程",
@@ -13979,10 +14080,9 @@
    "label": "刷提升T1",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-22-002",
    "kp_secondary": [
-    "kp-x3-16-002",
-    "kp-x3-19-001"
+    "kp-x3-23-002"
    ],
    "kp_proposed": "聚变反应与质能方程",
    "models": [
@@ -14006,9 +14106,10 @@
    "label": "刷提升T2",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-23-001",
    "kp_secondary": [
-    "kp-x3-01-002"
+    "kp-x3-22-003",
+    "kp-x3-23-003"
    ],
    "kp_proposed": "铀235裂变反应与核能计算",
    "models": [
@@ -14032,8 +14133,11 @@
    "label": "刷素养T3",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-22-003",
+    "kp-x3-23-003"
+   ],
    "kp_proposed": "太阳内部聚变与核能计算",
    "models": [
     "质子聚变成氦",
@@ -14056,9 +14160,10 @@
    "label": "素养检测T1",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-21-001",
    "kp_secondary": [
-    "kp-x3-16-003"
+    "kp-x3-22-002",
+    "kp-x3-20-003"
    ],
    "kp_proposed": "衰变方程与质能方程",
    "models": [
@@ -14081,10 +14186,9 @@
    "label": "素养检测T2",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-21-003",
    "kp_secondary": [
-    "kp-x3-18-003",
-    "kp-x3-16-002"
+    "kp-x3-21-001"
    ],
    "kp_proposed": "衰变与半衰期",
    "models": [
@@ -14160,9 +14264,10 @@
    "label": "素养检测T5",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-23-002",
    "kp_secondary": [
-    "kp-x3-17-002"
+    "kp-x3-22-002",
+    "kp-x3-22-001"
    ],
    "kp_proposed": "核反应方程与质能方程(聚变)",
    "models": [
@@ -14211,9 +14316,10 @@
    "label": "素养检测T7",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-21-001",
    "kp_secondary": [
-    "kp-x3-17-002"
+    "kp-x3-21-004",
+    "kp-x3-22-002"
    ],
    "kp_proposed": "β衰变核反应方程与质能方程",
    "models": [
@@ -14237,9 +14343,10 @@
    "label": "素养检测T8",
    "qtype": "多选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-21-004",
    "kp_secondary": [
-    "kp-x3-17-002"
+    "kp-x3-21-001",
+    "kp-x3-22-002"
    ],
    "kp_proposed": "α衰变与质量亏损(质能方程)",
    "models": [
@@ -14313,8 +14420,11 @@
    "label": "素养检测T11",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-004",
+   "kp_secondary": [
+    "kp-x3-22-001",
+    "kp-x3-21-001"
+   ],
    "kp_proposed": "α衰变与比结合能(结合磁场中带电粒子运动)",
    "models": [
     "α衰变",
@@ -14531,8 +14641,10 @@
    "label": "高考强化T9",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-001",
+   "kp_secondary": [
+    "kp-x3-20-001"
+   ],
    "kp_proposed": "衰变",
    "models": [
     "α衰变",
@@ -14554,8 +14666,11 @@
    "label": "高考强化T10",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-21-003",
+   "kp_secondary": [
+    "kp-x3-21-001",
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "衰变与半衰期",
    "models": [
     "核电池",
@@ -14577,8 +14692,10 @@
    "label": "高考强化T11",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-003",
+   "kp_secondary": [
+    "kp-x3-20-003"
+   ],
    "kp_proposed": "核反应方程",
    "models": [
     "硼中子俘获核反应"
@@ -14599,8 +14716,10 @@
    "label": "高考强化T12",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-003",
+   "kp_secondary": [
+    "kp-x3-20-001"
+   ],
    "kp_proposed": "核反应方程",
    "models": [
     "重离子合成新元素核反应"
@@ -14621,8 +14740,10 @@
    "label": "高考强化T13",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-003",
+   "kp_secondary": [
+    "kp-x3-20-002"
+   ],
    "kp_proposed": "核反应方程与射线性质",
    "models": [
     "恒星核反应",
@@ -14644,7 +14765,7 @@
    "label": "高考强化T14",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-22-002",
    "kp_secondary": [],
    "kp_proposed": "质能方程",
    "models": [
@@ -14667,8 +14788,11 @@
    "label": "高考强化T15",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-22-001",
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "核聚变与质能方程、比结合能",
    "models": [
     "核聚变反应",
@@ -14739,7 +14863,7 @@
    "label": "刷原创T3",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-22-001",
    "kp_secondary": [],
    "kp_proposed": "结合能与比结合能",
    "models": [
@@ -14762,8 +14886,11 @@
    "label": "刷原创T4",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
-   "kp_secondary": [],
+   "kp_primary": "kp-x3-23-002",
+   "kp_secondary": [
+    "kp-x3-22-001",
+    "kp-x3-22-002"
+   ],
    "kp_proposed": "核聚变、结合能与质能方程",
    "models": [
     "核聚变反应",
@@ -14834,9 +14961,10 @@
    "label": "题型专练T3",
    "qtype": "单选",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-23-002",
    "kp_secondary": [
-    "kp-x3-04-001"
+    "kp-x3-22-002",
+    "kp-x3-24-002"
    ],
    "kp_proposed": "核聚变与热核反应",
    "models": [
@@ -14935,9 +15063,10 @@
    "label": "刷素养T1",
    "qtype": "计算",
    "informal": false,
-   "kp_primary": "",
+   "kp_primary": "kp-x3-23-002",
    "kp_secondary": [
-    "kp-x3-16-003"
+    "kp-x3-22-002",
+    "kp-x3-23-003"
    ],
    "kp_proposed": "核聚变、质能方程与质量亏损",
    "models": [

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { getJSON } from "../lib/api";
-import type { DifficultyLevel, KpTree, StudentPublic } from "../lib/types";
+import type { DifficultyLevel, KpTree } from "../lib/types";
 
 interface LevelCount {
   formal: number;
@@ -30,12 +30,10 @@ interface Stats {
 
 type MasteryLevel = "none" | "learning" | "weak" | "solid";
 
-function levelOf(student: StudentPublic | null, kpId: string): MasteryLevel {
-  const m = student?.mastery?.[kpId];
-  if (!m || m.seen === 0) return "none";
-  if (m.wrong > m.correct) return "weak";
-  if (m.correct >= 4 && m.correct >= m.wrong * 3) return "solid";
-  return "learning";
+interface Progress {
+  plan: { due: string[]; mistakes: number; continueKp: string | null; streakDays: number; examDays: number };
+  overall: { pct: number; total: number; touched: number };
+  levels: Record<string, { level: MasteryLevel; due: boolean }>;
 }
 
 const LEVEL_LABEL: Record<MasteryLevel, string> = {
@@ -66,8 +64,8 @@ export default function MapPage() {
   const [params, setParams] = useSearchParams();
   const difficultyLevel = parseDifficultyLevel(params.get("level"));
   const [tree, setTree] = useState<KpTree | null>(null);
-  const [student, setStudent] = useState<StudentPublic | null>(null);
   const [stats, setStats] = useState<Stats | null>(null);
+  const [progress, setProgress] = useState<Progress | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const loadTree = useCallback(() => {
@@ -77,7 +75,7 @@ export default function MapPage() {
 
   useEffect(() => {
     loadTree();
-    getJSON<StudentPublic>("/api/student").then(setStudent).catch(() => {});
+    getJSON<Progress>("/api/progress").then(setProgress).catch(() => {});
     getJSON<Stats>("/api/questions/stats").then(setStats).catch(() => {});
   }, [loadTree]);
 
@@ -106,6 +104,10 @@ export default function MapPage() {
     if (difficultyLevel) query.set("level", difficultyLevel);
     return `/practice?${query.toString()}`;
   };
+
+  const kpNames: Record<string, string> = {};
+  for (const ch of tree.chapters) for (const u of ch.units) for (const k of u.kps) kpNames[k.id] = k.name;
+  const plan = progress?.plan;
 
   return (
     <div className="page">
@@ -143,6 +145,32 @@ export default function MapPage() {
         </div>
       </header>
 
+      {plan && (
+        <div className="daily-banner panel">
+          <div className="daily-stats">
+            <div className="dstat"><b>{plan.examDays}</b><span>距高考(天)</span></div>
+            <div className="dstat"><b>{plan.streakDays || "—"}</b><span>连续学习(天)</span></div>
+            <div className="dstat"><b>{progress?.overall.pct ?? 0}<i>%</i></b><span>全书掌握</span></div>
+            <div className="dstat"><b>{progress?.overall.touched ?? 0}<i>/{progress?.overall.total ?? 0}</i></b><span>已点亮考点</span></div>
+          </div>
+          <div className="daily-plan">
+            <span className="dp-title">今日计划</span>
+            {plan.due.length === 0 && plan.mistakes === 0 && !plan.continueKp && (
+              <span className="dp-empty">从下面挑一个考点开讲,清单会自己长出来。</span>
+            )}
+            {plan.due.slice(0, 3).map((kp) => (
+              <Link key={kp} className="dp-chip review" to={`/?kp=${kp}`}>复习 · {kpNames[kp]?.slice(0, 14) ?? kp}</Link>
+            ))}
+            {plan.mistakes > 0 && (
+              <Link className="dp-chip mistakes" to="/practice?source=mistakes">攻克错题 · {plan.mistakes} 道</Link>
+            )}
+            {plan.continueKp && (
+              <Link className="dp-chip continue" to={`/?kp=${plan.continueKp}`}>继续学 · {kpNames[plan.continueKp]?.slice(0, 14) ?? "上次的考点"}</Link>
+            )}
+          </div>
+        </div>
+      )}
+
       {tree.chapters.map((ch) => (
         <section key={ch.id} className="chapter">
           <h2 className="chapter-title">{ch.name}</h2>
@@ -155,7 +183,8 @@ export default function MapPage() {
                 </div>
                 <ul className="kp-list">
                   {u.kps.map((kp) => {
-                    const lv = levelOf(student, kp.id);
+                    const pInfo = progress?.levels?.[kp.id];
+                    const lv = pInfo?.level ?? "none";
                     const qs = stats?.perKp?.[kp.id];
                     const levelQs = difficultyLevel && qs ? qs.byLevel?.[difficultyLevel] : null;
                     const countText = qs
@@ -171,6 +200,7 @@ export default function MapPage() {
                         <span className="kp-name">
                           {kp.name}
                           {kp.type === "实验" && <span className="kp-tag">实验</span>}
+                          {pInfo?.due && <span className="kp-tag due">待复习</span>}
                         </span>
                         <span className="kp-actions">
                           {countText !== null && (

@@ -19,9 +19,14 @@ export type ContentState = "new" | "weak" | "apply" | "solid";
 export function masteryState(kpId: string | null | undefined, s: Student): ContentState {
   if (!kpId) return "apply";
   const m = s.mastery[kpId];
-  if (!m || m.seen === 0) return "new";
+  if (!m) return "new";
+  if (m.seen === 0) return (m.taught ?? 0) > 0 ? "apply" : "new"; // 讲过没练:进入应用检验
   if (m.wrong > m.correct) return "weak";
-  if (m.correct >= 4 && m.correct >= m.wrong * 3) return "solid";
+  if (m.correct >= 4 && m.correct >= m.wrong * 3) {
+    // 已稳但复习逾期:回到应用态,让教学侧带着检验而不是当新课讲
+    if (m.dueAt && Date.parse(m.dueAt) <= Date.now()) return "apply";
+    return "solid";
+  }
   return "apply";
 }
 

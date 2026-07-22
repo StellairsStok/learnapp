@@ -62,6 +62,7 @@ export interface StudentPublic {
     given: string;
     answer: string;
     at: string;
+    resolvedAt?: string;
   }[];
 }
 

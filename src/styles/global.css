@@ -2393,6 +2393,146 @@ body {
   cursor: pointer;
 }
 
+/* ---------------- 学习动力:每日横幅 / 错题攻克 / 底部导航 ---------------- */
+
+.daily-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding: 18px 22px;
+}
+
+.daily-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 34px;
+}
+
+.dstat {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.dstat b {
+  font-family: var(--font-display, inherit);
+  font-size: 24px;
+  line-height: 1.2;
+  color: #f6dfae;
+  font-variant-numeric: tabular-nums;
+}
+
+.dstat b i {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--ink-3);
+  margin-left: 2px;
+}
+
+.dstat span {
+  font-size: 12px;
+  color: var(--ink-3);
+  letter-spacing: 0.06em;
+}
+
+.daily-plan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.dp-title {
+  font-size: 13px;
+  color: var(--ink-2);
+  letter-spacing: 0.1em;
+  margin-right: 4px;
+}
+
+.dp-empty { font-size: 13px; color: var(--ink-3); }
+
+.dp-chip {
+  font-size: 13px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.dp-chip:hover { border-color: var(--zhu); background: rgba(217, 74, 56, 0.08); }
+.dp-chip.review { border-color: rgba(158, 231, 255, 0.45); }
+.dp-chip.mistakes { border-color: rgba(217, 74, 56, 0.5); color: #ffc9c0; }
+.dp-chip.continue { border-color: rgba(204, 168, 95, 0.5); color: #f0dcae; }
+
+.kp-tag.due {
+  color: #8bd8ff;
+  border-color: rgba(139, 216, 255, 0.45);
+  background: rgba(139, 216, 255, 0.10);
+}
+
+.head-sub .hl { color: var(--zhu, #ec6152); }
+
+.mistake-item.resolved { opacity: 0.55; }
+.q-tag.beaten {
+  color: #7fd8a8;
+  border-color: rgba(127, 216, 168, 0.5);
+  background: rgba(127, 216, 168, 0.10);
+}
+.mistake-divider {
+  margin: 18px 0 10px;
+  font-size: 13px;
+  color: var(--ink-3);
+  letter-spacing: 0.08em;
+}
+
+/* 底部导航(手机) */
+.bottom-nav { display: none; }
+
+@media (max-width: 760px) {
+  .sidebar { display: none; }
+
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+    background: rgba(8, 10, 22, 0.92);
+    border-top: 1px solid var(--line-strong);
+    backdrop-filter: none;
+  }
+
+  .bn-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 4px 10px;
+    font-size: 11px;
+    color: var(--ink-3);
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .bn-item.active { color: var(--zhu, #ec6152); }
+  .bn-item svg { width: 20px; height: 20px; }
+
+  /* 给底部导航让位 */
+  .page { padding-bottom: 84px; }
+  .chat-page .composer-wrap {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom));
+  }
+}
+
 /* ---------------- 概念配图(从真题裁出的真实图) ---------------- */
 
 /* ```figure 块外层的 pre 去样式 */

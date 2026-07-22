@@ -40,6 +40,7 @@ export default function PracticePage() {
   const [params, setParams] = useSearchParams();
   const kp = params.get("kp");
   const qid = params.get("qid");
+  const source = params.get("source");
   const difficultyLevel = parseDifficultyLevel(params.get("level"));
   const activeDifficultyLabel = difficultyLevel ? DIFFICULTY_LEVEL_LABEL[difficultyLevel] : "全部难度";
 
@@ -82,6 +83,7 @@ export default function PracticePage() {
     if (qid) {
       queryParts.push(`qid=${encodeURIComponent(qid)}`);
     } else {
+      if (source) queryParts.push(`source=${encodeURIComponent(source)}`);
       if (kp) queryParts.push(`kp=${encodeURIComponent(kp)}`);
       if (difficultyLevel) queryParts.push(`level=${encodeURIComponent(difficultyLevel)}`);
       if (exclude.length > 0) queryParts.push(`exclude=${encodeURIComponent(exclude.join(","))}`);
@@ -97,7 +99,7 @@ export default function PracticePage() {
     } else {
       setEmptyReason(data.reason ?? "暂无可用题目");
     }
-  }, [kp, qid, difficultyLevel]);
+  }, [kp, qid, difficultyLevel, source]);
 
   const setDifficulty = (nextLevel: DifficultyLevel | null) => {
     const nextParams: Record<string, string> = {};
@@ -139,6 +141,7 @@ export default function PracticePage() {
     if (qid) {
       excludeOnNextLoad.current = exclude;
       const nextParams: Record<string, string> = {};
+      if (source) nextParams.source = source;
       if (kp) nextParams.kp = kp;
       if (difficultyLevel) nextParams.level = difficultyLevel;
       setParams(nextParams);
@@ -156,12 +159,14 @@ export default function PracticePage() {
         <div>
           <h1>练习</h1>
           <div className="head-sub">
-            {kp ? (
+            {source === "mistakes" ? (
+              <>错题重练模式 · 只出还没攻克的错题,做对一道销一道 · <Link to="/practice" className="inline-link">退出重练</Link></>
+            ) : kp ? (
               <>
                 考点筛选:{kpNames[kp] ?? kp} · 难度:{activeDifficultyLabel} · <Link to={practiceUrl} className="inline-link">取消考点</Link>
               </>
             ) : (
-              `智能推荐 · ${activeDifficultyLabel} · 从已录入的讲义真题中选题`
+              `智能推荐 · ${activeDifficultyLabel} · 从已录入的真题中选题`
             )}
           </div>
         </div>
@@ -271,8 +276,16 @@ export default function PracticePage() {
               )}
               <div className="q-actions">
                 <button className="primary-btn" onClick={next}>下一题</button>
+                {!result.correct && (
+                  <Link
+                    className="ghost-btn"
+                    to={`/?q=${q.qid}${q.kp_primary ? `&kp=${q.kp_primary}` : ""}&given=${encodeURIComponent(chosen.join(""))}&ans=${encodeURIComponent(result.answer)}`}
+                  >
+                    带我订正这道题
+                  </Link>
+                )}
                 {!result.correct && q.kp_primary && (
-                  <Link className="ghost-btn" to={`/?kp=${q.kp_primary}`}>让 Stellairs 讲讲这个考点</Link>
+                  <Link className="ghost-btn" to={`/?kp=${q.kp_primary}`}>重听这个考点</Link>
                 )}
               </div>
             </div>

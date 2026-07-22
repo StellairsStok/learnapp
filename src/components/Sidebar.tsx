@@ -58,6 +58,20 @@ export default function Sidebar() {
   );
 }
 
+/** 手机端底部标签栏(≤760px 显示,替代侧栏) */
+export function BottomNav() {
+  return (
+    <nav className="bottom-nav" aria-label="主导航">
+      {NAV.map(({ to, label, icon: Icon }) => (
+        <NavLink key={to} to={to} end={to === "/"} className={({ isActive }) => "bn-item" + (isActive ? " active" : "")}>
+          <Icon />
+          <span>{label === "学习地图" ? "地图" : label === "错题本" ? "错题" : label}</span>
+        </NavLink>
+      ))}
+    </nav>
+  );
+}
+
 function IconChat() {
   return (
     <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.5">

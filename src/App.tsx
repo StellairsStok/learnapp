@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import CosmicBackdrop from "./components/CosmicBackdrop";
-import Sidebar from "./components/Sidebar";
+import Sidebar, { BottomNav } from "./components/Sidebar";
 import ChatPage from "./pages/ChatPage";
 import MapPage from "./pages/MapPage";
 import MistakesPage from "./pages/MistakesPage";
@@ -35,6 +35,7 @@ export default function App() {
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </main>
+      <BottomNav />
     </div>
   );
 }

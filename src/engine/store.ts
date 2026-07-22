@@ -24,11 +24,23 @@ export interface MistakeEntry {
   given: string;
   answer: string;
   at: string;
+  resolvedAt?: string; // 重练做对后"攻克"销账
 }
 export interface AnswerRecord {
   correct?: boolean;
   given?: string;
   at: string;
+}
+export interface MasteryEntry {
+  seen: number;
+  correct: number;
+  wrong: number;
+  lastAt: string;
+  taught?: number; // 讲课轮数(讲过即点亮)
+  lastTaughtAt?: string;
+  dueAt?: string; // 间隔复习到期时间
+  intervalDays?: number;
+  reps?: number; // 连续答对次数(排期用)
 }
 export interface Student {
   createdAt: string;
@@ -39,10 +51,11 @@ export interface Student {
   activeQid: string | null; // 正在对话里做的练习题;学生作答时把它的题图带给 AI 批改
   teacherNotes: { updatedAt: string; text: string } | null;
   turnsSinceNotes: number;
-  mastery: Record<string, { seen: number; correct: number; wrong: number; lastAt: string }>;
+  mastery: Record<string, MasteryEntry>;
   answers: Record<string, AnswerRecord>;
   mistakes: MistakeEntry[];
   chat: ChatEntry[];
+  streak?: { last: string; days: number }; // 连续学习天数
 }
 
 function defaultStudent(): Student {
